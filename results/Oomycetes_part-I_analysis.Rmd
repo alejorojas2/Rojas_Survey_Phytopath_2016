@@ -8,7 +8,7 @@ output:
 
 ```{r setup, include=FALSE}
 #Knitr options
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 
 ##Library load
@@ -103,6 +103,7 @@ __Figure 3.__  Frequency of the oomycete species summarized by clade for 2011
 and 2012. Oomycete genera outside of Pythium and Phytophthora were summarized 
 by genus.  Those species designated as spp. are not well resolved based only on
 the ITS sequence.
+
 ```{r clade_plot, fig.height=5, fig.width=7, echo=FALSE, fig.align='center'}
 #Summarise data by year
 Clade_data11 <- ddply(Isolate_11, "Clade", summarise,
@@ -140,9 +141,26 @@ Clade_data$Clade <- factor(Clade_data$Clade,
 For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
 
 
-__Figure 3.__
+```{r seed_analysis, echo=FALSE, results='hide'}
+source("../code/seed_rot_analysis.R")
 ```
 
+__Figure 4.__ Mean disease severity index of 84 oomycete species screened in a seed rot assay at 13ºC and 20ºC.  Bars represent standard error and disease severity index values from 0 = non-pathogenic to 100 = highly pathogenic.
+
+```{r temp_seed, fig.align='center', fig.width=12, fig.height=9}
+ggplot(seed_sum, aes(x=reorder(Species, mean_DI,median), y=mean_DI)) + 
+  geom_point(aes(colour=Temp), stat = "summary", fun.y="mean", size=2) + 
+  theme_gray() +
+  theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic")) +
+  scale_color_manual(values=c("#80b1d3","#fb8072")) +
+  geom_errorbar(limits, width=0.2) + 
+  labs(x="Species", y="Disease Severity Index")
+```
+
+__Figure 5.__ Figure 5.  (A) Hierarchical analysis of the disease severity index of 84 oomycete species to establish three clusters related to pathogenicity on soybean and (B) boxplot of disease severity index by clusters at 13°C and 20°C as evaluated in a seed rot assay.
+
+```{r seed_cluster, fig.height=8, fig.width=15, warning=FALSE, message=FALSE}
+plot_grid(htree2.1, bp, labels=c("A","B"), ncol=2)
 ```
 
 ## Tables

@@ -1,15 +1,4 @@
----
-title: "Seed rot data analysis"
-author: "Alejandro Rojas"
-date: "August 17, 2015"
-output: 
-  html_document: 
-    keep_md: yes
----
-
-#Pathogenicity data analysis - Soybean oomycete pathogen survey
-
-```{r custom_functions, echo=FALSE, message=FALSE}
+## ----custom_functions, echo=FALSE, message=FALSE-------------------------
 #Standard error function
 std <- function(x) sd(x)/sqrt(length(x))
 
@@ -22,16 +11,12 @@ if (length(new.pkg))
     install.packages(new.pkg, dependencies = TRUE)
 sapply(pkg, require, character.only = TRUE)
 }
-```
 
-```{r libs and directory, echo=FALSE, message=FALSE}
+## ----libs and directory, echo=FALSE, message=FALSE-----------------------
 packages <- c("ggplot2","RColorBrewer","grid","gridExtra","plyr","lme4","lsmeans","knitr","tidyr","dplyr", "MASS")
 ipak(packages)
-```
 
-##Seed rot - Pathogenicity data
-Processing the data for graphical exploration and analysis.  
-```{r data process}
+## ----data process--------------------------------------------------------
 #Reading the file
 seed <- read.csv("../data/clean/seed_rot.csv")
 
@@ -45,10 +30,8 @@ seed_sum <- ddply(seed, c("Species", "Temp"), summarise,
   
 #Setting limits for error bars
 limits <- aes(ymax = mean_DI + se_DI, ymin=mean_DI - se_DI, col=Temp)
-```
 
-Plotting the data by temperature using standard error and summarizing data by species.
-```{r seed_rot plot, fig.align='center', fig.width=12, fig.height=9}
+## ----seed_rot plot, fig.align='center', fig.width=12, fig.height=9-------
 #Creating plot for DI mean values
 (seed_temp <- ggplot(seed_sum, aes(x=reorder(Species, mean_DI,median), y=mean_DI)) + 
   geom_point(aes(colour=Temp), stat = "summary", fun.y="mean", size=2) + 
@@ -57,16 +40,8 @@ Plotting the data by temperature using standard error and summarizing data by sp
   scale_color_manual(values=c("#80b1d3","#fb8072")) +
   geom_errorbar(limits, width=0.2) + 
   labs(x="Species", y="Disease Severity Index"))
-```
 
-###Seed rot data for 20C
-Subsetting the 20C seed rot assay data for statistical analysis, and testing different models to find the best fit:
-
- * Species as fixed effect
- * Species as fixed effect and experiment as random factor
- * Species as fixed effect, experiment as random factor and Isolates nested within species
- 
-```{r model eval at 20C, fig.align='center'}
+## ----model eval at 20C, fig.align='center'-------------------------------
 #Dataset for 20C for seed rot
 Seed_20C <- subset(seed, seed$Temp=="20C")
 
@@ -93,9 +68,8 @@ summary(fit2_20C)
 
 #Model 2 fitting (fitted vs residuals)
 plot(fit2_20C)
-```
 
-```{r lsmeans 20C model 2, fig.align='center', fig.width=8, fig.height=10}
+## ----lsmeans 20C model 2, fig.align='center', fig.width=8, fig.height=10----
 #lsmeans for model 2
 lsmeans_fit2_20C <- lsmeans(fit2_20C,"Species")
 
@@ -106,18 +80,16 @@ plot(lsmeans_fit2_20C)
 
 #Estimate confidence intervals for model 2
 #confint(contrast(lsmeans_fit2, "trt.vs.ctrl", ref=3))
-```
 
-```{r lsmeans_model3_20C}
+## ----lsmeans_model3_20C--------------------------------------------------
 #Model 3 with fixed effect (species) and random effect (set) and nested effect (species:isolate)
 fit3_20C <- lmer(DIx100 ~ Species + (1|Set) + (1|Species:Isolate), data=Seed_20C, REML = FALSE)
 summary(fit3_20C)
 
 #Model 3 fitting (fitted vs residuals)
 plot(fit3_20C)
-```
 
-```{r model comparison, fig.align='center', fig.width=8, fig.height=10}
+## ----model comparison, fig.align='center', fig.width=8, fig.height=10----
 #lsmeans for model 3
 lsmeans_fit3_20C <- lsmeans(fit3_20C, "Species")
 
@@ -128,24 +100,14 @@ plot(lsmeans_fit3_20C)
 
 #Comparing models 2 and 3
 anova(fit2_20C, fit3_20C)
-```
 
-Based on the model 3, which is the best model, the data was compared against the control to determine those species that are different.  The p-values were adjusted with bonferroni due to large number of levels.
-```{r contrast for model 3}
+## ----contrast for model 3------------------------------------------------
 #Contrast for model 3
 CvsA_fit3_20C <- contrast(lsmeans_fit3_20C, "trt.vs.ctrl", ref=3)
 Results_fit3_20C <- summary(CvsA_fit3_20C, adjust="bon")
 kable(Results_fit3_20C, digits = 3, format = "markdown")
-```
 
-###Seed rot data for 13C
-Subsetting the 13C seed rot assay data for statistical analysis, and testing different models to find the best fit:
-
- * Species as fixed effect
- * Species as fixed effect and experiment as random factor
- * Species as fixed effect, experiment as random factor and Isolates nested within species
- 
-```{r model eval at 13C, fig.align='center'}
+## ----model eval at 13C, fig.align='center'-------------------------------
 #Dataset for 20C for seed rot
 Seed_13C <- subset(seed, seed$Temp=="13C")
 #General model AOV
@@ -166,9 +128,8 @@ summary(fit2_13C)
 
 #Model 2 fitting (fitted vs residuals)
 plot(fit2_13C)
-```
 
-```{r lsmeans 13C, fig.align='center', fig.width=8, fig.height=10}
+## ----lsmeans 13C, fig.align='center', fig.width=8, fig.height=10---------
 #lsmeans for model 2
 lsmeans_fit2_13C <- lsmeans(fit2_13C,"Species")
 
@@ -179,18 +140,16 @@ plot(lsmeans_fit2_13C)
 
 #Estimate confidence intervals for model 2
 #confint(contrast(lsmeans_fit2, "trt.vs.ctrl", ref=3))
-```
 
-```{r lsmeans_model3}
+## ----lsmeans_model3------------------------------------------------------
 #Model 3 with fixed effect (species) and random effect (set) and nested effect (species:isolate)
 fit3_13C <- lmer(DIx100 ~ Species + (1|Set) + (1|Species:Isolate), data=Seed_13C, REML = FALSE)
 summary(fit3_13C)
 
 #Model 3 fitting (fitted vs residuals)
 plot(fit3_13C)
-```
 
-```{r model comaprison, fig.align='center', fig.width=8, fig.height=10}
+## ----model comaprison, fig.align='center', fig.width=8, fig.height=10----
 #lsmeans for model 3
 lsmeans_fit3_13C <- lsmeans(fit3_13C, "Species")
 
@@ -201,18 +160,14 @@ plot(lsmeans_fit3_13C)
 
 #Comparing models 2 and 3
 anova(fit2_13C, fit3_13C)
-```
 
-Based on the model 3, which is the best model, the data was compared against the control to determine those species that are different.  The p-values were adjusted with bonferroni due to large number of levels.
-```{r Contrasts for model 3}
+## ----Contrasts for model 3-----------------------------------------------
 #Contrast for model 3
 CvsA_fit3_13C <- contrast(lsmeans_fit3_13C, "trt.vs.ctrl", ref=3)
 Results_fit3_13C <- summary(CvsA_fit3_13C, adjust="bon", level=.90)
 kable(Results_fit3_13C, format = "markdown")
-```
 
-##Clustering for seed rot data
-```{r Cluster analysis seed rot}
+## ----Cluster analysis seed rot-------------------------------------------
 #Sorting tables for seed rot at 13C and 20C
 Seed_13C <- Seed_13C[order(Seed_13C[,1], Seed_13C[,2], Seed_13C[,3]),]
 Seed_20C <- Seed_20C[order(Seed_20C[,1], Seed_20C[,2], Seed_20C[,3]),]
@@ -279,10 +234,8 @@ library(cluster)
 clusplot(seed_lda_isol,groups_isol, color = TRUE, shade = TRUE, labels=2, lines=0)
 #kable(seed_lda_)
 
-```
 
-
-```{r plot_phylo, fig.height=8, fig.width=15, warning=FALSE, message=FALSE}
+## ----plot_phylo, fig.height=8, fig.width=15, warning=FALSE, message=FALSE----
 library(ggtree)
 library(cowplot)
 #mypal = c("#1a1a1a","#008837","#2b83ba")
@@ -302,10 +255,8 @@ plot_grid(htree2.1, bp, labels=c("A","B"), ncol=2)
 #library(ggdendro)
 #ggdendrogram(fit_isol, size=1, color="tomato")
 
-```
 
-###Summary table Seed rot data
-```{r Final seed rot table}
+## ----Final seed rot table------------------------------------------------
 
 seed_spp <- ddply(Seed_temps, c("Species"), summarise,
               N = length(DI_13C)/9,
@@ -344,4 +295,3 @@ Seed_rot_final <- Seed_pvalue %>% dplyr::select(Species,
                                                 Pval_20C
                                                 )
 kable(Seed_rot_final, format = "markdown")
-```

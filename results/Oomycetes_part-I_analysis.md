@@ -22,15 +22,21 @@ __Figure 3.__  Frequency of the oomycete species summarized by clade for 2011
 and 2012. Oomycete genera outside of Pythium and Phytophthora were summarized 
 by genus.  Those species designated as spp. are not well resolved based only on
 the ITS sequence.
+
 <img src="Oomycetes_part-I_analysis_files/figure-html/clade_plot-1.png" title="" alt="" style="display: block; margin: auto;" />
 
 For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
 
 
-__Figure 3.__
-```
+![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-1.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-2.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-3.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-4.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-5.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-6.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-7.png)
 
-```
+__Figure 4.__ Mean disease severity index of 84 oomycete species screened in a seed rot assay at 13ºC and 20ºC.  Bars represent standard error and disease severity index values from 0 = non-pathogenic to 100 = highly pathogenic.
+
+<img src="Oomycetes_part-I_analysis_files/figure-html/temp_seed-1.png" title="" alt="" style="display: block; margin: auto;" />
+
+__Figure 5.__ Figure 5.  (A) Hierarchical analysis of the disease severity index of 84 oomycete species to establish three clusters related to pathogenicity on soybean and (B) boxplot of disease severity index by clusters at 13°C and 20°C as evaluated in a seed rot assay.
+
+![](Oomycetes_part-I_analysis_files/figure-html/seed_cluster-1.png)
 
 ## Tables
 
