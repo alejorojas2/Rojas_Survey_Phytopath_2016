@@ -24,7 +24,8 @@ by genus.  Those species designated as spp. are not well resolved based only on
 the ITS sequence.
 <img src="Oomycetes_part-I_analysis_files/figure-html/clade_plot-1.png" title="" alt="" style="display: block; margin: auto;" />
 
-
+* For seed rot analyses in detail, please check the [seed_rot_data_analysis.Rmd]()
+__Figure 3.__
 ## Tables
 
 You can also embed plots, for example:

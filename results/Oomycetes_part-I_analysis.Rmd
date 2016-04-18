@@ -7,8 +7,33 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+#Knitr options
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+
+##Library load
+# ipak function: install and load multiple R packages.
+# check to see if packages are installed. Install them if they are not, then load them into the R session.
+# Source: https://gist.github.com/stevenworthington/3178163
+ipak <- function(pkg){
+new.pkg <- pkg[!(pkg %in% installed.packages()[,"Package"])]
+if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+sapply(pkg, require, character.only = TRUE)
+}
+
+packages <- c("ggplot2","RColorBrewer","grid","gridExtra","plyr","lme4",
+              "lsmeans","knitr","tidyr","dplyr", "MASS", "magrittr", 
+              "reshape2", "FactoMineR", "cowplot")
+ipak(packages)
+
+##Other functions
+#Standard error function
+std <- function(x) sd(x)/sqrt(length(x))
+CVcoeff <- function(x) (sd(x)/mean(x))*100
+
+#Trimming leading or trailing space
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 ```
 
 #Part I: identification and pathogenicity characterization
@@ -19,7 +44,7 @@ __Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of
 planted soybean acres demonstrated by color intensity at the county/parish level. 
 
 ```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12, cache=TRUE}
-source("code/soy_sample_map.R")
+source("../code/soy_sample_map.R")
 
 print(gg2)
 print(gg3, vp=viewport(.65, .88, .4,.4))
@@ -30,7 +55,7 @@ __Figure 2.__ Frequency at which different Oomycete species were recovered from
 diseased soybean seedlings in 2011 and 2012.  (*) Species previously reported as 
 associated with soybean in the fungal-host database (<http://nt.ars-grin.gov/fungaldatabases/fungushost/fungushost.cfm>).
 ```{r abundance_plot, fig.height=10, fig.width=8, echo=FALSE, fig.align='center'}
-source("code/abundance_analysis.R")
+source("../code/abundance_analysis.R")
 
 #Plots
 Isol_11 <- ggplot(data=Data_11_12, aes(x=reorder(Species, freq_11, mean), y=freq_11)) + 
@@ -112,6 +137,12 @@ Clade_data$Clade <- factor(Clade_data$Clade,
   labs(y="Frequency (%)") + xlab(NULL) + coord_flip())
 ```
 
+For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis.Rmd](Seed_rot_data_analysis.md)__
+
+__Figure 3.__
+```{}
+
+```
 
 ## Tables
 

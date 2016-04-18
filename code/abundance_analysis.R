@@ -3,7 +3,7 @@ library(dplyr)
 library(gridExtra)
 
 #Read raw dataset for isolates
-Isolate_data <- read.csv("data/clean/Isolates_11-12_final.csv")
+Isolate_data <- read.csv("../data/clean/Isolates_11-12_final.csv")
 
 #Subsetting by year
 Isolate_11 <-subset(Isolate_data, Isolate_data$Year==2011)

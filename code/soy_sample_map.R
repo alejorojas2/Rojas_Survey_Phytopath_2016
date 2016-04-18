@@ -23,9 +23,9 @@ gpclibPermit()
 par(mfrow = c(1,1))
 
 #Read files  with location data for survey and load the file with soybean area planted (Acres)
-fields <- read.csv2("data/clean/US_GIS_data.txt", 
+fields <- read.csv2("../data/clean/US_GIS_data.txt", 
                     header = TRUE,sep = "\t", dec = ".")
-soy_data2 <- read.table("data/clean/soybean_data.csv", 
+soy_data2 <- read.table("../data/clean/soybean_data.csv", 
                         sep = ",", header = TRUE, colClasses=c(rep("character",19)))
 
 #Reformating data for soy data
@@ -70,13 +70,13 @@ can2 <- getData('GADM', country="CAN", level=2) # counties
 ca.province <- fortify(can2[can2$NAME_1 %in% "Ontario",], region = "NAME_2")
 
 #Read data for locations
-Ontario <- read.csv2("data/clean/CA_GIS_data.txt", 
+Ontario <- read.csv2("../data/clean/CA_GIS_data.txt", 
                      header = TRUE,sep = "\t", dec = ".")
 Ontario$Lat <- as.numeric(Ontario$Lat)
 Ontario$Long <- as.numeric(Ontario$Long)
 
 #Read data for soy pdx
-On_soy <- read.csv2("data/clean/Ontario_soybean.txt", 
+On_soy <- read.csv2("../data/clean/Ontario_soybean.txt", 
                     sep = "\t", header = TRUE)
 
 On_soy$brk <- cut(On_soy$Acres, 
