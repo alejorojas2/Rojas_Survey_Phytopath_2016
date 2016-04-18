@@ -33,7 +33,7 @@ ipak(packages)
 Processing the data for graphical exploration and analysis.  
 ```{r data process}
 #Reading the file
-seed <- read.csv(file = "./seed_rot_allsets.csv")
+seed <- read.csv("./seed_rot_allsets.csv")
 
 #Summarizing data using different parameters by plyr library
 seed_sum <- ddply(seed, c("Species", "Temp"), summarise,
