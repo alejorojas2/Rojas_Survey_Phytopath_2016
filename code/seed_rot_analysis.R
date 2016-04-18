@@ -51,11 +51,11 @@ summary(fit1_20C, adjust="bon")
 
 #Plotting diagnostic plots for fit1 model
 par(mfrow=c(2,2)) # optional layout 
-plot(fit1_20C)# diagnostic plots
+diag_plot_20C <- plot(fit1_20C)# diagnostic plots
 
 #Plotting residuals
 par(mfrow=c(1,1)) # optional layout 
-hist(fit1_20C$residuals)
+hist_20C_res <- hist(fit1_20C$residuals)
 
 #Test with random effect fit2 using aov
 fit1.2_20C <- aov(DIx100 ~ Species + Species:Isolate + Error(Set), data=Seed_20C)
@@ -67,7 +67,7 @@ fit2_20C <- lmer(DIx100 ~ Species + (1|Set), data=Seed_20C, REML = FALSE)
 summary(fit2_20C)
 
 #Model 2 fitting (fitted vs residuals)
-plot(fit2_20C)
+fitvsres_20C <- plot(fit2_20C)
 
 ## ----lsmeans 20C model 2, fig.align='center', fig.width=8, fig.height=10----
 #lsmeans for model 2
@@ -76,7 +76,7 @@ lsmeans_fit2_20C <- lsmeans(fit2_20C,"Species")
 #Print summary for data including mean, SE, df, CIs, t-ratio and p.value
 #summary(lsmeans_fit2_20C, infer=c(TRUE,TRUE), adjust="bon")
 
-plot(lsmeans_fit2_20C)
+#plot(lsmeans_fit2_20C)
 
 #Estimate confidence intervals for model 2
 #confint(contrast(lsmeans_fit2, "trt.vs.ctrl", ref=3))
@@ -116,18 +116,18 @@ summary(fit1_13C, adjust="bon")
 
 #Plotting diagnostic plots for fit1 model
 par(mfrow=c(2,2)) # optional layout 
-plot(fit1_13C)# diagnostic plots
+#plot(fit1_13C)# diagnostic plots
 
 #Plotting residuals
 par(mfrow=c(1,1)) # optional layout 
-hist(fit1_13C$residuals)
+#hist(fit1_13C$residuals)
 
 ##Model 2 with fixed effect (species) and random effect (set)
 fit2_13C <- lmer(DIx100 ~ Species + (1|Set), data=Seed_13C, REML = FALSE)
 summary(fit2_13C)
 
 #Model 2 fitting (fitted vs residuals)
-plot(fit2_13C)
+#plot(fit2_13C)
 
 ## ----lsmeans 13C, fig.align='center', fig.width=8, fig.height=10---------
 #lsmeans for model 2
@@ -136,7 +136,7 @@ lsmeans_fit2_13C <- lsmeans(fit2_13C,"Species")
 #Print summary for data including mean, SE, df, CIs, t-ratio and p.value
 #summary(lsmeans_fit2_13C, infer=c(TRUE,TRUE), adjust="bon")
 
-plot(lsmeans_fit2_13C)
+#plot(lsmeans_fit2_13C)
 
 #Estimate confidence intervals for model 2
 #confint(contrast(lsmeans_fit2, "trt.vs.ctrl", ref=3))
@@ -147,7 +147,7 @@ fit3_13C <- lmer(DIx100 ~ Species + (1|Set) + (1|Species:Isolate), data=Seed_13C
 summary(fit3_13C)
 
 #Model 3 fitting (fitted vs residuals)
-plot(fit3_13C)
+#plot(fit3_13C)
 
 ## ----model comaprison, fig.align='center', fig.width=8, fig.height=10----
 #lsmeans for model 3
@@ -156,7 +156,7 @@ lsmeans_fit3_13C <- lsmeans(fit3_13C, "Species")
 #Print summary for data including mean, SE, df, CIs, t-ratio and p.value
 #summary(lsmeans_fit3_13C, infer=c(TRUE,TRUE), adjust="bon")
 
-plot(lsmeans_fit3_13C)
+#plot(lsmeans_fit3_13C)
 
 #Comparing models 2 and 3
 anova(fit2_13C, fit3_13C)
@@ -205,7 +205,7 @@ seed_cluster <- seed_cluster[,-1]
 
 d_isol <- dist(seed_cluster, method="euclidean")
 fit_isol <- hclust(d_isol, method="ward.D")
-plot(fit_isol)
+#plot(fit_isol)
 groups_isol <- cutree(fit_isol, k=3)
 rect.hclust(fit_isol,k=3, border="red")
 
@@ -231,7 +231,7 @@ bp <- ggplot(data=cluster_seed_rot, aes(x=groups_isol, y=DI)) +
 # summary(fit2)
 
 library(cluster)
-clusplot(seed_lda_isol,groups_isol, color = TRUE, shade = TRUE, labels=2, lines=0)
+#clusplot(seed_lda_isol,groups_isol, color = TRUE, shade = TRUE, labels=2, lines=0)
 #kable(seed_lda_)
 
 

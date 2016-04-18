@@ -28,7 +28,7 @@ the ITS sequence.
 For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
 
 
-![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-1.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-2.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-3.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-4.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-5.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-6.png)![](Oomycetes_part-I_analysis_files/figure-html/seed_analysis-7.png)
+
 
 __Figure 4.__ Mean disease severity index of 84 oomycete species screened in a seed rot assay at 13ºC and 20ºC.  Bars represent standard error and disease severity index values from 0 = non-pathogenic to 100 = highly pathogenic.
 

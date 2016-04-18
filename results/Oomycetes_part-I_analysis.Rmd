@@ -141,7 +141,7 @@ Clade_data$Clade <- factor(Clade_data$Clade,
 For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
 
 
-```{r seed_analysis, echo=FALSE, results='hide'}
+```{r seed_analysis, echo=FALSE, results='hide', fig.show='hide'}
 source("../code/seed_rot_analysis.R")
 ```
 
