@@ -1,0 +1,33 @@
+---
+title: "Oomycete species associated with soybean seedlings in the U.S."
+author: "J. Alejandro Rojas"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+#Part I: identification and pathogenicity characterization
+
+__Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of planted soybean acres demonstrated by color intensity at the county/parish level. 
+
+```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12}
+source("code/soy_sample_map.R")
+
+print(gg2)
+print(gg3, vp=viewport(.65, .88, .4,.4))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

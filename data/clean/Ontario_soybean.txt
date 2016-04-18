@@ -1,0 +1,49 @@
+County	Acres
+Brant	44159
+Chatham-Kent	207404
+Elgin	100176
+Essex	160530
+Haldimand-Norfolk	152870
+Hamilton	31828
+Lambton	236154
+Middlesex	164463
+Niagara	76938
+Oxford	78480
+Bruce	95924
+Dufferin	16048
+Grey	31317
+Halton	19594
+Huron	170504
+Peel	22676
+Perth	106537
+Simcoe	91546
+Waterloo	30749
+Wellington	92119
+Durham	44171
+Haliburton	0
+Hastings	20583
+Kawartha Lakes	29256
+Muskoka	0
+Northumberland	38999
+Parry Sound	0
+Peterborough	16480
+Prince Edward	19595
+York	24468
+Frontenac	8363
+Lanark	13808
+Leeds and Grenville	25595
+Lennox and Addington	13941
+Ottawa	57224
+Prescott and Russell	81778
+Renfrew	21638
+Stormont Dundas and Glengarry	108291
+Algoma	0
+Cochrane	332
+Greater Sudbury	0
+Kenora	0
+Manitoulin	1093
+Nipissing	1968
+Rainy River	211
+Sudbury	483
+Thunder Bay	680
+Timiskaming	4827
