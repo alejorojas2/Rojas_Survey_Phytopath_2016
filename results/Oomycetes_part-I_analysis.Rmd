@@ -137,11 +137,11 @@ Clade_data$Clade <- factor(Clade_data$Clade,
   labs(y="Frequency (%)") + xlab(NULL) + coord_flip())
 ```
 
-For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis.Rmd](Seed_rot_data_analysis.md)
+For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
 
 
 __Figure 3.__
-```{}
+```
 
 ```
 

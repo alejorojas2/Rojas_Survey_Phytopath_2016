@@ -10,7 +10,7 @@ J. Alejandro Rojas
 __Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of 
 planted soybean acres demonstrated by color intensity at the county/parish level. 
 
-![](Oomycetes_part-I_analysis_files/figure-html/map_soybean_samples-1.png)
+<img src="Oomycetes_part-I_analysis_files/figure-html/map_soybean_samples-1.png" title="" alt="" style="display: block; margin: auto;" />
 
 
 __Figure 2.__ Frequency at which different Oomycete species were recovered from 
@@ -24,8 +24,14 @@ by genus.  Those species designated as spp. are not well resolved based only on
 the ITS sequence.
 <img src="Oomycetes_part-I_analysis_files/figure-html/clade_plot-1.png" title="" alt="" style="display: block; margin: auto;" />
 
-* For seed rot analyses in detail, please check the [seed_rot_data_analysis.Rmd]()
+For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
+
+
 __Figure 3.__
+```
+
+```
+
 ## Tables
 
 You can also embed plots, for example:
