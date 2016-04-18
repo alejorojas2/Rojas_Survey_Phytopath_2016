@@ -43,8 +43,10 @@ For both papers, the sequences can be obtained with the accession numbers GenBan
 
 Results
 ----------------------
+Rmarkdown documents containing figures and analyses for Oomycete species associated with soybean seedlings in the U.S.
 
-
+* [Part I - Identification and pathogenicity characterization](Oomycetes_part-I_analysis.md)
+* [Part II- Diversity and ecology in relation to environmental and edaphic factors](Oomycetes_part-II_analysis.md)
 
 
 
