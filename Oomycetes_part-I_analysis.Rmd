@@ -18,7 +18,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 __Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of 
 planted soybean acres demonstrated by color intensity at the county/parish level. 
 
-```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12}
+```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12, cache=TRUE}
 source("code/soy_sample_map.R")
 
 print(gg2)
@@ -78,7 +78,7 @@ __Figure 3.__  Frequency of the oomycete species summarized by clade for 2011
 and 2012. Oomycete genera outside of Pythium and Phytophthora were summarized 
 by genus.  Those species designated as spp. are not well resolved based only on
 the ITS sequence.
-```{r clade_plot, fig.height=6, fig.width=4, echo=FALSE, fig.align='center'}
+```{r clade_plot, fig.height=5, fig.width=7, echo=FALSE, fig.align='center'}
 #Summarise data by year
 Clade_data11 <- ddply(Isolate_11, "Clade", summarise,
                    N = as.numeric(length(qDef)),

@@ -23,6 +23,8 @@ and 2012. Oomycete genera outside of Pythium and Phytophthora were summarized
 by genus.  Those species designated as spp. are not well resolved based only on
 the ITS sequence.
 <img src="Oomycetes_part-I_analysis_files/figure-html/clade_plot-1.png" title="" alt="" style="display: block; margin: auto;" />
+
+
 ## Tables
 
 You can also embed plots, for example:
