@@ -1,0 +1,1990 @@
+Species,Set,Isolate,Rep,Whole Shoot,Roots,Number Plants,Weight per root,Weight per shoot
+Pythium aff. torulosum ,Set_1-1,AR_15.S.2.7.A,R1,670,50,5,10,134
+Pythium aff. torulosum ,Set_1-1,AR_15.S.2.7.A,R2,680,110,5,22,136
+Pythium aff. torulosum ,Set_1-1,AR_15.S.2.7.A,R3,630,80,5,16,126
+Pythium aff. dissotocum,Set_1-1,AR_160.S.1.9.A,R1,900,160,5,32,180
+Pythium aff. dissotocum,Set_1-1,AR_160.S.1.9.A,R2,650,70,5,14,130
+Pythium aff. dissotocum,Set_1-1,AR_160.S.1.9.A,R3,730,60,5,12,146
+Pythium lutarium ,Set_1-1,AR_284.S.1.4.A,R1,650,80,5,16,130
+Pythium lutarium ,Set_1-1,AR_284.S.1.4.A,R2,690,110,5,22,138
+Pythium lutarium ,Set_1-1,AR_284.S.1.4.A,R3,620,50,5,10,124
+CONTROL,Set_1-1,CONTROL,R1,820,180,5,36,164
+CONTROL,Set_1-1,CONTROL,R2,800,190,5,38,160
+CONTROL,Set_1-1,CONTROL,R3,660,220,5,44,132
+CONTROL_NR,Set_1-1,CONTROL_NR,R1,850,180,5,36,170
+CONTROL_NR,Set_1-1,CONTROL_NR,R2,760,170,5,34,152
+CONTROL_NR,Set_1-1,CONTROL_NR,R3,690,180,5,36,138
+Pythium aff. torulosum ,Set_1-1,IASO_10-16.27,R1,880,40,5,8,176
+Pythium aff. torulosum ,Set_1-1,IASO_10-16.27,R2,720,100,5,20,144
+Pythium aff. torulosum ,Set_1-1,IASO_10-16.27,R3,820,100,5,20,164
+Pythium heterothallicum,Set_1-1,IASO_10-32.3,R1,770,110,5,22,154
+Pythium heterothallicum,Set_1-1,IASO_10-32.3,R2,850,30,5,6,170
+Pythium heterothallicum,Set_1-1,IASO_10-32.3,R3,740,40,5,8,148
+Pythium aff. dissotocum,Set_1-1,IASO_10-37.8,R1,820,30,5,6,164
+Pythium aff. dissotocum,Set_1-1,IASO_10-37.8,R2,720,80,5,16,144
+Pythium aff. dissotocum,Set_1-1,IASO_10-37.8,R3,760,10,5,2,152
+Pythium irregulare ,Set_1-1,IASO_2-21.2,R1,730,80,5,16,146
+Pythium irregulare ,Set_1-1,IASO_2-21.2,R2,690,80,5,16,138
+Pythium irregulare ,Set_1-1,IASO_2-21.2,R3,660,100,5,20,132
+Phytophthora sojae ,Set_1-1,IASO_3-41.17,R1,620,0,5,0,124
+Phytophthora sojae ,Set_1-1,IASO_3-41.17,R2,570,0,5,0,114
+Phytophthora sojae ,Set_1-1,IASO_3-41.17,R3,570,5.2,5,1,114
+Pythium attrantheridium,Set_1-1,IASO_6-36.41,R1,720,140,5,28,144
+Pythium attrantheridium,Set_1-1,IASO_6-36.41,R2,720,90,5,18,144
+Pythium attrantheridium,Set_1-1,IASO_6-36.41,R3,810,160,5,32,162
+Phytophthora sojae ,Set_1-1,IASO_8-13.10,R1,690,20,5,4,138
+Phytophthora sojae ,Set_1-1,IASO_8-13.10,R2,470,10,5,2,94
+Phytophthora sojae ,Set_1-1,IASO_8-13.10,R3,620,20,5,4,124
+Pythium ultimum var. sporangiiferum ,Set_1-1,ILSO_3-21A,R1,660,10,5,2,132
+Pythium ultimum var. sporangiiferum ,Set_1-1,ILSO_3-21A,R2,420,0,5,0,84
+Pythium ultimum var. sporangiiferum ,Set_1-1,ILSO_3-21A,R3,470,0,5,0,94
+Pythium attrantheridium,Set_1-1,ILSO_3-24A,R1,730,110,5,22,146
+Pythium attrantheridium,Set_1-1,ILSO_3-24A,R2,720,20,5,4,144
+Pythium attrantheridium,Set_1-1,ILSO_3-24A,R3,840,120,5,24,168
+Pythium ultimum var. ultimum,Set_1-1,ILSO_4-52C,R1,750,20,5,4,150
+Pythium ultimum var. ultimum,Set_1-1,ILSO_4-52C,R2,720,30,5,6,144
+Pythium ultimum var. ultimum,Set_1-1,ILSO_4-52C,R3,590,4.3,5,0.9,118
+Pythium oopapillum,Set_1-1,ILSO_6-12B,R1,740,140,5,28,148
+Pythium oopapillum,Set_1-1,ILSO_6-12B,R2,740,30,5,6,148
+Pythium oopapillum,Set_1-1,ILSO_6-12B,R3,650,90,5,18,130
+Pythium sylvaticum ,Set_1-1,INSO_1-10C,R1,660,90,5,18,132
+Pythium sylvaticum ,Set_1-1,INSO_1-10C,R2,560,70,5,14,112
+Pythium sylvaticum ,Set_1-1,INSO_1-10C,R3,690,160,5,32,138
+Pythium oopapillum,Set_1-1,INSO_1-53A,R1,750,90,5,18,150
+Pythium oopapillum,Set_1-1,INSO_1-53A,R2,590,100,5,20,118
+Pythium oopapillum,Set_1-1,INSO_1-53A,R3,660,150,5,30,132
+Pythium lutarium ,Set_1-1,INSO_1-8A,R1,690,150,5,30,138
+Pythium lutarium ,Set_1-1,INSO_1-8A,R2,780,140,5,28,156
+Pythium lutarium ,Set_1-1,INSO_1-8A,R3,660,70,5,14,132
+Pythium aff. torulosum ,Set_1-1,INSO_4-10,R1,930,200,5,40,186
+Pythium aff. torulosum ,Set_1-1,INSO_4-10,R2,760,140,5,28,152
+Pythium aff. torulosum ,Set_1-1,INSO_4-10,R3,740,170,5,34,148
+Pythium ultimum var. sporangiiferum ,Set_1-1,INSO_5-50,R1,680,60,5,12,136
+Pythium ultimum var. sporangiiferum ,Set_1-1,INSO_5-50,R2,510,60,5,12,102
+Pythium ultimum var. sporangiiferum ,Set_1-1,INSO_5-50,R3,650,40,5,8,130
+Pythium irregulare ,Set_1-1,KSSO_2-10,R1,720,100,5,20,144
+Pythium irregulare ,Set_1-1,KSSO_2-10,R2,680,60,5,12,136
+Pythium irregulare ,Set_1-1,KSSO_2-10,R3,710,80,5,16,142
+Aphanomyces cladogamus ,Set_1-1,KSSO_5-30,R1,820,130,5,26,164
+Aphanomyces cladogamus ,Set_1-1,KSSO_5-30,R2,710,10,5,2,142
+Aphanomyces cladogamus ,Set_1-1,KSSO_5-30,R3,720,110,5,22,144
+Phytophthora sansomeana,Set_1-1,KSSO_6-1,R1,690,20,5,4,138
+Phytophthora sansomeana,Set_1-1,KSSO_6-1,R2,770,10,5,2,154
+Phytophthora sansomeana,Set_1-1,KSSO_6-1,R3,740,30,5,6,148
+Pythium ultimum var. sporangiiferum ,Set_1-1,KSSO_6-30,R1,730,110,5,22,146
+Pythium ultimum var. sporangiiferum ,Set_1-1,KSSO_6-30,R2,650,90,5,18,130
+Pythium ultimum var. sporangiiferum ,Set_1-1,KSSO_6-30,R3,720,10,5,2,144
+Phytophthora sansomeana,Set_1-1,KSSO_6-47,R1,280,0,5,0,56
+Phytophthora sansomeana,Set_1-1,KSSO_6-47,R2,380,0,5,0,76
+Phytophthora sansomeana,Set_1-1,KSSO_6-47,R3,630,0,5,0,126
+Pythium aff. dissotocum,Set_1-1,MISO_1-33,R1,820,120,5,24,164
+Pythium aff. dissotocum,Set_1-1,MISO_1-33,R2,790,90,5,18,158
+Pythium aff. dissotocum,Set_1-1,MISO_1-33,R3,850,130,5,26,170
+Pythium lutarium ,Set_1-1,MISO_1-4,R1,710,110,5,22,142
+Pythium lutarium ,Set_1-1,MISO_1-4,R2,740,70,5,14,148
+Pythium lutarium ,Set_1-1,MISO_1-4,R3,740,0,5,0,148
+Pythium ultimum var. ultimum,Set_1-1,MISO_8-10,R1,460,10,5,2,92
+Pythium ultimum var. ultimum,Set_1-1,MISO_8-10,R2,400,30,5,6,80
+Pythium ultimum var. ultimum,Set_1-1,MISO_8-10,R3,320,0,5,0,64
+Pythium oopapillum,Set_1-1,MISO_8-23,R1,780,10,5,2,156
+Pythium oopapillum,Set_1-1,MISO_8-23,R2,770,80,5,16,154
+Pythium oopapillum,Set_1-1,MISO_8-23,R3,750,10,5,2,150
+Pythium heterothallicum,Set_1-1,MISO_8-33,R1,770,180,5,36,154
+Pythium heterothallicum,Set_1-1,MISO_8-33,R2,620,100,5,20,124
+Pythium heterothallicum,Set_1-1,MISO_8-33,R3,820,150,5,30,164
+Pythium sylvaticum ,Set_1-1,NDSO_1-42,R1,640,70,5,14,128
+Pythium sylvaticum ,Set_1-1,NDSO_1-42,R2,750,110,5,22,150
+Pythium sylvaticum ,Set_1-1,NDSO_1-42,R3,690,70,5,14,138
+Pythium attrantheridium,Set_1-1,NDSO_2-12,R1,750,170,5,34,150
+Pythium attrantheridium,Set_1-1,NDSO_2-12,R2,610,100,5,20,122
+Pythium attrantheridium,Set_1-1,NDSO_2-12,R3,720,130,5,26,144
+Pythium sylvaticum ,Set_1-1,NESO_2-13,R1,610,110,5,22,122
+Pythium sylvaticum ,Set_1-1,NESO_2-13,R2,740,150,5,30,148
+Pythium sylvaticum ,Set_1-1,NESO_2-13,R3,590,80,5,16,118
+Phytophthora sojae ,Set_1-1,V-SDSO2_1-53,R1,860,230,5,46,172
+Phytophthora sojae ,Set_1-1,V-SDSO2_1-53,R2,740,210,5,42,148
+Phytophthora sojae ,Set_1-1,V-SDSO2_1-53,R3,720,130,5,26,144
+Pythium heterothallicum,Set_1-1,NESO_4-30,R1,780,170,5,34,156
+Pythium heterothallicum,Set_1-1,NESO_4-30,R2,720,180,5,36,144
+Pythium heterothallicum,Set_1-1,NESO_4-30,R3,830,10,5,2,166
+Pythium ultimum var. ultimum,Set_1-1,WISO_4-13,R1,620,110,5,22,124
+Pythium ultimum var. ultimum,Set_1-1,WISO_4-13,R2,650,60,5,12,130
+Pythium ultimum var. ultimum,Set_1-1,WISO_4-13,R3,640,90,5,18,128
+Pythium irregulare ,Set_1-1,WISO_5-65,R1,610,50,5,10,122
+Pythium irregulare ,Set_1-1,WISO_5-65,R2,740,70,5,14,148
+Pythium irregulare ,Set_1-1,WISO_5-65,R3,730,50,5,10,146
+Pythium aff. torulosum ,Set_1-2,AR_15.S.2.7.A,R1,840,50,5,10,168
+Pythium aff. torulosum ,Set_1-2,AR_15.S.2.7.A,R2,540,110,5,22,108
+Pythium aff. torulosum ,Set_1-2,AR_15.S.2.7.A,R3,460,70,5,14,92
+Pythium aff. dissotocum,Set_1-2,AR_160.S.1.9.A,R1,570,110,5,22,114
+Pythium aff. dissotocum,Set_1-2,AR_160.S.1.9.A,R2,700,180,5,36,140
+Pythium aff. dissotocum,Set_1-2,AR_160.S.1.9.A,R3,490,90,5,18,98
+Pythium lutarium ,Set_1-2,AR_284.S.1.4.A,R1,730,180,5,36,146
+Pythium lutarium ,Set_1-2,AR_284.S.1.4.A,R2,530,110,5,22,106
+Pythium lutarium ,Set_1-2,AR_284.S.1.4.A,R3,530,110,5,22,106
+CONTROL,Set_1-2,CONTROL,R1,660,190,5,38,132
+CONTROL,Set_1-2,CONTROL,R2,760,190,5,38,152
+CONTROL,Set_1-2,CONTROL,R3,950,240,5,48,190
+CONTROL_NR,Set_1-2,CONTROL_NR,R1,760,270,5,54,152
+CONTROL_NR,Set_1-2,CONTROL_NR,R2,730,260,5,52,146
+CONTROL_NR,Set_1-2,CONTROL_NR,R3,1170,270,5,54,234
+Pythium aff. torulosum ,Set_1-2,IASO_10-16.27,R1,790,180,5,36,158
+Pythium aff. torulosum ,Set_1-2,IASO_10-16.27,R2,690,220,5,44,138
+Pythium aff. torulosum ,Set_1-2,IASO_10-16.27,R3,580,160,5,32,116
+Pythium heterothallicum,Set_1-2,IASO_10-32.3,R1,650,140,5,28,130
+Pythium heterothallicum,Set_1-2,IASO_10-32.3,R2,960,90,5,18,192
+Pythium heterothallicum,Set_1-2,IASO_10-32.3,R3,730,140,5,28,146
+Pythium aff. dissotocum,Set_1-2,IASO_10-37.8,R1,690,110,5,22,138
+Pythium aff. dissotocum,Set_1-2,IASO_10-37.8,R2,700,100,5,20,140
+Pythium aff. dissotocum,Set_1-2,IASO_10-37.8,R3,810,190,5,38,162
+Pythium irregulare ,Set_1-2,IASO_2-21.2,R1,580,40,5,8,116
+Pythium irregulare ,Set_1-2,IASO_2-21.2,R2,640,70,5,14,128
+Pythium irregulare ,Set_1-2,IASO_2-21.2,R3,710,60,5,12,142
+Phytophthora sojae ,Set_1-2,IASO_3-41.17,R1,870,140,5,28,174
+Phytophthora sojae ,Set_1-2,IASO_3-41.17,R2,910,140,5,28,182
+Phytophthora sojae ,Set_1-2,IASO_3-41.17,R3,820,220,5,44,164
+Pythium attrantheridium,Set_1-2,IASO_6-36.41,R1,780,90,5,18,156
+Pythium attrantheridium,Set_1-2,IASO_6-36.41,R2,750,50,5,10,150
+Pythium attrantheridium,Set_1-2,IASO_6-36.41,R3,730,40,5,8,146
+Phytophthora sojae ,Set_1-2,IASO_8-13.10,R1,710,220,5,44,142
+Phytophthora sojae ,Set_1-2,IASO_8-13.10,R2,780,190,5,38,156
+Phytophthora sojae ,Set_1-2,IASO_8-13.10,R3,840,310,5,62,168
+Pythium ultimum var. sporangiiferum ,Set_1-2,ILSO_3-21A,R1,840,90,5,18,168
+Pythium ultimum var. sporangiiferum ,Set_1-2,ILSO_3-21A,R2,750,82,5,16.4,150
+Pythium ultimum var. sporangiiferum ,Set_1-2,ILSO_3-21A,R3,660,20,5,4,132
+Pythium attrantheridium,Set_1-2,ILSO_3-24A,R1,670,130,5,26,134
+Pythium attrantheridium,Set_1-2,ILSO_3-24A,R2,770,80,5,16,154
+Pythium attrantheridium,Set_1-2,ILSO_3-24A,R3,770,40,5,8,154
+Pythium ultimum var. ultimum,Set_1-2,ILSO_4-52C,R1,660,30,5,6,132
+Pythium ultimum var. ultimum,Set_1-2,ILSO_4-52C,R2,640,40,5,8,128
+Pythium ultimum var. ultimum,Set_1-2,ILSO_4-52C,R3,660,60,5,12,132
+Pythium oopapillum,Set_1-2,ILSO_6-12B,R1,750,100,5,20,150
+Pythium oopapillum,Set_1-2,ILSO_6-12B,R2,960,150,5,30,192
+Pythium oopapillum,Set_1-2,ILSO_6-12B,R3,680,200,5,40,136
+Pythium sylvaticum ,Set_1-2,INSO_1-10C,R1,590,190,5,38,118
+Pythium sylvaticum ,Set_1-2,INSO_1-10C,R2,650,80,5,16,130
+Pythium sylvaticum ,Set_1-2,INSO_1-10C,R3,710,100,5,20,142
+Pythium oopapillum,Set_1-2,INSO_1-53A,R1,630,120,5,24,126
+Pythium oopapillum,Set_1-2,INSO_1-53A,R2,730,80,5,16,146
+Pythium oopapillum,Set_1-2,INSO_1-53A,R3,880,30,5,6,176
+Pythium lutarium ,Set_1-2,INSO_1-8A,R1,750,90,5,18,150
+Pythium lutarium ,Set_1-2,INSO_1-8A,R2,810,130,5,26,162
+Pythium lutarium ,Set_1-2,INSO_1-8A,R3,760,90,5,18,152
+Pythium aff. torulosum ,Set_1-2,INSO_4-10,R1,550,110,5,22,110
+Pythium aff. torulosum ,Set_1-2,INSO_4-10,R2,770,240,5,48,154
+Pythium aff. torulosum ,Set_1-2,INSO_4-10,R3,960,160,5,32,192
+Pythium ultimum var. sporangiiferum ,Set_1-2,INSO_5-50,R1,700,230,5,46,140
+Pythium ultimum var. sporangiiferum ,Set_1-2,INSO_5-50,R2,730,150,5,30,146
+Pythium ultimum var. sporangiiferum ,Set_1-2,INSO_5-50,R3,750,120,5,24,150
+Pythium irregulare ,Set_1-2,KSSO_2-10,R1,690,60,5,12,138
+Pythium irregulare ,Set_1-2,KSSO_2-10,R2,770,130,5,26,154
+Pythium irregulare ,Set_1-2,KSSO_2-10,R3,790,40,5,8,158
+Aphanomyces cladogamus ,Set_1-2,KSSO_5-30,R1,670,110,5,22,134
+Aphanomyces cladogamus ,Set_1-2,KSSO_5-30,R2,720,100,5,20,144
+Aphanomyces cladogamus ,Set_1-2,KSSO_5-30,R3,700,200,5,40,140
+Phytophthora sansomeana,Set_1-2,KSSO_6-1,R1,860,30,5,6,172
+Phytophthora sansomeana,Set_1-2,KSSO_6-1,R2,610,10,5,2,122
+Phytophthora sansomeana,Set_1-2,KSSO_6-1,R3,790,20,5,4,158
+Pythium ultimum var. sporangiiferum ,Set_1-2,KSSO_6-30,R1,720,150,5,30,144
+Pythium ultimum var. sporangiiferum ,Set_1-2,KSSO_6-30,R2,810,100,5,20,162
+Pythium ultimum var. sporangiiferum ,Set_1-2,KSSO_6-30,R3,770,120,5,24,154
+Phytophthora sansomeana,Set_1-2,KSSO_6-47,R1,390,10,5,2,78
+Phytophthora sansomeana,Set_1-2,KSSO_6-47,R2,320,0,5,0,64
+Phytophthora sansomeana,Set_1-2,KSSO_6-47,R3,440,20,5,4,88
+Pythium aff. dissotocum,Set_1-2,MISO_1-33,R1,760,220,5,44,152
+Pythium aff. dissotocum,Set_1-2,MISO_1-33,R2,770,100,5,20,154
+Pythium aff. dissotocum,Set_1-2,MISO_1-33,R3,820,90,5,18,164
+Pythium lutarium ,Set_1-2,MISO_1-4,R1,760,130,5,26,152
+Pythium lutarium ,Set_1-2,MISO_1-4,R2,490,40,5,8,98
+Pythium lutarium ,Set_1-2,MISO_1-4,R3,740,160,5,32,148
+Pythium ultimum var. ultimum,Set_1-2,MISO_8-10,R1,600,30,5,6,120
+Pythium ultimum var. ultimum,Set_1-2,MISO_8-10,R2,670,30,5,6,134
+Pythium ultimum var. ultimum,Set_1-2,MISO_8-10,R3,660,40,5,8,132
+Pythium oopapillum,Set_1-2,MISO_8-23,R1,750,210,5,42,150
+Pythium oopapillum,Set_1-2,MISO_8-23,R2,780,200,5,40,156
+Pythium oopapillum,Set_1-2,MISO_8-23,R3,840,190,5,38,168
+Pythium heterothallicum,Set_1-2,MISO_8-33,R1,690,150,5,30,138
+Pythium heterothallicum,Set_1-2,MISO_8-33,R2,720,70,5,14,144
+Pythium heterothallicum,Set_1-2,MISO_8-33,R3,620,70,5,14,124
+Pythium sylvaticum ,Set_1-2,NDSO_1-42,R1,800,110,5,22,160
+Pythium sylvaticum ,Set_1-2,NDSO_1-42,R2,650,80,5,16,130
+Pythium sylvaticum ,Set_1-2,NDSO_1-42,R3,720,80,5,16,144
+Pythium attrantheridium,Set_1-2,NDSO_2-12,R1,710,60,5,12,142
+Pythium attrantheridium,Set_1-2,NDSO_2-12,R2,940,70,5,14,188
+Pythium attrantheridium,Set_1-2,NDSO_2-12,R3,770,50,5,10,154
+Pythium sylvaticum ,Set_1-2,NESO_2-13,R1,770,70,5,14,154
+Pythium sylvaticum ,Set_1-2,NESO_2-13,R2,700,110,5,22,140
+Pythium sylvaticum ,Set_1-2,NESO_2-13,R3,810,110,5,22,162
+Phytophthora sojae ,Set_1-2,V-SDSO2_1-53,R1,830,90,5,18,166
+Phytophthora sojae ,Set_1-2,V-SDSO2_1-53,R2,880,300,5,60,176
+Phytophthora sojae ,Set_1-2,V-SDSO2_1-53,R3,740,140,5,28,148
+Pythium heterothallicum,Set_1-2,NESO_4-30,R1,890,140,5,28,178
+Pythium heterothallicum,Set_1-2,NESO_4-30,R2,710,120,5,24,142
+Pythium heterothallicum,Set_1-2,NESO_4-30,R3,790,150,5,30,158
+Pythium ultimum var. ultimum,Set_1-2,WISO_4-13,R1,520,40,5,8,104
+Pythium ultimum var. ultimum,Set_1-2,WISO_4-13,R2,460,0,5,0,92
+Pythium ultimum var. ultimum,Set_1-2,WISO_4-13,R3,540,10,5,2,108
+Pythium irregulare ,Set_1-2,WISO_5-65,R1,470,30,5,6,94
+Pythium irregulare ,Set_1-2,WISO_5-65,R2,780,140,5,28,156
+Pythium irregulare ,Set_1-2,WISO_5-65,R3,730,40,5,8,146
+Pythium aff. torulosum ,Set_1-3,AR_15.S.2.7.A,R1,700,210,5,42,140
+Pythium aff. torulosum ,Set_1-3,AR_15.S.2.7.A,R2,420,70,5,14,84
+Pythium aff. torulosum ,Set_1-3,AR_15.S.2.7.A,R3,600,170,5,34,120
+Pythium aff. dissotocum,Set_1-3,AR_160.S.1.9.A,R1,740,210,5,42,148
+Pythium aff. dissotocum,Set_1-3,AR_160.S.1.9.A,R2,680,150,5,30,136
+Pythium aff. dissotocum,Set_1-3,AR_160.S.1.9.A,R3,790,230,5,46,158
+Pythium lutarium ,Set_1-3,AR_284.S.1.4.A,R1,730,110,5,22,146
+Pythium lutarium ,Set_1-3,AR_284.S.1.4.A,R2,700,160,5,32,140
+Pythium lutarium ,Set_1-3,AR_284.S.1.4.A,R3,600,140,5,28,120
+CONTROL,Set_1-3,CONTROL,R1,730,240,5,48,146
+CONTROL,Set_1-3,CONTROL,R2,720,190,5,38,144
+CONTROL,Set_1-3,CONTROL,R3,840,250,5,50,168
+CONTROL_NR,Set_1-3,CONTROL_NR,R1,730,230,5,46,146
+CONTROL_NR,Set_1-3,CONTROL_NR,R2,820,270,5,54,164
+CONTROL_NR,Set_1-3,CONTROL_NR,R3,920,300,5,60,184
+Pythium aff. torulosum ,Set_1-3,IASO_10-16.27,R1,850,270,5,54,170
+Pythium aff. torulosum ,Set_1-3,IASO_10-16.27,R2,740,170,5,34,148
+Pythium aff. torulosum ,Set_1-3,IASO_10-16.27,R3,450,190,5,38,90
+Pythium heterothallicum,Set_1-3,IASO_10-32.3,R1,830,260,5,52,166
+Pythium heterothallicum,Set_1-3,IASO_10-32.3,R2,730,230,5,46,146
+Pythium heterothallicum,Set_1-3,IASO_10-32.3,R3,630,160,5,32,126
+Pythium aff. dissotocum,Set_1-3,IASO_10-37.8,R1,810,260,5,52,162
+Pythium aff. dissotocum,Set_1-3,IASO_10-37.8,R2,750,170,5,34,150
+Pythium aff. dissotocum,Set_1-3,IASO_10-37.8,R3,830,230,5,46,166
+Pythium irregulare ,Set_1-3,IASO_2-21.2,R1,830,220,5,44,166
+Pythium irregulare ,Set_1-3,IASO_2-21.2,R2,850,240,5,48,170
+Pythium irregulare ,Set_1-3,IASO_2-21.2,R3,760,190,5,38,152
+Phytophthora sojae ,Set_1-3,IASO_3-41.17,R1,620,30,5,6,124
+Phytophthora sojae ,Set_1-3,IASO_3-41.17,R2,660,60,5,12,132
+Phytophthora sojae ,Set_1-3,IASO_3-41.17,R3,590,70,5,14,118
+Pythium attrantheridium,Set_1-3,IASO_6-36.41,R1,580,170,5,34,116
+Pythium attrantheridium,Set_1-3,IASO_6-36.41,R2,680,240,5,48,136
+Pythium attrantheridium,Set_1-3,IASO_6-36.41,R3,300,30,5,6,60
+Phytophthora sojae ,Set_1-3,IASO_8-13.10,R1,540,20,5,4,108
+Phytophthora sojae ,Set_1-3,IASO_8-13.10,R2,740,60,5,12,148
+Phytophthora sojae ,Set_1-3,IASO_8-13.10,R3,830,100,5,20,166
+Pythium ultimum var. sporangiiferum ,Set_1-3,ILSO_3-21A,R1,610,20,5,4,122
+Pythium ultimum var. sporangiiferum ,Set_1-3,ILSO_3-21A,R2,690,140,5,28,138
+Pythium ultimum var. sporangiiferum ,Set_1-3,ILSO_3-21A,R3,660,40,5,8,132
+Pythium attrantheridium,Set_1-3,ILSO_3-24A,R1,640,140,5,28,128
+Pythium attrantheridium,Set_1-3,ILSO_3-24A,R2,710,160,5,32,142
+Pythium attrantheridium,Set_1-3,ILSO_3-24A,R3,690,120,5,24,138
+Pythium ultimum var. ultimum,Set_1-3,ILSO_4-52C,R1,450,50,5,10,90
+Pythium ultimum var. ultimum,Set_1-3,ILSO_4-52C,R2,700,110,5,22,140
+Pythium ultimum var. ultimum,Set_1-3,ILSO_4-52C,R3,700,80,5,16,140
+Pythium oopapillum,Set_1-3,ILSO_6-12B,R1,770,180,5,36,154
+Pythium oopapillum,Set_1-3,ILSO_6-12B,R2,670,150,5,30,134
+Pythium oopapillum,Set_1-3,ILSO_6-12B,R3,720,140,5,28,144
+Pythium sylvaticum ,Set_1-3,INSO_1-10C,R1,580,270,5,54,116
+Pythium sylvaticum ,Set_1-3,INSO_1-10C,R2,710,220,5,44,142
+Pythium sylvaticum ,Set_1-3,INSO_1-10C,R3,970,390,5,78,194
+Pythium oopapillum,Set_1-3,INSO_1-53A,R1,720,180,5,36,144
+Pythium oopapillum,Set_1-3,INSO_1-53A,R2,450,130,5,26,90
+Pythium oopapillum,Set_1-3,INSO_1-53A,R3,790,180,5,36,158
+Pythium lutarium ,Set_1-3,INSO_1-8A,R1,800,280,5,56,160
+Pythium lutarium ,Set_1-3,INSO_1-8A,R2,800,150,5,30,160
+Pythium lutarium ,Set_1-3,INSO_1-8A,R3,880,230,5,46,176
+Pythium aff. torulosum ,Set_1-3,INSO_4-10,R1,630,40,5,8,126
+Pythium aff. torulosum ,Set_1-3,INSO_4-10,R2,790,180,5,36,158
+Pythium aff. torulosum ,Set_1-3,INSO_4-10,R3,720,220,5,44,144
+Pythium ultimum var. sporangiiferum ,Set_1-3,INSO_5-50,R1,720,150,5,30,144
+Pythium ultimum var. sporangiiferum ,Set_1-3,INSO_5-50,R2,540,180,5,36,108
+Pythium ultimum var. sporangiiferum ,Set_1-3,INSO_5-50,R3,710,150,5,30,142
+Pythium irregulare ,Set_1-3,KSSO_2-10,R1,600,200,5,40,120
+Pythium irregulare ,Set_1-3,KSSO_2-10,R2,580,100,5,20,116
+Pythium irregulare ,Set_1-3,KSSO_2-10,R3,780,170,5,34,156
+Aphanomyces cladogamus ,Set_1-3,KSSO_5-30,R1,690,190,5,38,138
+Aphanomyces cladogamus ,Set_1-3,KSSO_5-30,R2,630,260,5,52,126
+Aphanomyces cladogamus ,Set_1-3,KSSO_5-30,R3,680,180,5,36,136
+Phytophthora sansomeana,Set_1-3,KSSO_6-1,R1,600,20,5,4,120
+Phytophthora sansomeana,Set_1-3,KSSO_6-1,R2,560,20,5,4,112
+Phytophthora sansomeana,Set_1-3,KSSO_6-1,R3,670,20,5,4,134
+Pythium ultimum var. sporangiiferum ,Set_1-3,KSSO_6-30,R1,700,140,5,28,140
+Pythium ultimum var. sporangiiferum ,Set_1-3,KSSO_6-30,R2,830,210,5,42,166
+Pythium ultimum var. sporangiiferum ,Set_1-3,KSSO_6-30,R3,660,120,5,24,132
+Phytophthora sansomeana,Set_1-3,KSSO_6-47,R1,190,0,5,0,38
+Phytophthora sansomeana,Set_1-3,KSSO_6-47,R2,390,0,5,0,78
+Phytophthora sansomeana,Set_1-3,KSSO_6-47,R3,320,0,5,0,64
+Pythium aff. dissotocum,Set_1-3,MISO_1-33,R1,720,210,5,42,144
+Pythium aff. dissotocum,Set_1-3,MISO_1-33,R2,680,170,5,34,136
+Pythium aff. dissotocum,Set_1-3,MISO_1-33,R3,730,200,5,40,146
+Pythium lutarium ,Set_1-3,MISO_1-4,R1,720,150,5,30,144
+Pythium lutarium ,Set_1-3,MISO_1-4,R2,870,280,5,56,174
+Pythium lutarium ,Set_1-3,MISO_1-4,R3,950,210,5,42,190
+Pythium ultimum var. ultimum,Set_1-3,MISO_8-10,R1,690,10,5,2,138
+Pythium ultimum var. ultimum,Set_1-3,MISO_8-10,R2,550,50,5,10,110
+Pythium ultimum var. ultimum,Set_1-3,MISO_8-10,R3,480,0,5,0,96
+Pythium oopapillum,Set_1-3,MISO_8-23,R1,750,220,5,44,150
+Pythium oopapillum,Set_1-3,MISO_8-23,R2,820,310,5,62,164
+Pythium oopapillum,Set_1-3,MISO_8-23,R3,950,300,5,60,190
+Pythium heterothallicum,Set_1-3,MISO_8-33,R1,750,180,5,36,150
+Pythium heterothallicum,Set_1-3,MISO_8-33,R2,690,150,5,30,138
+Pythium heterothallicum,Set_1-3,MISO_8-33,R3,830,190,5,38,166
+Pythium sylvaticum ,Set_1-3,NDSO_1-42,R1,720,200,5,40,144
+Pythium sylvaticum ,Set_1-3,NDSO_1-42,R2,520,190,5,38,104
+Pythium sylvaticum ,Set_1-3,NDSO_1-42,R3,600,110,5,22,120
+Pythium attrantheridium,Set_1-3,NDSO_2-12,R1,650,200,5,40,130
+Pythium attrantheridium,Set_1-3,NDSO_2-12,R2,780,210,5,42,156
+Pythium attrantheridium,Set_1-3,NDSO_2-12,R3,660,220,5,44,132
+Pythium sylvaticum ,Set_1-3,NESO_2-13,R1,700,210,5,42,140
+Pythium sylvaticum ,Set_1-3,NESO_2-13,R2,850,270,5,54,170
+Pythium sylvaticum ,Set_1-3,NESO_2-13,R3,610,170,5,34,122
+Pythium heterothallicum,Set_1-3,NESO_4-30,R1,610,110,5,22,122
+Pythium heterothallicum,Set_1-3,NESO_4-30,R2,810,240,5,48,162
+Pythium heterothallicum,Set_1-3,NESO_4-30,R3,700,160,5,32,140
+Phytophthora sojae ,Set_1-3,V-SDSO2_1-53,R1,470,30,5,6,94
+Phytophthora sojae ,Set_1-3,V-SDSO2_1-53,R2,440,60,5,12,88
+Phytophthora sojae ,Set_1-3,V-SDSO2_1-53,R3,520,20,5,4,104
+Pythium ultimum var. ultimum,Set_1-3,WISO_4-13,R1,590,90,5,18,118
+Pythium ultimum var. ultimum,Set_1-3,WISO_4-13,R2,570,60,5,12,114
+Pythium ultimum var. ultimum,Set_1-3,WISO_4-13,R3,510,30,5,6,102
+Pythium irregulare ,Set_1-3,WISO_5-65,R1,620,170,5,34,124
+Pythium irregulare ,Set_1-3,WISO_5-65,R2,540,110,5,22,108
+Pythium irregulare ,Set_1-3,WISO_5-65,R3,620,150,5,30,124
+Pythium kunmingense,Set_2-1,AR_260.S.2.8.A,R1,710,80,5,16,142
+Pythium kunmingense,Set_2-1,AR_260.S.2.8.A,R2,630,60,5,12,126
+Pythium kunmingense,Set_2-1,AR_260.S.2.8.A,R3,680,70,5,14,136
+Pythium kunmingense,Set_2-1,AR_96.S.2.3.A,R1,620,80,5,16,124
+Pythium kunmingense,Set_2-1,AR_96.S.2.3.A,R2,690,60,5,12,138
+Pythium kunmingense,Set_2-1,AR_96.S.2.3.A,R3,570,40,5,8,114
+Pythium aff. hypogynum,Set_2-1,C-ARSO2_3-5,R1,690,240,5,48,138
+Pythium aff. hypogynum,Set_2-1,C-ARSO2_3-5,R2,790,230,5,46,158
+Pythium aff. hypogynum,Set_2-1,C-ARSO2_3-5,R3,730,220,5,44,146
+Pythium acanthophoron,Set_2-1,C-ARSO2_4-13,R1,920,330,5,66,184
+Pythium acanthophoron,Set_2-1,C-ARSO2_4-13,R2,640,170,5,34,128
+Pythium acanthophoron,Set_2-1,C-ARSO2_4-13,R3,750,250,5,50,150
+Pythium catenulatum,Set_2-1,C-ARSO2_5-12,R1,810,220,5,44,162
+Pythium catenulatum,Set_2-1,C-ARSO2_5-12,R2,740,230,5,46,148
+Pythium catenulatum,Set_2-1,C-ARSO2_5-12,R3,750,260,5,52,150
+Pythium camurandrum,Set_2-1,C-KSSO2_4-10,R1,690,260,5,52,138
+Pythium camurandrum,Set_2-1,C-KSSO2_4-10,R2,590,160,5,32,118
+Pythium camurandrum,Set_2-1,C-KSSO2_4-10,R3,720,200,5,40,144
+Phytopythium aff. vexans,Set_2-1,C-KSSO2_5-19,R1,720,190,5,38,144
+Phytopythium aff. vexans,Set_2-1,C-KSSO2_5-19,R2,690,200,5,40,138
+Phytopythium aff. vexans,Set_2-1,C-KSSO2_5-19,R3,740,150,5,30,148
+Pythium aff. iwayamai,Set_2-1,C-KSSO2_5-8,R1,780,150,5,30,156
+Pythium aff. iwayamai,Set_2-1,C-KSSO2_5-8,R2,700,140,5,28,140
+Pythium aff. iwayamai,Set_2-1,C-KSSO2_5-8,R3,700,230,5,46,140
+Pythium hydnosporum,Set_2-1,C-MICO2_5-13,R1,840,230,5,46,168
+Pythium hydnosporum,Set_2-1,C-MICO2_5-13,R2,720,300,5,60,144
+Pythium hydnosporum,Set_2-1,C-MICO2_5-13,R3,740,200,5,40,148
+Pythium chondricola,Set_2-1,C-MISO2_4-9,R1,760,220,5,44,152
+Pythium chondricola,Set_2-1,C-MISO2_4-9,R2,710,190,5,38,142
+Pythium chondricola,Set_2-1,C-MISO2_4-9,R3,830,290,5,58,166
+Pythium cryptoirregulare,Set_2-1,C-MISO2_6-16,R1,720,50,5,10,144
+Pythium cryptoirregulare,Set_2-1,C-MISO2_6-16,R2,630,160,5,32,126
+Pythium cryptoirregulare,Set_2-1,C-MISO2_6-16,R3,740,110,5,22,148
+Pythium hydnosporum,Set_2-1,C-MNSO2_5-1,R1,780,240,5,48,156
+Pythium hydnosporum,Set_2-1,C-MNSO2_5-1,R2,670,160,5,32,134
+Pythium hydnosporum,Set_2-1,C-MNSO2_5-1,R3,710,210,5,42,142
+Pythium pyrilobum,Set_2-1,C-NDSO2_6-5,R1,860,170,5,34,172
+Pythium pyrilobum,Set_2-1,C-NDSO2_6-5,R2,780,220,5,44,156
+Pythium pyrilobum,Set_2-1,C-NDSO2_6-5,R3,730,210,5,42,146
+CONTROL,Set_2-1,CONTROL,R1,820,280,5,56,164
+CONTROL,Set_2-1,CONTROL,R2,750,230,5,46,150
+CONTROL,Set_2-1,CONTROL,R3,810,250,5,50,162
+CONTROL_NR,Set_2-1,CONTROL_NR,R1,1050,320,5,64,210
+CONTROL_NR,Set_2-1,CONTROL_NR,R2,900,360,5,72,180
+CONTROL_NR,Set_2-1,CONTROL_NR,R3,960,340,5,68,192
+Pythium aff. dictyosporum,Set_2-1,IASO_4-5,R1,450,10,5,2,90
+Pythium aff. dictyosporum,Set_2-1,IASO_4-5,R2,490,10,5,2,98
+Pythium aff. dictyosporum,Set_2-1,IASO_4-5,R3,360,10,5,2,72
+Pythium aff. dictyosporum,Set_2-1,INSO_1-19B,R1,630,170,5,34,126
+Pythium aff. dictyosporum,Set_2-1,INSO_1-19B,R2,550,120,5,24,110
+Pythium aff. dictyosporum,Set_2-1,INSO_1-19B,R3,670,180,5,36,134
+Pythium litorale,Set_2-1,MICO_2-2,R1,890,290,5,58,178
+Pythium litorale,Set_2-1,MICO_2-2,R2,750,220,5,44,150
+Pythium litorale,Set_2-1,MICO_2-2,R3,570,110,5,22,114
+Phytophthora drechsleri,Set_2-1,MICO_2-45,R1,740,160,5,32,148
+Phytophthora drechsleri,Set_2-1,MICO_2-45,R2,730,60,5,12,146
+Phytophthora drechsleri,Set_2-1,MICO_2-45,R3,670,40,5,8,134
+Pythium catenulatum,Set_2-1,NDSO_L_10-10,R1,990,350,5,70,198
+Pythium catenulatum,Set_2-1,NDSO_L_10-10,R2,800,260,5,52,160
+Pythium catenulatum,Set_2-1,NDSO_L_10-10,R3,990,320,5,64,198
+Pythium adhaerens,Set_2-1,NDSO_L_10-7,R1,740,180,5,36,148
+Pythium adhaerens,Set_2-1,NDSO_L_10-7,R2,890,260,5,52,178
+Pythium adhaerens,Set_2-1,NDSO_L_10-7,R3,730,180,5,36,146
+Phytopythium helicoides,Set_2-1,NESO_4-42,R1,670,160,5,32,134
+Phytopythium helicoides,Set_2-1,NESO_4-42,R2,770,210,5,42,154
+Phytopythium helicoides,Set_2-1,NESO_4-42,R3,680,120,5,24,136
+Pythium angustatum,Set_2-1,V-ARSO2_3-46,R1,860,250,5,50,172
+Pythium angustatum,Set_2-1,V-ARSO2_3-46,R2,790,200,5,40,158
+Pythium angustatum,Set_2-1,V-ARSO2_3-46,R3,810,240,5,48,162
+Phytopythium helicoides,Set_2-1,V-ARSO2_5-55,R1,790,190,5,38,158
+Phytopythium helicoides,Set_2-1,V-ARSO2_5-55,R2,710,180,5,36,142
+Phytopythium helicoides,Set_2-1,V-ARSO2_5-55,R3,780,220,5,44,156
+Pythium sterilum,Set_2-1,V-ILSO2_5-51,R1,810,240,5,48,162
+Pythium sterilum,Set_2-1,V-ILSO2_5-51,R2,750,210,5,42,150
+Pythium sterilum,Set_2-1,V-ILSO2_5-51,R3,750,240,5,48,150
+Phytopythium aff. vexans,Set_2-1,V-KSSO2_3-5,R1,730,170,5,34,146
+Phytopythium aff. vexans,Set_2-1,V-KSSO2_3-5,R2,780,260,5,52,156
+Phytopythium aff. vexans,Set_2-1,V-KSSO2_3-5,R3,610,160,5,32,122
+Phytopythium megacarpum,Set_2-1,V-MISO2_6-46,R1,650,170,5,34,130
+Phytopythium megacarpum,Set_2-1,V-MISO2_6-46,R2,780,170,5,34,156
+Phytopythium megacarpum,Set_2-1,V-MISO2_6-46,R3,660,160,5,32,132
+Pythiogeton sp.,Set_2-1,V-MNSO2_2-64,R1,730,170,5,34,146
+Pythiogeton sp.,Set_2-1,V-MNSO2_2-64,R2,840,200,5,40,168
+Pythiogeton sp.,Set_2-1,V-MNSO2_2-64,R3,710,150,5,30,142
+Phytophthora sp.,Set_2-1,V-NESO2_6-43,R1,840,170,5,34,168
+Phytophthora sp.,Set_2-1,V-NESO2_6-43,R2,170,160,5,32,34
+Phytophthora sp.,Set_2-1,V-NESO2_6-43,R3,690,150,5,30,138
+Phytophthora megasperma,Set_2-1,V-NESO2_6-64,R1,620,160,5,32,124
+Phytophthora megasperma,Set_2-1,V-NESO2_6-64,R2,790,210,5,42,158
+Phytophthora megasperma,Set_2-1,V-NESO2_6-64,R3,720,150,5,30,144
+Pythium catenulatum,Set_2-1,V-SDSO2_4-54,R1,680,150,5,30,136
+Pythium catenulatum,Set_2-1,V-SDSO2_4-54,R2,630,210,5,42,126
+Pythium catenulatum,Set_2-1,V-SDSO2_4-54,R3,740,230,5,46,148
+Pythium kunmingense,Set_2-2,AR_260.S.2.8.A,R1,730,140,5,28,146
+Pythium kunmingense,Set_2-2,AR_260.S.2.8.A,R2,450,30,5,6,90
+Pythium kunmingense,Set_2-2,AR_260.S.2.8.A,R3,710,70,5,14,142
+Pythium kunmingense,Set_2-2,AR_96.S.2.3.A,R1,530,40,5,8,106
+Pythium kunmingense,Set_2-2,AR_96.S.2.3.A,R2,650,50,5,10,130
+Pythium kunmingense,Set_2-2,AR_96.S.2.3.A,R3,610,80,5,16,122
+Pythium aff. hypogynum,Set_2-2,C-ARSO2_3-5,R1,580,150,5,30,116
+Pythium aff. hypogynum,Set_2-2,C-ARSO2_3-5,R2,600,140,5,28,120
+Pythium aff. hypogynum,Set_2-2,C-ARSO2_3-5,R3,310,170,5,34,62
+Pythium acanthophoron,Set_2-2,C-ARSO2_4-13,R1,640,180,5,36,128
+Pythium acanthophoron,Set_2-2,C-ARSO2_4-13,R2,850,350,5,70,170
+Pythium acanthophoron,Set_2-2,C-ARSO2_4-13,R3,720,190,5,38,144
+Pythium catenulatum,Set_2-2,C-ARSO2_5-12,R1,700,120,5,24,140
+Pythium catenulatum,Set_2-2,C-ARSO2_5-12,R2,750,250,5,50,150
+Pythium catenulatum,Set_2-2,C-ARSO2_5-12,R3,710,120,5,24,142
+Pythium camurandrum,Set_2-2,C-KSSO2_4-10,R1,690,240,5,48,138
+Pythium camurandrum,Set_2-2,C-KSSO2_4-10,R2,620,150,5,30,124
+Pythium camurandrum,Set_2-2,C-KSSO2_4-10,R3,750,250,5,50,150
+Phytopythium aff. vexans,Set_2-2,C-KSSO2_5-19,R1,760,180,5,36,152
+Phytopythium aff. vexans,Set_2-2,C-KSSO2_5-19,R2,710,240,5,48,142
+Phytopythium aff. vexans,Set_2-2,C-KSSO2_5-19,R3,560,130,5,26,112
+Pythium aff. iwayamai,Set_2-2,C-KSSO2_5-8,R1,610,150,5,30,122
+Pythium aff. iwayamai,Set_2-2,C-KSSO2_5-8,R2,740,270,5,54,148
+Pythium aff. iwayamai,Set_2-2,C-KSSO2_5-8,R3,630,160,5,32,126
+Pythium hydnosporum,Set_2-2,C-MICO2_5-13,R1,730,230,5,46,146
+Pythium hydnosporum,Set_2-2,C-MICO2_5-13,R2,750,280,5,56,150
+Pythium hydnosporum,Set_2-2,C-MICO2_5-13,R3,560,120,5,24,112
+Pythium chondricola,Set_2-2,C-MISO2_4-9,R1,540,150,5,30,108
+Pythium chondricola,Set_2-2,C-MISO2_4-9,R2,780,210,5,42,156
+Pythium chondricola,Set_2-2,C-MISO2_4-9,R3,720,200,5,40,144
+Pythium cryptoirregulare,Set_2-2,C-MISO2_6-16,R1,560,90,5,18,112
+Pythium cryptoirregulare,Set_2-2,C-MISO2_6-16,R2,620,90,5,18,124
+Pythium cryptoirregulare,Set_2-2,C-MISO2_6-16,R3,670,70,5,14,134
+Pythium hydnosporum,Set_2-2,C-MNSO2_5-1,R1,740,250,5,50,148
+Pythium hydnosporum,Set_2-2,C-MNSO2_5-1,R2,750,210,5,42,150
+Pythium hydnosporum,Set_2-2,C-MNSO2_5-1,R3,800,290,5,58,160
+Pythium pyrilobum,Set_2-2,C-NDSO2_6-5,R1,700,210,5,42,140
+Pythium pyrilobum,Set_2-2,C-NDSO2_6-5,R2,730,170,5,34,146
+Pythium pyrilobum,Set_2-2,C-NDSO2_6-5,R3,620,130,5,26,124
+CONTROL,Set_2-2,CONTROL,R1,820,270,5,54,164
+CONTROL,Set_2-2,CONTROL,R2,770,310,5,62,154
+CONTROL,Set_2-2,CONTROL,R3,810,250,5,50,162
+CONTROL_NR,Set_2-2,CONTROL_NR,R1,970,330,5,66,194
+CONTROL_NR,Set_2-2,CONTROL_NR,R2,950,380,5,76,190
+CONTROL_NR,Set_2-2,CONTROL_NR,R3,910,290,5,58,182
+Pythium aff. dictyosporum,Set_2-2,IASO_4-5,R1,470,10,5,2,94
+Pythium aff. dictyosporum,Set_2-2,IASO_4-5,R2,690,0,5,0,138
+Pythium aff. dictyosporum,Set_2-2,IASO_4-5,R3,690,10,5,2,138
+Pythium aff. dictyosporum,Set_2-2,INSO_1-19B,R1,730,170,5,34,146
+Pythium aff. dictyosporum,Set_2-2,INSO_1-19B,R2,680,200,5,40,136
+Pythium aff. dictyosporum,Set_2-2,INSO_1-19B,R3,600,140,5,28,120
+Pythium litorale,Set_2-2,MICO_2-2,R1,770,220,5,44,154
+Pythium litorale,Set_2-2,MICO_2-2,R2,770,210,5,42,154
+Pythium litorale,Set_2-2,MICO_2-2,R3,670,190,5,38,134
+Phytophthora drechsleri,Set_2-2,MICO_2-45,R1,590,90,5,18,118
+Phytophthora drechsleri,Set_2-2,MICO_2-45,R2,490,30,5,6,98
+Phytophthora drechsleri,Set_2-2,MICO_2-45,R3,680,50,5,10,136
+Pythium catenulatum,Set_2-2,NDSO_L_10-10,R1,790,260,5,52,158
+Pythium catenulatum,Set_2-2,NDSO_L_10-10,R2,830,310,5,62,166
+Pythium catenulatum,Set_2-2,NDSO_L_10-10,R3,670,260,5,52,134
+Pythium adhaerens,Set_2-2,NDSO_L_10-7,R1,670,180,5,36,134
+Pythium adhaerens,Set_2-2,NDSO_L_10-7,R2,670,160,5,32,134
+Pythium adhaerens,Set_2-2,NDSO_L_10-7,R3,730,20,5,4,146
+Phytopythium helicoides,Set_2-2,NESO_4-42,R1,710,230,5,46,142
+Phytopythium helicoides,Set_2-2,NESO_4-42,R2,720,230,5,46,144
+Phytopythium helicoides,Set_2-2,NESO_4-42,R3,500,120,5,24,100
+Pythium angustatum,Set_2-2,V-ARSO2_3-46,R1,730,220,5,44,146
+Pythium angustatum,Set_2-2,V-ARSO2_3-46,R2,790,270,5,54,158
+Pythium angustatum,Set_2-2,V-ARSO2_3-46,R3,680,190,5,38,136
+Phytopythium helicoides,Set_2-2,V-ARSO2_5-55,R1,750,210,5,42,150
+Phytopythium helicoides,Set_2-2,V-ARSO2_5-55,R2,700,190,5,38,140
+Phytopythium helicoides,Set_2-2,V-ARSO2_5-55,R3,670,210,5,42,134
+Pythium sterilum,Set_2-2,V-ILSO2_5-51,R1,690,140,5,28,138
+Pythium sterilum,Set_2-2,V-ILSO2_5-51,R2,660,160,5,32,132
+Pythium sterilum,Set_2-2,V-ILSO2_5-51,R3,880,240,5,48,176
+Phytopythium aff. vexans,Set_2-2,V-KSSO2_3-5,R1,750,170,5,34,150
+Phytopythium aff. vexans,Set_2-2,V-KSSO2_3-5,R2,710,160,5,32,142
+Phytopythium aff. vexans,Set_2-2,V-KSSO2_3-5,R3,680,140,5,28,136
+Phytopythium megacarpum,Set_2-2,V-MISO2_6-46,R1,690,120,5,24,138
+Phytopythium megacarpum,Set_2-2,V-MISO2_6-46,R2,710,160,5,32,142
+Phytopythium megacarpum,Set_2-2,V-MISO2_6-46,R3,600,160,5,32,120
+Pythiogeton sp.,Set_2-2,V-MNSO2_2-64,R1,730,180,5,36,146
+Pythiogeton sp.,Set_2-2,V-MNSO2_2-64,R2,660,140,5,28,132
+Pythiogeton sp.,Set_2-2,V-MNSO2_2-64,R3,760,200,5,40,152
+Phytophthora sp.,Set_2-2,V-NESO2_6-43,R1,730,240,5,48,146
+Phytophthora sp.,Set_2-2,V-NESO2_6-43,R2,830,280,5,56,166
+Phytophthora sp.,Set_2-2,V-NESO2_6-43,R3,810,190,5,38,162
+Phytophthora megasperma,Set_2-2,V-NESO2_6-64,R1,790,220,5,44,158
+Phytophthora megasperma,Set_2-2,V-NESO2_6-64,R2,720,180,5,36,144
+Phytophthora megasperma,Set_2-2,V-NESO2_6-64,R3,690,200,5,40,138
+Pythium catenulatum,Set_2-2,V-SDSO2_4-54,R1,800,190,5,38,160
+Pythium catenulatum,Set_2-2,V-SDSO2_4-54,R2,820,290,5,58,164
+Pythium catenulatum,Set_2-2,V-SDSO2_4-54,R3,790,250,5,50,158
+Pythium kunmingense,Set_2-3,AR_260.S.2.8.A,R1,520,60,5,12,104
+Pythium kunmingense,Set_2-3,AR_260.S.2.8.A,R2,390,0,5,0,78
+Pythium kunmingense,Set_2-3,AR_260.S.2.8.A,R3,690,110,5,22,138
+Pythium kunmingense,Set_2-3,AR_96.S.2.3.A,R1,780,110,5,22,156
+Pythium kunmingense,Set_2-3,AR_96.S.2.3.A,R2,560,80,5,16,112
+Pythium kunmingense,Set_2-3,AR_96.S.2.3.A,R3,620,70,5,14,124
+Pythium aff. hypogynum,Set_2-3,C-ARSO2_3-5,R1,960,350,5,70,192
+Pythium aff. hypogynum,Set_2-3,C-ARSO2_3-5,R2,1010,360,5,72,202
+Pythium aff. hypogynum,Set_2-3,C-ARSO2_3-5,R3,650,160,5,32,130
+Pythium acanthophoron,Set_2-3,C-ARSO2_4-13,R1,800,280,5,56,160
+Pythium acanthophoron,Set_2-3,C-ARSO2_4-13,R2,850,290,5,58,170
+Pythium acanthophoron,Set_2-3,C-ARSO2_4-13,R3,1000,440,5,88,200
+Pythium catenulatum,Set_2-3,C-ARSO2_5-12,R1,720,190,5,38,144
+Pythium catenulatum,Set_2-3,C-ARSO2_5-12,R2,750,220,5,44,150
+Pythium catenulatum,Set_2-3,C-ARSO2_5-12,R3,980,350,5,70,196
+Pythium camurandrum,Set_2-3,C-KSSO2_4-10,R1,690,240,5,48,138
+Pythium camurandrum,Set_2-3,C-KSSO2_4-10,R2,730,230,5,46,146
+Pythium camurandrum,Set_2-3,C-KSSO2_4-10,R3,1050,410,5,82,210
+Phytopythium aff. vexans,Set_2-3,C-KSSO2_5-19,R1,640,190,5,38,128
+Phytopythium aff. vexans,Set_2-3,C-KSSO2_5-19,R2,670,230,5,46,134
+Phytopythium aff. vexans,Set_2-3,C-KSSO2_5-19,R3,841,270,5,54,168.2
+Pythium aff. iwayamai,Set_2-3,C-KSSO2_5-8,R1,600,220,5,44,120
+Pythium aff. iwayamai,Set_2-3,C-KSSO2_5-8,R2,830,210,5,42,166
+Pythium aff. iwayamai,Set_2-3,C-KSSO2_5-8,R3,650,200,5,40,130
+Pythium hydnosporum,Set_2-3,C-MICO2_5-13,R1,820,340,5,68,164
+Pythium hydnosporum,Set_2-3,C-MICO2_5-13,R2,1030,350,5,70,206
+Pythium hydnosporum,Set_2-3,C-MICO2_5-13,R3,840,270,5,54,168
+Pythium chondricola,Set_2-3,C-MISO2_4-9,R1,780,240,5,48,156
+Pythium chondricola,Set_2-3,C-MISO2_4-9,R2,870,340,5,68,174
+Pythium chondricola,Set_2-3,C-MISO2_4-9,R3,960,390,5,78,192
+Pythium cryptoirregulare,Set_2-3,C-MISO2_6-16,R1,640,120,5,24,128
+Pythium cryptoirregulare,Set_2-3,C-MISO2_6-16,R2,550,60,5,12,110
+Pythium cryptoirregulare,Set_2-3,C-MISO2_6-16,R3,810,130,5,26,162
+Pythium hydnosporum,Set_2-3,C-MNSO2_5-1,R1,990,300,5,60,198
+Pythium hydnosporum,Set_2-3,C-MNSO2_5-1,R2,660,260,5,52,132
+Pythium hydnosporum,Set_2-3,C-MNSO2_5-1,R3,880,300,5,60,176
+Pythium pyrilobum,Set_2-3,C-NDSO2_6-5,R1,980,280,5,56,196
+Pythium pyrilobum,Set_2-3,C-NDSO2_6-5,R2,830,280,5,56,166
+Pythium pyrilobum,Set_2-3,C-NDSO2_6-5,R3,600,250,5,50,120
+CONTROL,Set_2-3,CONTROL,R1,1110,400,5,80,222
+CONTROL,Set_2-3,CONTROL,R2,940,360,5,72,188
+CONTROL,Set_2-3,CONTROL,R3,790,290,5,58,158
+CONTROL_NR,Set_2-3,CONTROL_NR,R1,960,400,5,80,192
+CONTROL_NR,Set_2-3,CONTROL_NR,R2,790,330,5,66,158
+CONTROL_NR,Set_2-3,CONTROL_NR,R3,800,360,5,72,160
+Pythium aff. dictyosporum,Set_2-3,IASO_4-5,R1,450,10,5,2,90
+Pythium aff. dictyosporum,Set_2-3,IASO_4-5,R2,460,10,5,2,92
+Pythium aff. dictyosporum,Set_2-3,IASO_4-5,R3,570,40,5,8,114
+Pythium aff. dictyosporum,Set_2-3,INSO_1-19B,R1,800,230,5,46,160
+Pythium aff. dictyosporum,Set_2-3,INSO_1-19B,R2,740,190,5,38,148
+Pythium aff. dictyosporum,Set_2-3,INSO_1-19B,R3,790,180,5,36,158
+Pythium litorale,Set_2-3,MICO_2-2,R1,800,190,5,38,160
+Pythium litorale,Set_2-3,MICO_2-2,R2,890,190,5,38,178
+Pythium litorale,Set_2-3,MICO_2-2,R3,730,90,5,18,146
+Phytophthora drechsleri,Set_2-3,MICO_2-45,R1,590,80,5,16,118
+Phytophthora drechsleri,Set_2-3,MICO_2-45,R2,670,100,5,20,134
+Phytophthora drechsleri,Set_2-3,MICO_2-45,R3,550,130,5,26,110
+Pythium catenulatum,Set_2-3,NDSO_L_10-10,R1,920,350,5,70,184
+Pythium catenulatum,Set_2-3,NDSO_L_10-10,R2,860,320,5,64,172
+Pythium catenulatum,Set_2-3,NDSO_L_10-10,R3,760,250,5,50,152
+Pythium adhaerens,Set_2-3,NDSO_L_10-7,R1,630,80,5,16,126
+Pythium adhaerens,Set_2-3,NDSO_L_10-7,R2,1150,440,5,88,230
+Pythium adhaerens,Set_2-3,NDSO_L_10-7,R3,840,290,5,58,168
+Phytopythium helicoides,Set_2-3,NESO_4-42,R1,430,130,5,26,86
+Phytopythium helicoides,Set_2-3,NESO_4-42,R2,670,160,5,32,134
+Phytopythium helicoides,Set_2-3,NESO_4-42,R3,790,140,5,28,158
+Pythium angustatum,Set_2-3,V-ARSO2_3-46,R1,850,340,5,68,170
+Pythium angustatum,Set_2-3,V-ARSO2_3-46,R2,850,310,5,62,170
+Pythium angustatum,Set_2-3,V-ARSO2_3-46,R3,860,360,5,72,172
+Phytopythium helicoides,Set_2-3,V-ARSO2_5-55,R1,880,180,5,36,176
+Phytopythium helicoides,Set_2-3,V-ARSO2_5-55,R2,750,200,5,40,150
+Phytopythium helicoides,Set_2-3,V-ARSO2_5-55,R3,760,170,5,34,152
+Pythium sterilum,Set_2-3,V-ILSO2_5-51,R1,630,170,5,34,126
+Pythium sterilum,Set_2-3,V-ILSO2_5-51,R2,810,230,5,46,162
+Pythium sterilum,Set_2-3,V-ILSO2_5-51,R3,1090,360,5,72,218
+Phytopythium aff. vexans,Set_2-3,V-KSSO2_3-5,R1,750,230,5,46,150
+Phytopythium aff. vexans,Set_2-3,V-KSSO2_3-5,R2,600,160,5,32,120
+Phytopythium aff. vexans,Set_2-3,V-KSSO2_3-5,R3,780,220,5,44,156
+Phytopythium megacarpum,Set_2-3,V-MISO2_6-46,R1,770,260,5,52,154
+Phytopythium megacarpum,Set_2-3,V-MISO2_6-46,R2,850,210,5,42,170
+Phytopythium megacarpum,Set_2-3,V-MISO2_6-46,R3,830,220,5,44,166
+Pythiogeton sp.,Set_2-3,V-MNSO2_2-64,R1,840,290,5,58,168
+Pythiogeton sp.,Set_2-3,V-MNSO2_2-64,R2,680,150,5,30,136
+Pythiogeton sp.,Set_2-3,V-MNSO2_2-64,R3,780,160,5,32,156
+Phytophthora sp.,Set_2-3,V-NESO2_6-43,R1,810,280,5,56,162
+Phytophthora sp.,Set_2-3,V-NESO2_6-43,R2,1090,300,5,60,218
+Phytophthora sp.,Set_2-3,V-NESO2_6-43,R3,830,220,5,44,166
+Phytophthora megasperma,Set_2-3,V-NESO2_6-64,R1,990,360,5,72,198
+Phytophthora megasperma,Set_2-3,V-NESO2_6-64,R2,870,240,5,48,174
+Phytophthora megasperma,Set_2-3,V-NESO2_6-64,R3,600,80,5,16,120
+Pythium catenulatum,Set_2-3,V-SDSO2_4-54,R1,830,250,5,50,166
+Pythium catenulatum,Set_2-3,V-SDSO2_4-54,R2,830,260,5,52,166
+Pythium catenulatum,Set_2-3,V-SDSO2_4-54,R3,880,330,5,66,176
+Pythium terrestris,Set_3-1,C-IASO2_4-7,R1,590,90,5,18,118
+Pythium terrestris,Set_3-1,C-IASO2_4-7,R2,630,160,5,32,126
+Pythium terrestris,Set_3-1,C-IASO2_4-7,R3,740,250,5,50,148
+Pythium vanterpoolii,Set_3-1,C-MISO2_5-21,R1,710,240,5,48,142
+Pythium vanterpoolii,Set_3-1,C-MISO2_5-21,R2,540,230,5,46,108
+Pythium vanterpoolii,Set_3-1,C-MISO2_5-21,R3,710,240,5,48,142
+Phytophthora rosacearum,Set_3-1,C-MNSO2_6-7,R1,550,260,5,52,110
+Phytophthora rosacearum,Set_3-1,C-MNSO2_6-7,R2,640,170,5,34,128
+Phytophthora rosacearum,Set_3-1,C-MNSO2_6-7,R3,660,170,5,34,132
+Pythium carolinianum,Set_3-1,C-NDSO2_3-2,R1,790,270,5,54,158
+Pythium carolinianum,Set_3-1,C-NDSO2_3-2,R2,630,190,5,38,126
+Pythium carolinianum,Set_3-1,C-NDSO2_3-2,R3,690,290,5,58,138
+CONTROL,Set_3-1,CONTROL,R1,750,200,5,40,150
+CONTROL,Set_3-1,CONTROL,R2,720,230,5,46,144
+CONTROL,Set_3-1,CONTROL,R3,960,320,5,64,192
+CONTROL_NR,Set_3-1,CONTROL_NR,R1,990,440,5,88,198
+CONTROL_NR,Set_3-1,CONTROL_NR,R2,1010,380,5,76,202
+CONTROL_NR,Set_3-1,CONTROL_NR,R3,790,280,5,56,158
+Pythium longisporangium,Set_3-1,ILSO_2-18b,R1,790,340,5,68,158
+Pythium longisporangium,Set_3-1,ILSO_2-18b,R2,700,220,5,44,140
+Pythium longisporangium,Set_3-1,ILSO_2-18b,R3,910,320,5,64,182
+Pythium longisporangium,Set_3-1,ILSO_2-19b,R1,820,310,5,62,164
+Pythium longisporangium,Set_3-1,ILSO_2-19b,R2,720,260,5,52,144
+Pythium longisporangium,Set_3-1,ILSO_2-19b,R3,920,310,5,62,184
+Phytopythium chamaehyphon,Set_3-1,INSO_2-39,R1,710,260,5,52,142
+Phytopythium chamaehyphon,Set_3-1,INSO_2-39,R2,820,240,5,48,164
+Phytopythium chamaehyphon,Set_3-1,INSO_2-39,R3,750,140,5,28,150
+Pythium periplocum,Set_3-1,KSSO_5-45,R1,450,20,5,4,90
+Pythium periplocum,Set_3-1,KSSO_5-45,R2,710,310,5,62,142
+Pythium periplocum,Set_3-1,KSSO_5-45,R3,620,120,5,24,124
+Pythium periplocum,Set_3-1,KSSO_5-50,R1,580,40,5,8,116
+Pythium periplocum,Set_3-1,KSSO_5-50,R2,890,280,5,56,178
+Pythium periplocum,Set_3-1,KSSO_5-50,R3,740,310,5,62,148
+Pythium periilum,Set_3-1,MICO_5-23,R1,810,280,5,56,162
+Pythium periilum,Set_3-1,MICO_5-23,R2,790,340,5,68,158
+Pythium periilum,Set_3-1,MICO_5-23,R3,900,340,5,68,180
+Aphanomyces cochlioides,Set_3-1,MICO_5-28_1,R1,730,220,5,44,146
+Aphanomyces cochlioides,Set_3-1,MICO_5-28_1,R2,790,240,5,48,158
+Aphanomyces cochlioides,Set_3-1,MICO_5-28_1,R3,760,200,5,40,152
+Pythium periilum,Set_3-1,MICO_5-3,R1,810,330,5,66,162
+Pythium periilum,Set_3-1,MICO_5-3,R2,840,270,5,54,168
+Pythium periilum,Set_3-1,MICO_5-3,R3,910,500,5,100,182
+Pythium periplocum,Set_3-1,MICO_6-36,R1,760,260,5,52,152
+Pythium periplocum,Set_3-1,MICO_6-36,R2,690,370,5,74,138
+Pythium periplocum,Set_3-1,MICO_6-36,R3,600,220,5,44,120
+Pythium periilum,Set_3-1,MICO_6-5,R1,740,360,5,72,148
+Pythium periilum,Set_3-1,MICO_6-5,R2,790,250,5,50,158
+Pythium periilum,Set_3-1,MICO_6-5,R3,750,340,5,68,150
+Pythium minus,Set_3-1,MNSO_1-38.2,R1,680,260,5,52,136
+Pythium minus,Set_3-1,MNSO_1-38.2,R2,690,210,5,42,138
+Pythium minus,Set_3-1,MNSO_1-38.2,R3,890,370,5,74,178
+Pythium minus,Set_3-1,MNSO_2-36,R1,740,260,5,52,148
+Pythium minus,Set_3-1,MNSO_2-36,R2,750,280,5,56,150
+Pythium minus,Set_3-1,MNSO_2-36,R3,690,380,5,76,138
+Pythium minus,Set_3-1,MNSO_2-37,R1,700,180,5,36,140
+Pythium minus,Set_3-1,MNSO_2-37,R2,700,250,5,50,140
+Pythium minus,Set_3-1,MNSO_2-37,R3,860,320,5,64,172
+Pythium longisporangium,Set_3-1,NDSO_L_4-4,R1,700,280,5,56,140
+Pythium longisporangium,Set_3-1,NDSO_L_4-4,R2,760,270,5,54,152
+Pythium longisporangium,Set_3-1,NDSO_L_4-4,R3,700,210,5,42,140
+Phytopythium chamaehyphon,Set_3-1,NESO_2-21,R1,730,250,5,50,146
+Phytopythium chamaehyphon,Set_3-1,NESO_2-21,R2,700,260,5,52,140
+Phytopythium chamaehyphon,Set_3-1,NESO_2-21,R3,480,130,5,26,96
+Pythium vanterpoolii,Set_3-1,V-ARSO2_3-45,R1,740,370,5,74,148
+Pythium vanterpoolii,Set_3-1,V-ARSO2_3-45,R2,640,210,5,42,128
+Pythium vanterpoolii,Set_3-1,V-ARSO2_3-45,R3,750,180,5,36,150
+Phytophthora rosacearum,Set_3-1,V-KSSO2_2-4,R1,860,300,5,60,172
+Phytophthora rosacearum,Set_3-1,V-KSSO2_2-4,R2,670,210,5,42,134
+Phytophthora rosacearum,Set_3-1,V-KSSO2_2-4,R3,730,230,5,46,146
+Phytophthora aff. rosacearum,Set_3-1,V-NDSO2_2-55,R1,940,360,5,72,188
+Phytophthora aff. rosacearum,Set_3-1,V-NDSO2_2-55,R2,930,310,5,62,186
+Phytophthora aff. rosacearum,Set_3-1,V-NDSO2_2-55,R3,650,230,5,46,130
+Pythium vanterpoolii,Set_3-1,V-NDSO2_2-56,R1,770,280,5,56,154
+Pythium vanterpoolii,Set_3-1,V-NDSO2_2-56,R2,860,250,5,50,172
+Pythium vanterpoolii,Set_3-1,V-NDSO2_2-56,R3,730,280,5,56,146
+Pythium carolinianum,Set_3-1,V-NDSO2_3-54,R1,810,320,5,64,162
+Pythium carolinianum,Set_3-1,V-NDSO2_3-54,R2,820,290,5,58,164
+Pythium carolinianum,Set_3-1,V-NDSO2_3-54,R3,600,220,5,44,120
+Phytophthora aff. rosacearum,Set_3-1,V-NESO2_6-49,R1,790,320,5,64,158
+Phytophthora aff. rosacearum,Set_3-1,V-NESO2_6-49,R2,770,250,5,50,154
+Phytophthora aff. rosacearum,Set_3-1,V-NESO2_6-49,R3,990,370,5,74,198
+Phytopythium chamaehyphon,Set_3-1,V-SDSO2_2-45,R1,580,180,5,36,116
+Phytopythium chamaehyphon,Set_3-1,V-SDSO2_2-45,R2,640,140,5,28,128
+Phytopythium chamaehyphon,Set_3-1,V-SDSO2_2-45,R3,750,200,5,40,150
+Phytophthora rosacearum,Set_3-1,V-SDSO2_4-45,R1,550,180,5,36,110
+Phytophthora rosacearum,Set_3-1,V-SDSO2_4-45,R2,790,230,5,46,158
+Phytophthora rosacearum,Set_3-1,V-SDSO2_4-45,R3,420,140,5,28,84
+Phytophthora aff. rosacearum,Set_3-1,V-SDSO2_4-50,R1,490,120,5,24,98
+Phytophthora aff. rosacearum,Set_3-1,V-SDSO2_4-50,R2,610,240,5,48,122
+Phytophthora aff. rosacearum,Set_3-1,V-SDSO2_4-50,R3,720,270,5,54,144
+Pythium carolinianum,Set_3-1,V-SDSO2_4-66,R1,690,350,5,70,138
+Pythium carolinianum,Set_3-1,V-SDSO2_4-66,R2,810,360,5,72,162
+Pythium carolinianum,Set_3-1,V-SDSO2_4-66,R3,800,310,5,62,160
+Pythium terrestris,Set_3-2,C-IASO2_4-7,R1,820,210,5,42,164
+Pythium terrestris,Set_3-2,C-IASO2_4-7,R2,630,150,5,30,126
+Pythium terrestris,Set_3-2,C-IASO2_4-7,R3,610,120,5,24,122
+Pythium vanterpoolii,Set_3-2,C-MISO2_5-21,R1,660,160,5,32,132
+Pythium vanterpoolii,Set_3-2,C-MISO2_5-21,R2,880,190,5,38,176
+Pythium vanterpoolii,Set_3-2,C-MISO2_5-21,R3,710,150,5,30,142
+Phytophthora rosacearum,Set_3-2,C-MNSO2_6-7,R1,680,120,5,24,136
+Phytophthora rosacearum,Set_3-2,C-MNSO2_6-7,R2,760,150,5,30,152
+Phytophthora rosacearum,Set_3-2,C-MNSO2_6-7,R3,680,150,5,30,136
+Pythium carolinianum,Set_3-2,C-NDSO2_3-2,R1,680,180,5,36,136
+Pythium carolinianum,Set_3-2,C-NDSO2_3-2,R2,860,130,5,26,172
+Pythium carolinianum,Set_3-2,C-NDSO2_3-2,R3,850,240,5,48,170
+CONTROL,Set_3-2,CONTROL,R1,780,210,5,42,156
+CONTROL,Set_3-2,CONTROL,R2,780,150,5,30,156
+CONTROL,Set_3-2,CONTROL,R3,700,160,5,32,140
+CONTROL_NR,Set_3-2,CONTROL_NR,R1,850,250,5,50,170
+CONTROL_NR,Set_3-2,CONTROL_NR,R2,670,150,5,30,134
+CONTROL_NR,Set_3-2,CONTROL_NR,R3,760,260,5,52,152
+Pythium longisporangium,Set_3-2,ILSO_2-18b,R1,610,160,5,32,122
+Pythium longisporangium,Set_3-2,ILSO_2-18b,R2,750,210,5,42,150
+Pythium longisporangium,Set_3-2,ILSO_2-18b,R3,750,190,5,38,150
+Pythium longisporangium,Set_3-2,ILSO_2-19b,R1,870,20,5,4,174
+Pythium longisporangium,Set_3-2,ILSO_2-19b,R2,760,30,5,6,152
+Pythium longisporangium,Set_3-2,ILSO_2-19b,R3,860,220,5,44,172
+Phytopythium chamaehyphon,Set_3-2,INSO_2-39,R1,870,200,5,40,174
+Phytopythium chamaehyphon,Set_3-2,INSO_2-39,R2,720,190,5,38,144
+Phytopythium chamaehyphon,Set_3-2,INSO_2-39,R3,760,190,5,38,152
+Pythium periplocum,Set_3-2,KSSO_5-45,R1,710,80,5,16,142
+Pythium periplocum,Set_3-2,KSSO_5-45,R2,470,6,5,1.2,94
+Pythium periplocum,Set_3-2,KSSO_5-45,R3,800,20,5,4,160
+Pythium periplocum,Set_3-2,KSSO_5-50,R1,720,80,5,16,144
+Pythium periplocum,Set_3-2,KSSO_5-50,R2,650,160,5,32,130
+Pythium periplocum,Set_3-2,KSSO_5-50,R3,770,220,5,44,154
+Pythium periilum,Set_3-2,MICO_5-23,R1,640,190,5,38,128
+Pythium periilum,Set_3-2,MICO_5-23,R2,670,180,5,36,134
+Pythium periilum,Set_3-2,MICO_5-23,R3,720,170,5,34,144
+Aphanomyces cochlioides,Set_3-2,MICO_5-28_1,R1,730,80,5,16,146
+Aphanomyces cochlioides,Set_3-2,MICO_5-28_1,R2,790,150,5,30,158
+Aphanomyces cochlioides,Set_3-2,MICO_5-28_1,R3,620,70,5,14,124
+Pythium periilum,Set_3-2,MICO_5-3,R1,850,140,5,28,170
+Pythium periilum,Set_3-2,MICO_5-3,R2,680,150,5,30,136
+Pythium periilum,Set_3-2,MICO_5-3,R3,740,140,5,28,148
+Pythium periplocum,Set_3-2,MICO_6-36,R1,670,210,5,42,134
+Pythium periplocum,Set_3-2,MICO_6-36,R2,820,230,5,46,164
+Pythium periplocum,Set_3-2,MICO_6-36,R3,750,180,5,36,150
+Pythium periilum,Set_3-2,MICO_6-5,R1,720,100,5,20,144
+Pythium periilum,Set_3-2,MICO_6-5,R2,680,140,5,28,136
+Pythium periilum,Set_3-2,MICO_6-5,R3,670,10,5,2,134
+Pythium minus,Set_3-2,MNSO_1-38.2,R1,680,170,5,34,136
+Pythium minus,Set_3-2,MNSO_1-38.2,R2,810,160,5,32,162
+Pythium minus,Set_3-2,MNSO_1-38.2,R3,770,160,5,32,154
+Pythium minus,Set_3-2,MNSO_2-36,R1,660,180,5,36,132
+Pythium minus,Set_3-2,MNSO_2-36,R2,690,200,5,40,138
+Pythium minus,Set_3-2,MNSO_2-36,R3,800,220,5,44,160
+Pythium minus,Set_3-2,MNSO_2-37,R1,860,180,5,36,172
+Pythium minus,Set_3-2,MNSO_2-37,R2,680,210,5,42,136
+Pythium minus,Set_3-2,MNSO_2-37,R3,730,160,5,32,146
+Pythium longisporangium,Set_3-2,NDSO_L_4-4,R1,720,170,5,34,144
+Pythium longisporangium,Set_3-2,NDSO_L_4-4,R2,630,110,5,22,126
+Pythium longisporangium,Set_3-2,NDSO_L_4-4,R3,760,110,5,22,152
+Phytopythium chamaehyphon,Set_3-2,NESO_2-21,R1,840,240,5,48,168
+Phytopythium chamaehyphon,Set_3-2,NESO_2-21,R2,640,220,5,44,128
+Phytopythium chamaehyphon,Set_3-2,NESO_2-21,R3,610,50,5,10,122
+Pythium vanterpoolii,Set_3-2,V-ARSO2_3-45,R1,740,180,5,36,148
+Pythium vanterpoolii,Set_3-2,V-ARSO2_3-45,R2,840,340,5,68,168
+Pythium vanterpoolii,Set_3-2,V-ARSO2_3-45,R3,700,210,5,42,140
+Phytophthora rosacearum,Set_3-2,V-KSSO2_2-4,R1,750,280,5,56,150
+Phytophthora rosacearum,Set_3-2,V-KSSO2_2-4,R2,640,170,5,34,128
+Phytophthora rosacearum,Set_3-2,V-KSSO2_2-4,R3,910,110,5,22,182
+Phytophthora aff. rosacearum,Set_3-2,V-NDSO2_2-55,R1,690,160,5,32,138
+Phytophthora aff. rosacearum,Set_3-2,V-NDSO2_2-55,R2,700,240,5,48,140
+Phytophthora aff. rosacearum,Set_3-2,V-NDSO2_2-55,R3,790,310,5,62,158
+Pythium vanterpoolii,Set_3-2,V-NDSO2_2-56,R1,750,140,5,28,150
+Pythium vanterpoolii,Set_3-2,V-NDSO2_2-56,R2,820,200,5,40,164
+Pythium vanterpoolii,Set_3-2,V-NDSO2_2-56,R3,530,250,5,50,106
+Pythium carolinianum,Set_3-2,V-NDSO2_3-54,R1,790,250,5,50,158
+Pythium carolinianum,Set_3-2,V-NDSO2_3-54,R2,770,220,5,44,154
+Pythium carolinianum,Set_3-2,V-NDSO2_3-54,R3,780,190,5,38,156
+Phytophthora aff. rosacearum,Set_3-2,V-NESO2_6-49,R1,820,210,5,42,164
+Phytophthora aff. rosacearum,Set_3-2,V-NESO2_6-49,R2,720,190,5,38,144
+Phytophthora aff. rosacearum,Set_3-2,V-NESO2_6-49,R3,730,220,5,44,146
+Phytopythium chamaehyphon,Set_3-2,V-SDSO2_2-45,R1,720,190,5,38,144
+Phytopythium chamaehyphon,Set_3-2,V-SDSO2_2-45,R2,730,190,5,38,146
+Phytopythium chamaehyphon,Set_3-2,V-SDSO2_2-45,R3,670,220,5,44,134
+Phytophthora rosacearum,Set_3-2,V-SDSO2_4-45,R1,670,180,5,36,134
+Phytophthora rosacearum,Set_3-2,V-SDSO2_4-45,R2,820,180,5,36,164
+Phytophthora rosacearum,Set_3-2,V-SDSO2_4-45,R3,670,220,5,44,134
+Phytophthora aff. rosacearum,Set_3-2,V-SDSO2_4-50,R1,750,200,5,40,150
+Phytophthora aff. rosacearum,Set_3-2,V-SDSO2_4-50,R2,770,230,5,46,154
+Phytophthora aff. rosacearum,Set_3-2,V-SDSO2_4-50,R3,760,160,5,32,152
+Pythium carolinianum,Set_3-2,V-SDSO2_4-66,R1,810,210,5,42,162
+Pythium carolinianum,Set_3-2,V-SDSO2_4-66,R2,740,280,5,56,148
+Pythium carolinianum,Set_3-2,V-SDSO2_4-66,R3,760,190,5,38,152
+Pythium terrestris,Set_3-3,C-IASO2_4-7,R1,790,310,5,62,158
+Pythium terrestris,Set_3-3,C-IASO2_4-7,R2,700,140,5,28,140
+Pythium terrestris,Set_3-3,C-IASO2_4-7,R3,580,200,5,40,116
+Pythium vanterpoolii,Set_3-3,C-MISO2_5-21,R1,810,230,5,46,162
+Pythium vanterpoolii,Set_3-3,C-MISO2_5-21,R2,870,340,5,68,174
+Pythium vanterpoolii,Set_3-3,C-MISO2_5-21,R3,650,290,5,58,130
+Phytophthora rosacearum,Set_3-3,C-MNSO2_6-7,R1,860,290,5,58,172
+Phytophthora rosacearum,Set_3-3,C-MNSO2_6-7,R2,730,310,5,62,146
+Phytophthora rosacearum,Set_3-3,C-MNSO2_6-7,R3,660,260,5,52,132
+Pythium carolinianum,Set_3-3,C-NDSO2_3-2,R1,760,270,5,54,152
+Pythium carolinianum,Set_3-3,C-NDSO2_3-2,R2,820,330,5,66,164
+Pythium carolinianum,Set_3-3,C-NDSO2_3-2,R3,960,440,5,88,192
+CONTROL,Set_3-3,CONTROL,R1,810,310,5,62,162
+CONTROL,Set_3-3,CONTROL,R2,960,280,5,56,192
+CONTROL,Set_3-3,CONTROL,R3,980,400,5,80,196
+CONTROL_NR,Set_3-3,CONTROL_NR,R1,920,310,5,62,184
+CONTROL_NR,Set_3-3,CONTROL_NR,R2,960,400,5,80,192
+CONTROL_NR,Set_3-3,CONTROL_NR,R3,840,270,5,54,168
+Pythium longisporangium,Set_3-3,ILSO_2-18b,R1,750,310,5,62,150
+Pythium longisporangium,Set_3-3,ILSO_2-18b,R2,610,230,5,46,122
+Pythium longisporangium,Set_3-3,ILSO_2-18b,R3,850,320,5,64,170
+Pythium longisporangium,Set_3-3,ILSO_2-19b,R1,670,230,5,46,134
+Pythium longisporangium,Set_3-3,ILSO_2-19b,R2,870,330,5,66,174
+Pythium longisporangium,Set_3-3,ILSO_2-19b,R3,790,220,5,44,158
+Phytopythium chamaehyphon,Set_3-3,INSO_2-39,R1,790,210,5,42,158
+Phytopythium chamaehyphon,Set_3-3,INSO_2-39,R2,750,250,5,50,150
+Phytopythium chamaehyphon,Set_3-3,INSO_2-39,R3,760,270,5,54,152
+Pythium periplocum,Set_3-3,KSSO_5-45,R1,670,120,5,24,134
+Pythium periplocum,Set_3-3,KSSO_5-45,R2,640,120,5,24,128
+Pythium periplocum,Set_3-3,KSSO_5-45,R3,570,100,5,20,114
+Pythium periplocum,Set_3-3,KSSO_5-50,R1,830,390,5,78,166
+Pythium periplocum,Set_3-3,KSSO_5-50,R2,590,140,5,28,118
+Pythium periplocum,Set_3-3,KSSO_5-50,R3,960,360,5,72,192
+Pythium periilum,Set_3-3,MICO_5-23,R1,820,330,5,66,164
+Pythium periilum,Set_3-3,MICO_5-23,R2,810,390,5,78,162
+Pythium periilum,Set_3-3,MICO_5-23,R3,750,210,5,42,150
+Aphanomyces cochlioides,Set_3-3,MICO_5-28_1,R1,740,330,5,66,148
+Aphanomyces cochlioides,Set_3-3,MICO_5-28_1,R2,740,130,5,26,148
+Aphanomyces cochlioides,Set_3-3,MICO_5-28_1,R3,870,290,5,58,174
+Pythium periilum,Set_3-3,MICO_5-3,R1,940,350,5,70,188
+Pythium periilum,Set_3-3,MICO_5-3,R2,800,290,5,58,160
+Pythium periilum,Set_3-3,MICO_5-3,R3,730,200,5,40,146
+Pythium periplocum,Set_3-3,MICO_6-36,R1,880,300,5,60,176
+Pythium periplocum,Set_3-3,MICO_6-36,R2,820,290,5,58,164
+Pythium periplocum,Set_3-3,MICO_6-36,R3,700,260,5,52,140
+Pythium periilum,Set_3-3,MICO_6-5,R1,780,270,5,54,156
+Pythium periilum,Set_3-3,MICO_6-5,R2,640,220,5,44,128
+Pythium periilum,Set_3-3,MICO_6-5,R3,650,200,5,40,130
+Pythium minus,Set_3-3,MNSO_1-38.2,R1,840,250,5,50,168
+Pythium minus,Set_3-3,MNSO_1-38.2,R2,790,320,5,64,158
+Pythium minus,Set_3-3,MNSO_1-38.2,R3,900,250,5,50,180
+Pythium minus,Set_3-3,MNSO_2-36,R1,710,200,5,40,142
+Pythium minus,Set_3-3,MNSO_2-36,R2,830,290,5,58,166
+Pythium minus,Set_3-3,MNSO_2-36,R3,690,220,5,44,138
+Pythium minus,Set_3-3,MNSO_2-37,R1,760,150,5,30,152
+Pythium minus,Set_3-3,MNSO_2-37,R2,810,380,5,76,162
+Pythium minus,Set_3-3,MNSO_2-37,R3,830,330,5,66,166
+Pythium longisporangium,Set_3-3,NDSO_L_4-4,R1,650,210,5,42,130
+Pythium longisporangium,Set_3-3,NDSO_L_4-4,R2,670,230,5,46,134
+Pythium longisporangium,Set_3-3,NDSO_L_4-4,R3,770,210,5,42,154
+Phytopythium chamaehyphon,Set_3-3,NESO_2-21,R1,850,300,5,60,170
+Phytopythium chamaehyphon,Set_3-3,NESO_2-21,R2,710,190,5,38,142
+Phytopythium chamaehyphon,Set_3-3,NESO_2-21,R3,840,220,5,44,168
+Pythium vanterpoolii,Set_3-3,V-ARSO2_3-45,R1,730,280,5,56,146
+Pythium vanterpoolii,Set_3-3,V-ARSO2_3-45,R2,660,160,5,32,132
+Pythium vanterpoolii,Set_3-3,V-ARSO2_3-45,R3,800,220,5,44,160
+Phytophthora rosacearum,Set_3-3,V-KSSO2_2-4,R1,590,170,5,34,118
+Phytophthora rosacearum,Set_3-3,V-KSSO2_2-4,R2,960,320,5,64,192
+Phytophthora rosacearum,Set_3-3,V-KSSO2_2-4,R3,870,310,5,62,174
+Phytophthora aff. rosacearum,Set_3-3,V-NDSO2_2-55,R1,790,270,5,54,158
+Phytophthora aff. rosacearum,Set_3-3,V-NDSO2_2-55,R2,780,300,5,60,156
+Phytophthora aff. rosacearum,Set_3-3,V-NDSO2_2-55,R3,830,320,5,64,166
+Pythium vanterpoolii,Set_3-3,V-NDSO2_2-56,R1,720,260,5,52,144
+Pythium vanterpoolii,Set_3-3,V-NDSO2_2-56,R2,790,300,5,60,158
+Pythium vanterpoolii,Set_3-3,V-NDSO2_2-56,R3,720,260,5,52,144
+Pythium carolinianum,Set_3-3,V-NDSO2_3-54,R1,770,390,5,78,154
+Pythium carolinianum,Set_3-3,V-NDSO2_3-54,R2,810,230,5,46,162
+Pythium carolinianum,Set_3-3,V-NDSO2_3-54,R3,940,300,5,60,188
+Phytophthora aff. rosacearum,Set_3-3,V-NESO2_6-49,R1,900,340,5,68,180
+Phytophthora aff. rosacearum,Set_3-3,V-NESO2_6-49,R2,720,250,5,50,144
+Phytophthora aff. rosacearum,Set_3-3,V-NESO2_6-49,R3,720,230,5,46,144
+Phytopythium chamaehyphon,Set_3-3,V-SDSO2_2-45,R1,730,220,5,44,146
+Phytopythium chamaehyphon,Set_3-3,V-SDSO2_2-45,R2,830,300,5,60,166
+Phytopythium chamaehyphon,Set_3-3,V-SDSO2_2-45,R3,860,230,5,46,172
+Phytophthora rosacearum,Set_3-3,V-SDSO2_4-45,R1,640,210,5,42,128
+Phytophthora rosacearum,Set_3-3,V-SDSO2_4-45,R2,770,170,5,34,154
+Phytophthora rosacearum,Set_3-3,V-SDSO2_4-45,R3,690,180,5,36,138
+Phytophthora aff. rosacearum,Set_3-3,V-SDSO2_4-50,R1,740,250,5,50,148
+Phytophthora aff. rosacearum,Set_3-3,V-SDSO2_4-50,R2,820,310,5,62,164
+Phytophthora aff. rosacearum,Set_3-3,V-SDSO2_4-50,R3,740,270,5,54,148
+Pythium carolinianum,Set_3-3,V-SDSO2_4-66,R1,710,250,5,50,142
+Pythium carolinianum,Set_3-3,V-SDSO2_4-66,R2,700,290,5,58,140
+Pythium carolinianum,Set_3-3,V-SDSO2_4-66,R3,900,330,5,66,180
+Pythium acrogynum,Set_4-1,C-ARSO2_6-19,R1,890,410,5,82,178
+Pythium acrogynum,Set_4-1,C-ARSO2_6-19,R2,980,370,5,74,196
+Pythium acrogynum,Set_4-1,C-ARSO2_6-19,R3,890,330,5,66,178
+Pythium monospermum,Set_4-1,C-INSO2_2-15,R1,1000,380,5,76,200
+Pythium monospermum,Set_4-1,C-INSO2_2-15,R2,960,390,5,78,192
+Pythium monospermum,Set_4-1,C-INSO2_2-15,R3,830,370,5,74,166
+Pythium longandrum,Set_4-1,C-KSSO2_5-20,R1,790,210,5,42,158
+Pythium longandrum,Set_4-1,C-KSSO2_5-20,R2,640,80,5,16,128
+Pythium longandrum,Set_4-1,C-KSSO2_5-20,R3,1010,320,5,64,202
+Phytophthora inundata,Set_4-1,C-MICO2_1-19,R1,780,380,5,76,156
+Phytophthora inundata,Set_4-1,C-MICO2_1-19,R2,690,180,5,36,138
+Phytophthora inundata,Set_4-1,C-MICO2_1-19,R3,880,350,5,70,176
+Pythium oligandrum,Set_4-1,C-MICO2_5-16,R1,770,260,5,52,154
+Pythium oligandrum,Set_4-1,C-MICO2_5-16,R2,780,340,5,68,156
+Pythium oligandrum,Set_4-1,C-MICO2_5-16,R3,920,430,5,86,184
+Pythium acrogynum,Set_4-1,C-MISO2_1-11,R1,850,380,5,76,170
+Pythium acrogynum,Set_4-1,C-MISO2_1-11,R2,890,440,5,88,178
+Pythium acrogynum,Set_4-1,C-MISO2_1-11,R3,730,280,5,56,146
+Pythium oligandrum,Set_4-1,C-MISO2_5-23,R1,700,310,5,62,140
+Pythium oligandrum,Set_4-1,C-MISO2_5-23,R2,710,290,5,58,142
+Pythium oligandrum,Set_4-1,C-MISO2_5-23,R3,800,350,5,70,160
+Pythium contiguanum,Set_4-1,C-MISO2_5-4,R1,770,310,5,62,154
+Pythium contiguanum,Set_4-1,C-MISO2_5-4,R2,720,300,5,60,144
+Pythium contiguanum,Set_4-1,C-MISO2_5-4,R3,860,290,5,58,172
+Pythium oligandrum,Set_4-1,C-MISO2_6-6,R1,730,280,5,56,146
+Pythium oligandrum,Set_4-1,C-MISO2_6-6,R2,790,420,5,84,158
+Pythium oligandrum,Set_4-1,C-MISO2_6-6,R3,750,390,5,78,150
+Pythium torulosum,Set_4-1,C-MNSO2_2-21,R1,920,370,5,74,184
+Pythium torulosum,Set_4-1,C-MNSO2_2-21,R2,880,350,5,70,176
+Pythium torulosum,Set_4-1,C-MNSO2_2-21,R3,1020,540,5,108,204
+Pythium longandrum,Set_4-1,C-NESO2_6-25,R1,890,410,5,82,178
+Pythium longandrum,Set_4-1,C-NESO2_6-25,R2,920,370,5,74,184
+Pythium longandrum,Set_4-1,C-NESO2_6-25,R3,720,230,5,46,144
+Pythium contiguanum,Set_4-1,C-SDSO2_4-9,R1,790,320,5,64,158
+Pythium contiguanum,Set_4-1,C-SDSO2_4-9,R2,840,380,5,76,168
+Pythium contiguanum,Set_4-1,C-SDSO2_4-9,R3,820,320,5,64,164
+CONTROL,Set_4-1,CONTROL,R1,880,300,5,60,176
+CONTROL,Set_4-1,CONTROL,R2,1000,390,5,78,200
+CONTROL,Set_4-1,CONTROL,R3,820,270,5,54,164
+CONTROL_NR,Set_4-1,CONTROL_NR,R1,900,360,5,72,180
+CONTROL_NR,Set_4-1,CONTROL_NR,R2,930,350,5,70,186
+CONTROL_NR,Set_4-1,CONTROL_NR,R3,1030,470,5,94,206
+Pythium aff. diclinum,Set_4-1,IASO_4-9,R1,610,150,5,30,122
+Pythium aff. diclinum,Set_4-1,IASO_4-9,R2,470,20,5,4,94
+Pythium aff. diclinum,Set_4-1,IASO_4-9,R3,580,130,5,26,116
+Pythium contiguanum,Set_4-1,ILSO_3-26B,R1,820,330,5,66,164
+Pythium contiguanum,Set_4-1,ILSO_3-26B,R2,810,450,5,90,162
+Pythium contiguanum,Set_4-1,ILSO_3-26B,R3,890,380,5,76,178
+Pythium monospermum,Set_4-1,INSO_2-25,R1,890,320,5,64,178
+Pythium monospermum,Set_4-1,INSO_2-25,R2,870,330,5,66,174
+Pythium monospermum,Set_4-1,INSO_2-25,R3,820,330,5,66,164
+Pythium rhizosaccharum,Set_4-1,KSSO_2-11,R1,840,380,5,76,168
+Pythium rhizosaccharum,Set_4-1,KSSO_2-11,R2,1000,410,5,82,200
+Pythium rhizosaccharum,Set_4-1,KSSO_2-11,R3,600,250,5,50,120
+Pythium longandrum,Set_4-1,MICO_2-24,R1,750,250,5,50,150
+Pythium longandrum,Set_4-1,MICO_2-24,R2,870,360,5,72,174
+Pythium longandrum,Set_4-1,MICO_2-24,R3,930,320,5,64,186
+Pythium torulosum,Set_4-1,MISO_5-19h,R1,890,440,5,88,178
+Pythium torulosum,Set_4-1,MISO_5-19h,R2,840,330,5,66,168
+Pythium torulosum,Set_4-1,MISO_5-19h,R3,720,200,5,40,144
+Pythium torulosum,Set_4-1,MISO_8-29_1,R1,860,340,5,68,172
+Pythium torulosum,Set_4-1,MISO_8-29_1,R2,1000,390,5,78,200
+Pythium torulosum,Set_4-1,MISO_8-29_1,R3,1090,430,5,86,218
+Pythium rhizosaccharum,Set_4-1,MNSO_1-29,R1,740,330,5,66,148
+Pythium rhizosaccharum,Set_4-1,MNSO_1-29,R2,830,320,5,64,166
+Pythium rhizosaccharum,Set_4-1,MNSO_1-29,R3,890,430,5,86,178
+Phytophthora inundata,Set_4-1,MNSO_2-41.1H,R1,890,320,5,64,178
+Phytophthora inundata,Set_4-1,MNSO_2-41.1H,R2,900,380,5,76,180
+Phytophthora inundata,Set_4-1,MNSO_2-41.1H,R3,920,490,5,98,184
+Pythium aff. diclinum,Set_4-1,NDSO_5-2,R1,580,100,5,20,116
+Pythium aff. diclinum,Set_4-1,NDSO_5-2,R2,250,30,5,6,50
+Pythium aff. diclinum,Set_4-1,NDSO_5-2,R3,440,110,5,22,88
+Pythium aff. diclinum,Set_4-1,NDSO_5-6,R1,660,290,5,58,132
+Pythium aff. diclinum,Set_4-1,NDSO_5-6,R2,820,400,5,80,164
+Pythium aff. diclinum,Set_4-1,NDSO_5-6,R3,840,380,5,76,168
+Pythium rhizosaccharum,Set_4-1,NESO_4-43,R1,920,330,5,66,184
+Pythium rhizosaccharum,Set_4-1,NESO_4-43,R2,940,430,5,86,188
+Pythium rhizosaccharum,Set_4-1,NESO_4-43,R3,660,170,5,34,132
+Phytophthora inundata,Set_4-1,V-NDSO2_3-60,R1,630,250,5,50,126
+Phytophthora inundata,Set_4-1,V-NDSO2_3-60,R2,880,350,5,70,176
+Phytophthora inundata,Set_4-1,V-NDSO2_3-60,R3,730,260,5,52,146
+Pythium acrogynum,Set_4-1,V-NDSO2_4-48,R1,630,290,5,58,126
+Pythium acrogynum,Set_4-1,V-NDSO2_4-48,R2,680,310,5,62,136
+Pythium acrogynum,Set_4-1,V-NDSO2_4-48,R3,810,380,5,76,162
+Pythium glomeratum,Set_4-1,WISO_2-12.2,R1,940,360,5,72,188
+Pythium glomeratum,Set_4-1,WISO_2-12.2,R2,880,350,5,70,176
+Pythium glomeratum,Set_4-1,WISO_2-12.2,R3,730,290,5,58,146
+Pythium glomeratum,Set_4-1,WISO_4-18,R1,640,230,5,46,128
+Pythium glomeratum,Set_4-1,WISO_4-18,R2,590,290,5,58,118
+Pythium glomeratum,Set_4-1,WISO_4-18,R3,680,180,5,36,136
+Pythium glomeratum,Set_4-1,WISO_4-22.1,R1,1090,310,5,62,218
+Pythium glomeratum,Set_4-1,WISO_4-22.1,R2,940,300,5,60,188
+Pythium glomeratum,Set_4-1,WISO_4-22.1,R3,1000,450,5,90,200
+Pythium acrogynum,Set_4-2,C-ARSO2_6-19,R1,720,290,5,58,144
+Pythium acrogynum,Set_4-2,C-ARSO2_6-19,R2,790,340,5,68,158
+Pythium acrogynum,Set_4-2,C-ARSO2_6-19,R3,710,260,5,52,142
+Pythium monospermum,Set_4-2,C-INSO2_2-15,R1,790,300,5,60,158
+Pythium monospermum,Set_4-2,C-INSO2_2-15,R2,820,330,5,66,164
+Pythium monospermum,Set_4-2,C-INSO2_2-15,R3,690,300,5,60,138
+Pythium longandrum,Set_4-2,C-KSSO2_5-20,R1,770,400,5,80,154
+Pythium longandrum,Set_4-2,C-KSSO2_5-20,R2,630,270,5,54,126
+Pythium longandrum,Set_4-2,C-KSSO2_5-20,R3,770,350,5,70,154
+Phytophthora inundata,Set_4-2,C-MICO2_1-19,R1,550,280,5,56,110
+Phytophthora inundata,Set_4-2,C-MICO2_1-19,R2,820,420,5,84,164
+Phytophthora inundata,Set_4-2,C-MICO2_1-19,R3,780,410,5,82,156
+Pythium oligandrum,Set_4-2,C-MICO2_5-16,R1,660,310,5,62,132
+Pythium oligandrum,Set_4-2,C-MICO2_5-16,R2,750,310,5,62,150
+Pythium oligandrum,Set_4-2,C-MICO2_5-16,R3,580,250,5,50,116
+Pythium acrogynum,Set_4-2,C-MISO2_1-11,R1,770,360,5,72,154
+Pythium acrogynum,Set_4-2,C-MISO2_1-11,R2,720,350,5,70,144
+Pythium acrogynum,Set_4-2,C-MISO2_1-11,R3,700,300,5,60,140
+Pythium oligandrum,Set_4-2,C-MISO2_5-23,R1,830,420,5,84,166
+Pythium oligandrum,Set_4-2,C-MISO2_5-23,R2,710,330,5,66,142
+Pythium oligandrum,Set_4-2,C-MISO2_5-23,R3,780,320,5,64,156
+Pythium contiguanum,Set_4-2,C-MISO2_5-4,R1,650,260,5,52,130
+Pythium contiguanum,Set_4-2,C-MISO2_5-4,R2,870,370,5,74,174
+Pythium contiguanum,Set_4-2,C-MISO2_5-4,R3,700,200,5,40,140
+Pythium oligandrum,Set_4-2,C-MISO2_6-6,R1,930,470,5,94,186
+Pythium oligandrum,Set_4-2,C-MISO2_6-6,R2,760,340,5,68,152
+Pythium oligandrum,Set_4-2,C-MISO2_6-6,R3,620,340,5,68,124
+Pythium torulosum,Set_4-2,C-MNSO2_2-21,R1,900,350,5,70,180
+Pythium torulosum,Set_4-2,C-MNSO2_2-21,R2,870,320,5,64,174
+Pythium torulosum,Set_4-2,C-MNSO2_2-21,R3,730,300,5,60,146
+Pythium longandrum,Set_4-2,C-NESO2_6-25,R1,740,310,5,62,148
+Pythium longandrum,Set_4-2,C-NESO2_6-25,R2,710,350,5,70,142
+Pythium longandrum,Set_4-2,C-NESO2_6-25,R3,800,300,5,60,160
+Pythium contiguanum,Set_4-2,C-SDSO2_4-9,R1,920,380,5,76,184
+Pythium contiguanum,Set_4-2,C-SDSO2_4-9,R2,730,280,5,56,146
+Pythium contiguanum,Set_4-2,C-SDSO2_4-9,R3,590,170,5,34,118
+CONTROL,Set_4-2,CONTROL,R1,750,250,5,50,150
+CONTROL,Set_4-2,CONTROL,R2,930,350,5,70,186
+CONTROL,Set_4-2,CONTROL,R3,780,310,5,62,156
+CONTROL_NR,Set_4-2,CONTROL_NR,R1,850,320,5,64,170
+CONTROL_NR,Set_4-2,CONTROL_NR,R2,640,250,5,50,128
+CONTROL_NR,Set_4-2,CONTROL_NR,R3,840,330,5,66,168
+Pythium aff. diclinum,Set_4-2,IASO_4-9,R1,430,30,5,6,86
+Pythium aff. diclinum,Set_4-2,IASO_4-9,R2,360,0,5,0,72
+Pythium aff. diclinum,Set_4-2,IASO_4-9,R3,630,110,5,22,126
+Pythium contiguanum,Set_4-2,ILSO_3-26B,R1,980,420,5,84,196
+Pythium contiguanum,Set_4-2,ILSO_3-26B,R2,590,220,5,44,118
+Pythium contiguanum,Set_4-2,ILSO_3-26B,R3,760,260,5,52,152
+Pythium monospermum,Set_4-2,INSO_2-25,R1,600,250,5,50,120
+Pythium monospermum,Set_4-2,INSO_2-25,R2,760,340,5,68,152
+Pythium monospermum,Set_4-2,INSO_2-25,R3,790,390,5,78,158
+Pythium rhizosaccharum,Set_4-2,KSSO_2-11,R1,840,370,5,74,168
+Pythium rhizosaccharum,Set_4-2,KSSO_2-11,R2,710,270,5,54,142
+Pythium rhizosaccharum,Set_4-2,KSSO_2-11,R3,770,310,5,62,154
+Pythium longandrum,Set_4-2,MICO_2-24,R1,740,340,5,68,148
+Pythium longandrum,Set_4-2,MICO_2-24,R2,860,320,5,64,172
+Pythium longandrum,Set_4-2,MICO_2-24,R3,690,300,5,60,138
+Pythium torulosum,Set_4-2,MISO_5-19h,R1,520,240,5,48,104
+Pythium torulosum,Set_4-2,MISO_5-19h,R2,630,280,5,56,126
+Pythium torulosum,Set_4-2,MISO_5-19h,R3,700,280,5,56,140
+Pythium torulosum,Set_4-2,MISO_8-29_1,R1,850,360,5,72,170
+Pythium torulosum,Set_4-2,MISO_8-29_1,R2,850,340,5,68,170
+Pythium torulosum,Set_4-2,MISO_8-29_1,R3,1000,520,5,104,200
+Pythium rhizosaccharum,Set_4-2,MNSO_1-29,R1,770,310,5,62,154
+Pythium rhizosaccharum,Set_4-2,MNSO_1-29,R2,800,370,5,74,160
+Pythium rhizosaccharum,Set_4-2,MNSO_1-29,R3,740,280,5,56,148
+Phytophthora inundata,Set_4-2,MNSO_2-41.1H,R1,770,300,5,60,154
+Phytophthora inundata,Set_4-2,MNSO_2-41.1H,R2,890,460,5,92,178
+Phytophthora inundata,Set_4-2,MNSO_2-41.1H,R3,770,380,5,76,154
+Pythium aff. diclinum,Set_4-2,NDSO_5-2,R1,580,170,5,34,116
+Pythium aff. diclinum,Set_4-2,NDSO_5-2,R2,330,40,5,8,66
+Pythium aff. diclinum,Set_4-2,NDSO_5-2,R3,420,70,5,14,84
+Pythium aff. diclinum,Set_4-2,NDSO_5-6,R1,650,250,5,50,130
+Pythium aff. diclinum,Set_4-2,NDSO_5-6,R2,830,260,5,52,166
+Pythium aff. diclinum,Set_4-2,NDSO_5-6,R3,740,330,5,66,148
+Pythium rhizosaccharum,Set_4-2,NESO_4-43,R1,700,260,5,52,140
+Pythium rhizosaccharum,Set_4-2,NESO_4-43,R2,870,280,5,56,174
+Pythium rhizosaccharum,Set_4-2,NESO_4-43,R3,830,330,5,66,166
+Phytophthora inundata,Set_4-2,V-NDSO2_3-60,R1,650,250,5,50,130
+Phytophthora inundata,Set_4-2,V-NDSO2_3-60,R2,740,330,5,66,148
+Phytophthora inundata,Set_4-2,V-NDSO2_3-60,R3,640,310,5,62,128
+Pythium acrogynum,Set_4-2,V-NDSO2_4-48,R1,610,290,5,58,122
+Pythium acrogynum,Set_4-2,V-NDSO2_4-48,R2,970,320,5,64,194
+Pythium acrogynum,Set_4-2,V-NDSO2_4-48,R3,770,360,5,72,154
+Pythium glomeratum,Set_4-2,WISO_2-12.2,R1,830,280,5,56,166
+Pythium glomeratum,Set_4-2,WISO_2-12.2,R2,860,340,5,68,172
+Pythium glomeratum,Set_4-2,WISO_2-12.2,R3,940,390,5,78,188
+Pythium glomeratum,Set_4-2,WISO_4-18,R1,730,320,5,64,146
+Pythium glomeratum,Set_4-2,WISO_4-18,R2,760,320,5,64,152
+Pythium glomeratum,Set_4-2,WISO_4-18,R3,650,260,5,52,130
+Pythium glomeratum,Set_4-2,WISO_4-22.1,R1,780,300,5,60,156
+Pythium glomeratum,Set_4-2,WISO_4-22.1,R2,740,340,5,68,148
+Pythium glomeratum,Set_4-2,WISO_4-22.1,R3,620,300,5,60,124
+Pythium hypogynum,Set_5-1,C-ARSO2_3-12,R1,530,240,5,48,106
+Pythium hypogynum,Set_5-1,C-ARSO2_3-12,R2,570,300,5,60,114
+Pythium hypogynum,Set_5-1,C-ARSO2_3-12,R3,690,230,5,46,138
+Pythium middletonii,Set_5-1,C-ARSO2_5-1,R1,500,260,5,52,100
+Pythium middletonii,Set_5-1,C-ARSO2_5-1,R2,810,270,5,54,162
+Pythium middletonii,Set_5-1,C-ARSO2_5-1,R3,490,210,5,42,98
+Pythium arrhenomanes,Set_5-1,C-ILSO2_1-1,R1,550,270,5,54,110
+Pythium arrhenomanes,Set_5-1,C-ILSO2_1-1,R2,780,310,5,62,156
+Pythium arrhenomanes,Set_5-1,C-ILSO2_1-1,R3,530,270,5,54,106
+Pythium aristosporum,Set_5-1,C-ILSO2_1-13,R1,610,340,5,68,122
+Pythium aristosporum,Set_5-1,C-ILSO2_1-13,R2,430,220,5,44,86
+Pythium aristosporum,Set_5-1,C-ILSO2_1-13,R3,550,310,5,62,110
+Pythium arrhenomanes,Set_5-1,C-ILSO2_1-3,R1,660,140,5,28,132
+Pythium arrhenomanes,Set_5-1,C-ILSO2_1-3,R2,530,190,5,38,106
+Pythium arrhenomanes,Set_5-1,C-ILSO2_1-3,R3,750,280,5,56,150
+Phytopythium litorale,Set_5-1,C-KSSO2_1-25,R1,380,150,5,30,76
+Phytopythium litorale,Set_5-1,C-KSSO2_1-25,R2,580,270,5,54,116
+Phytopythium litorale,Set_5-1,C-KSSO2_1-25,R3,450,220,5,44,90
+Phytopythium mercuriale,Set_5-1,C-KSSO2_2-15,R1,480,240,5,48,96
+Phytopythium mercuriale,Set_5-1,C-KSSO2_2-15,R2,540,190,5,38,108
+Phytopythium mercuriale,Set_5-1,C-KSSO2_2-15,R3,790,280,5,56,158
+Pythium hypogynum,Set_5-1,C-KSSO2_6-21,R1,530,320,5,64,106
+Pythium hypogynum,Set_5-1,C-KSSO2_6-21,R2,760,300,5,60,152
+Pythium hypogynum,Set_5-1,C-KSSO2_6-21,R3,520,210,5,42,104
+Pythium hypogynum,Set_5-1,C-MISO2_4-1,R1,400,210,5,42,80
+Pythium hypogynum,Set_5-1,C-MISO2_4-1,R2,450,210,5,42,90
+Pythium hypogynum,Set_5-1,C-MISO2_4-1,R3,550,280,5,56,110
+Pythium arrhenomanes,Set_5-1,C-MISO2_4-10,R1,730,250,5,50,146
+Pythium arrhenomanes,Set_5-1,C-MISO2_4-10,R2,460,270,5,54,92
+Pythium arrhenomanes,Set_5-1,C-MISO2_4-10,R3,650,270,5,54,130
+Pythium nagaii,Set_5-1,C-MNSO2_6-21,R1,800,280,5,56,160
+Pythium nagaii,Set_5-1,C-MNSO2_6-21,R2,450,160,5,32,90
+Pythium nagaii,Set_5-1,C-MNSO2_6-21,R3,540,300,5,60,108
+Pythium nagaii,Set_5-1,C-NDSO2_1-1,R1,790,280,5,56,158
+Pythium nagaii,Set_5-1,C-NDSO2_1-1,R2,460,200,5,40,92
+Pythium nagaii,Set_5-1,C-NDSO2_1-1,R3,710,240,5,48,142
+Pythium nagaii,Set_5-1,C-NDSO2_6-1,R1,460,190,5,38,92
+Pythium nagaii,Set_5-1,C-NDSO2_6-1,R2,430,200,5,40,86
+Pythium nagaii,Set_5-1,C-NDSO2_6-1,R3,380,180,5,36,76
+CONTROL,Set_5-1,CONTROL,R1,760,300,5,60,152
+CONTROL,Set_5-1,CONTROL,R2,780,300,5,60,156
+CONTROL,Set_5-1,CONTROL,R3,560,280,5,56,112
+Pythium aff. perplexum,Set_5-1,IASO_2-12.11,R1,540,250,5,50,108
+Pythium aff. perplexum,Set_5-1,IASO_2-12.11,R2,810,310,5,62,162
+Pythium aff. perplexum,Set_5-1,IASO_2-12.11,R3,380,230,5,46,76
+Pythium middletonii,Set_5-1,ILSO_6-58C,R1,540,260,5,52,108
+Pythium middletonii,Set_5-1,ILSO_6-58C,R2,680,310,5,62,136
+Pythium middletonii,Set_5-1,ILSO_6-58C,R3,670,280,5,56,134
+Pythium middletonii,Set_5-1,INSO_4-27,R1,790,320,5,64,158
+Pythium middletonii,Set_5-1,INSO_4-27,R2,540,300,5,60,108
+Pythium middletonii,Set_5-1,INSO_4-27,R3,660,310,5,62,132
+Pythium tardicrescens,Set_5-1,KSSO_5-18,R1,590,90,5,18,118
+Pythium tardicrescens,Set_5-1,KSSO_5-18,R2,470,20,5,4,94
+Pythium tardicrescens,Set_5-1,KSSO_5-18,R3,530,90,5,18,106
+Pythium tardicrescens,Set_5-1,MICO_5-13,R1,530,350,5,70,106
+Pythium tardicrescens,Set_5-1,MICO_5-13,R2,730,320,5,64,146
+Pythium tardicrescens,Set_5-1,MICO_5-13,R3,470,170,5,34,94
+Pythium tardicrescens,Set_5-1,MICO_6-11,R1,570,260,5,52,114
+Pythium tardicrescens,Set_5-1,MICO_6-11,R2,550,330,5,66,110
+Pythium tardicrescens,Set_5-1,MICO_6-11,R3,490,270,5,54,98
+Pythium aff. perplexum,Set_5-1,MNSO_2-28,R1,490,250,5,50,98
+Pythium aff. perplexum,Set_5-1,MNSO_2-28,R2,610,360,5,72,122
+Pythium aff. perplexum,Set_5-1,MNSO_2-28,R3,920,380,5,76,184
+Pythium kashmirense,Set_5-1,SDSO_7-31,R1,1010,350,5,70,202
+Pythium kashmirense,Set_5-1,SDSO_7-31,R2,520,240,5,48,104
+Pythium kashmirense,Set_5-1,SDSO_7-31,R3,560,240,5,48,112
+Phytopythium litorale,Set_5-1,V-IASO2_6-55,R1,720,330,5,66,144
+Phytopythium litorale,Set_5-1,V-IASO2_6-55,R2,730,260,5,52,146
+Phytopythium litorale,Set_5-1,V-IASO2_6-55,R3,740,280,5,56,148
+Pythium kashmirense,Set_5-1,V-ILSO2_4-64,R1,530,250,5,50,106
+Pythium kashmirense,Set_5-1,V-ILSO2_4-64,R2,860,420,5,84,172
+Pythium kashmirense,Set_5-1,V-ILSO2_4-64,R3,530,310,5,62,106
+Pythium aristosporum,Set_5-1,V-MICO2_5-8,R1,830,340,5,68,166
+Pythium aristosporum,Set_5-1,V-MICO2_5-8,R2,730,380,5,76,146
+Pythium aristosporum,Set_5-1,V-MICO2_5-8,R3,850,330,5,66,170
+Pythium aristosporum,Set_5-1,V-NDSO2_6-50,R1,650,320,5,64,130
+Pythium aristosporum,Set_5-1,V-NDSO2_6-50,R2,880,380,5,76,176
+Pythium aristosporum,Set_5-1,V-NDSO2_6-50,R3,630,150,5,30,126
+Phytopythium litorale,Set_5-1,V-NDSO2_6-55,R1,470,230,5,46,94
+Phytopythium litorale,Set_5-1,V-NDSO2_6-55,R2,580,300,5,60,116
+Phytopythium litorale,Set_5-1,V-NDSO2_6-55,R3,650,260,5,52,130
+Phytopythium mercuriale,Set_5-1,V-NESO2_5-41,R1,820,300,5,60,164
+Phytopythium mercuriale,Set_5-1,V-NESO2_5-41,R2,530,270,5,54,106
+Phytopythium mercuriale,Set_5-1,V-NESO2_5-41,R3,700,310,5,62,140
+Phytopythium mercuriale,Set_5-1,V-NESO2_5-43,R1,490,230,5,46,98
+Phytopythium mercuriale,Set_5-1,V-NESO2_5-43,R2,540,220,5,44,108
+Phytopythium mercuriale,Set_5-1,V-NESO2_5-43,R3,450,200,5,40,90
+Pythium kashmirense,Set_5-1,V-SDSO2_4-64,R1,810,300,5,60,162
+Pythium kashmirense,Set_5-1,V-SDSO2_4-64,R2,770,310,5,62,154
+Pythium kashmirense,Set_5-1,V-SDSO2_4-64,R3,800,320,5,64,160
+Pythium aff. perplexum,Set_5-1,WISO_4-39.1H,R1,440,190,5,38,88
+Pythium aff. perplexum,Set_5-1,WISO_4-39.1H,R2,590,280,5,56,118
+Pythium aff. perplexum,Set_5-1,WISO_4-39.1H,R3,420,220,5,44,84
+CONTROL_NR,Set_5-1,CONTROL_NR,R1,970,380,5,76,194
+CONTROL_NR,Set_5-1,CONTROL_NR,R2,730,290,5,58,146
+CONTROL_NR,Set_5-1,CONTROL_NR,R3,800,320,5,64,160
+Pythium acrogynum,Set_4-3,C-ARSO2_6-19,R1,900,360,5,72,180
+Pythium acrogynum,Set_4-3,C-ARSO2_6-19,R2,730,280,5,56,146
+Pythium acrogynum,Set_4-3,C-ARSO2_6-19,R3,780,260,5,52,156
+Pythium monospermum,Set_4-3,C-INSO2_2-15,R1,770,100,5,20,154
+Pythium monospermum,Set_4-3,C-INSO2_2-15,R2,700,300,5,60,140
+Pythium monospermum,Set_4-3,C-INSO2_2-15,R3,860,410,5,82,172
+Pythium longandrum,Set_4-3,C-KSSO2_5-20,R1,810,220,5,44,162
+Pythium longandrum,Set_4-3,C-KSSO2_5-20,R2,850,260,5,52,170
+Pythium longandrum,Set_4-3,C-KSSO2_5-20,R3,830,360,5,72,166
+Phytophthora inundata,Set_4-3,C-MICO2_1-19,R1,570,210,5,42,114
+Phytophthora inundata,Set_4-3,C-MICO2_1-19,R2,940,340,5,68,188
+Phytophthora inundata,Set_4-3,C-MICO2_1-19,R3,840,360,5,72,168
+Pythium oligandrum,Set_4-3,C-MICO2_5-16,R1,650,280,5,56,130
+Pythium oligandrum,Set_4-3,C-MICO2_5-16,R2,740,200,5,40,148
+Pythium oligandrum,Set_4-3,C-MICO2_5-16,R3,780,170,5,34,156
+Pythium acrogynum,Set_4-3,C-MISO2_1-11,R1,780,230,5,46,156
+Pythium acrogynum,Set_4-3,C-MISO2_1-11,R2,770,340,5,68,154
+Pythium acrogynum,Set_4-3,C-MISO2_1-11,R3,900,380,5,76,180
+Pythium oligandrum,Set_4-3,C-MISO2_5-23,R1,710,250,5,50,142
+Pythium oligandrum,Set_4-3,C-MISO2_5-23,R2,730,230,5,46,146
+Pythium oligandrum,Set_4-3,C-MISO2_5-23,R3,850,340,5,68,170
+Pythium contiguanum,Set_4-3,C-MISO2_5-4,R1,680,210,5,42,136
+Pythium contiguanum,Set_4-3,C-MISO2_5-4,R2,640,230,5,46,128
+Pythium contiguanum,Set_4-3,C-MISO2_5-4,R3,840,360,5,72,168
+Pythium oligandrum,Set_4-3,C-MISO2_6-6,R1,700,220,5,44,140
+Pythium oligandrum,Set_4-3,C-MISO2_6-6,R2,780,280,5,56,156
+Pythium oligandrum,Set_4-3,C-MISO2_6-6,R3,750,390,5,78,150
+Pythium torulosum,Set_4-3,C-MNSO2_2-21,R1,800,260,5,52,160
+Pythium torulosum,Set_4-3,C-MNSO2_2-21,R2,710,240,5,48,142
+Pythium torulosum,Set_4-3,C-MNSO2_2-21,R3,910,320,5,64,182
+Pythium longandrum,Set_4-3,C-NESO2_6-25,R1,720,280,5,56,144
+Pythium longandrum,Set_4-3,C-NESO2_6-25,R2,570,210,5,42,114
+Pythium longandrum,Set_4-3,C-NESO2_6-25,R3,570,250,5,50,114
+Pythium contiguanum,Set_4-3,C-SDSO2_4-9,R1,820,210,5,42,164
+Pythium contiguanum,Set_4-3,C-SDSO2_4-9,R2,820,290,5,58,164
+Pythium contiguanum,Set_4-3,C-SDSO2_4-9,R3,870,390,5,78,174
+CONTROL,Set_4-3,CONTROL,R1,960,320,5,64,192
+CONTROL,Set_4-3,CONTROL,R2,930,380,5,76,186
+CONTROL,Set_4-3,CONTROL,R3,1040,360,5,72,208
+CONTROL_NR,Set_4-3,CONTROL_NR,R1,850,370,5,74,170
+CONTROL_NR,Set_4-3,CONTROL_NR,R2,1020,410,5,82,204
+CONTROL_NR,Set_4-3,CONTROL_NR,R3,1000,380,5,76,200
+Pythium aff. diclinum,Set_4-3,IASO_4-9,R1,200,10,5,2,40
+Pythium aff. diclinum,Set_4-3,IASO_4-9,R2,190,0,5,0,38
+Pythium aff. diclinum,Set_4-3,IASO_4-9,R3,390,20,5,4,78
+Pythium contiguanum,Set_4-3,ILSO_3-26B,R1,910,360,5,72,182
+Pythium contiguanum,Set_4-3,ILSO_3-26B,R2,1060,400,5,80,212
+Pythium contiguanum,Set_4-3,ILSO_3-26B,R3,730,290,5,58,146
+Pythium monospermum,Set_4-3,INSO_2-25,R1,880,340,5,68,176
+Pythium monospermum,Set_4-3,INSO_2-25,R2,770,250,5,50,154
+Pythium monospermum,Set_4-3,INSO_2-25,R3,1020,380,5,76,204
+Pythium rhizosaccharum,Set_4-3,KSSO_2-11,R1,770,340,5,68,154
+Pythium rhizosaccharum,Set_4-3,KSSO_2-11,R2,920,310,5,62,184
+Pythium rhizosaccharum,Set_4-3,KSSO_2-11,R3,830,280,5,56,166
+Pythium longandrum,Set_4-3,MICO_2-24,R1,780,310,5,62,156
+Pythium longandrum,Set_4-3,MICO_2-24,R2,810,280,5,56,162
+Pythium longandrum,Set_4-3,MICO_2-24,R3,820,340,5,68,164
+Pythium torulosum,Set_4-3,MISO_5-19h,R1,730,280,5,56,146
+Pythium torulosum,Set_4-3,MISO_5-19h,R2,990,360,5,72,198
+Pythium torulosum,Set_4-3,MISO_5-19h,R3,930,360,5,72,186
+Pythium torulosum,Set_4-3,MISO_8-29_1,R1,770,360,5,72,154
+Pythium torulosum,Set_4-3,MISO_8-29_1,R2,720,270,5,54,144
+Pythium torulosum,Set_4-3,MISO_8-29_1,R3,920,410,5,82,184
+Pythium rhizosaccharum,Set_4-3,MNSO_1-29,R1,880,410,5,82,176
+Pythium rhizosaccharum,Set_4-3,MNSO_1-29,R2,980,340,5,68,196
+Pythium rhizosaccharum,Set_4-3,MNSO_1-29,R3,880,390,5,78,176
+Phytophthora inundata,Set_4-3,MNSO_2-41.1H,R1,840,420,5,84,168
+Phytophthora inundata,Set_4-3,MNSO_2-41.1H,R2,870,380,5,76,174
+Phytophthora inundata,Set_4-3,MNSO_2-41.1H,R3,850,290,5,58,170
+Pythium aff. diclinum,Set_4-3,NDSO_5-2,R1,520,80,5,16,104
+Pythium aff. diclinum,Set_4-3,NDSO_5-2,R2,550,130,5,26,110
+Pythium aff. diclinum,Set_4-3,NDSO_5-2,R3,610,150,5,30,122
+Pythium aff. diclinum,Set_4-3,NDSO_5-6,R1,740,170,5,34,148
+Pythium aff. diclinum,Set_4-3,NDSO_5-6,R2,940,300,5,60,188
+Pythium aff. diclinum,Set_4-3,NDSO_5-6,R3,650,150,5,30,130
+Pythium rhizosaccharum,Set_4-3,NESO_4-43,R1,810,330,5,66,162
+Pythium rhizosaccharum,Set_4-3,NESO_4-43,R2,770,230,5,46,154
+Pythium rhizosaccharum,Set_4-3,NESO_4-43,R3,900,360,5,72,180
+Phytophthora inundata,Set_4-3,V-NDSO2_3-60,R1,780,280,5,56,156
+Phytophthora inundata,Set_4-3,V-NDSO2_3-60,R2,700,240,5,48,140
+Phytophthora inundata,Set_4-3,V-NDSO2_3-60,R3,800,280,5,56,160
+Pythium acrogynum,Set_4-3,V-NDSO2_4-48,R1,960,310,5,62,192
+Pythium acrogynum,Set_4-3,V-NDSO2_4-48,R2,680,140,5,28,136
+Pythium acrogynum,Set_4-3,V-NDSO2_4-48,R3,770,280,5,56,154
+Pythium glomeratum,Set_4-3,WISO_2-12.2,R1,940,340,5,68,188
+Pythium glomeratum,Set_4-3,WISO_2-12.2,R2,830,340,5,68,166
+Pythium glomeratum,Set_4-3,WISO_2-12.2,R3,900,370,5,74,180
+Pythium glomeratum,Set_4-3,WISO_4-18,R1,880,290,5,58,176
+Pythium glomeratum,Set_4-3,WISO_4-18,R2,950,370,5,74,190
+Pythium glomeratum,Set_4-3,WISO_4-18,R3,810,270,5,54,162
+Pythium glomeratum,Set_4-3,WISO_4-22.1,R1,700,160,5,32,140
+Pythium glomeratum,Set_4-3,WISO_4-22.1,R2,660,80,5,16,132
+Pythium glomeratum,Set_4-3,WISO_4-22.1,R3,720,250,5,50,144
+Pythium hypogynum,Set_5-2,C-ARSO2_3-12,R1,970,310,5,62,194
+Pythium hypogynum,Set_5-2,C-ARSO2_3-12,R2,1010,280,5,56,202
+Pythium hypogynum,Set_5-2,C-ARSO2_3-12,R3,860,240,5,48,172
+Pythium middletonii,Set_5-2,C-ARSO2_5-1,R1,740,250,5,50,148
+Pythium middletonii,Set_5-2,C-ARSO2_5-1,R2,680,180,5,36,136
+Pythium middletonii,Set_5-2,C-ARSO2_5-1,R3,870,370,5,74,174
+Pythium arrhenomanes,Set_5-2,C-ILSO2_1-1,R1,710,240,5,48,142
+Pythium arrhenomanes,Set_5-2,C-ILSO2_1-1,R2,800,330,5,66,160
+Pythium arrhenomanes,Set_5-2,C-ILSO2_1-1,R3,780,260,5,52,156
+Pythium aristosporum,Set_5-2,C-ILSO2_1-13,R1,830,330,5,66,166
+Pythium aristosporum,Set_5-2,C-ILSO2_1-13,R2,690,260,5,52,138
+Pythium aristosporum,Set_5-2,C-ILSO2_1-13,R3,880,310,5,62,176
+Pythium arrhenomanes,Set_5-2,C-ILSO2_1-3,R1,780,290,5,58,156
+Pythium arrhenomanes,Set_5-2,C-ILSO2_1-3,R2,890,350,5,70,178
+Pythium arrhenomanes,Set_5-2,C-ILSO2_1-3,R3,560,160,5,32,112
+Phytopythium litorale,Set_5-2,C-KSSO2_1-25,R1,830,270,5,54,166
+Phytopythium litorale,Set_5-2,C-KSSO2_1-25,R2,820,290,5,58,164
+Phytopythium litorale,Set_5-2,C-KSSO2_1-25,R3,780,230,5,46,156
+Phytopythium mercuriale,Set_5-2,C-KSSO2_2-15,R1,640,190,5,38,128
+Phytopythium mercuriale,Set_5-2,C-KSSO2_2-15,R2,770,270,5,54,154
+Phytopythium mercuriale,Set_5-2,C-KSSO2_2-15,R3,870,270,5,54,174
+Pythium hypogynum,Set_5-2,C-KSSO2_6-21,R1,750,160,5,32,150
+Pythium hypogynum,Set_5-2,C-KSSO2_6-21,R2,760,300,5,60,152
+Pythium hypogynum,Set_5-2,C-KSSO2_6-21,R3,880,350,5,70,176
+Pythium hypogynum,Set_5-2,C-MISO2_4-1,R1,710,220,5,44,142
+Pythium hypogynum,Set_5-2,C-MISO2_4-1,R2,930,390,5,78,186
+Pythium hypogynum,Set_5-2,C-MISO2_4-1,R3,530,130,5,26,106
+Pythium arrhenomanes,Set_5-2,C-MISO2_4-10,R1,1010,380,5,76,202
+Pythium arrhenomanes,Set_5-2,C-MISO2_4-10,R2,770,260,5,52,154
+Pythium arrhenomanes,Set_5-2,C-MISO2_4-10,R3,720,310,5,62,144
+Pythium nagaii,Set_5-2,C-MNSO2_6-21,R1,830,220,5,44,166
+Pythium nagaii,Set_5-2,C-MNSO2_6-21,R2,850,250,5,50,170
+Pythium nagaii,Set_5-2,C-MNSO2_6-21,R3,860,300,5,60,172
+Pythium nagaii,Set_5-2,C-NDSO2_1-1,R1,780,270,5,54,156
+Pythium nagaii,Set_5-2,C-NDSO2_1-1,R2,910,270,5,54,182
+Pythium nagaii,Set_5-2,C-NDSO2_1-1,R3,840,250,5,50,168
+Pythium nagaii,Set_5-2,C-NDSO2_6-1,R1,820,270,5,54,164
+Pythium nagaii,Set_5-2,C-NDSO2_6-1,R2,750,260,5,52,150
+Pythium nagaii,Set_5-2,C-NDSO2_6-1,R3,570,230,5,46,114
+CONTROL,Set_5-2,CONTROL,R1,780,250,5,50,156
+CONTROL,Set_5-2,CONTROL,R2,910,330,5,66,182
+CONTROL,Set_5-2,CONTROL,R3,720,310,5,62,144
+Pythium aff. perplexum,Set_5-2,IASO_2-12.11,R1,890,340,5,68,178
+Pythium aff. perplexum,Set_5-2,IASO_2-12.11,R2,960,370,5,74,192
+Pythium aff. perplexum,Set_5-2,IASO_2-12.11,R3,630,230,5,46,126
+Pythium middletonii,Set_5-2,ILSO_6-58C,R1,760,270,5,54,152
+Pythium middletonii,Set_5-2,ILSO_6-58C,R2,800,260,5,52,160
+Pythium middletonii,Set_5-2,ILSO_6-58C,R3,800,300,5,60,160
+Pythium middletonii,Set_5-2,INSO_4-27,R1,850,310,5,62,170
+Pythium middletonii,Set_5-2,INSO_4-27,R2,850,310,5,62,170
+Pythium middletonii,Set_5-2,INSO_4-27,R3,700,300,5,60,140
+Pythium tardicrescens,Set_5-2,KSSO_5-18,R1,350,20,5,4,70
+Pythium tardicrescens,Set_5-2,KSSO_5-18,R2,630,100,5,20,126
+Pythium tardicrescens,Set_5-2,KSSO_5-18,R3,640,140,5,28,128
+Pythium tardicrescens,Set_5-2,MICO_5-13,R1,660,160,5,32,132
+Pythium tardicrescens,Set_5-2,MICO_5-13,R2,760,260,5,52,152
+Pythium tardicrescens,Set_5-2,MICO_5-13,R3,710,230,5,46,142
+Pythium tardicrescens,Set_5-2,MICO_6-11,R1,910,270,5,54,182
+Pythium tardicrescens,Set_5-2,MICO_6-11,R2,720,260,5,52,144
+Pythium tardicrescens,Set_5-2,MICO_6-11,R3,650,240,5,48,130
+Pythium aff. perplexum,Set_5-2,MNSO_2-28,R1,880,370,5,74,176
+Pythium aff. perplexum,Set_5-2,MNSO_2-28,R2,810,320,5,64,162
+Pythium aff. perplexum,Set_5-2,MNSO_2-28,R3,850,280,5,56,170
+Pythium kashmirense,Set_5-2,SDSO_7-31,R1,1050,320,5,64,210
+Pythium kashmirense,Set_5-2,SDSO_7-31,R2,830,330,5,66,166
+Pythium kashmirense,Set_5-2,SDSO_7-31,R3,830,290,5,58,166
+Phytopythium litorale,Set_5-2,V-IASO2_6-55,R1,880,270,5,54,176
+Phytopythium litorale,Set_5-2,V-IASO2_6-55,R2,810,280,5,56,162
+Phytopythium litorale,Set_5-2,V-IASO2_6-55,R3,960,300,5,60,192
+Pythium kashmirense,Set_5-2,V-ILSO2_4-64,R1,950,350,5,70,190
+Pythium kashmirense,Set_5-2,V-ILSO2_4-64,R2,810,250,5,50,162
+Pythium kashmirense,Set_5-2,V-ILSO2_4-64,R3,770,180,5,36,154
+Pythium aristosporum,Set_5-2,V-MICO2_5-8,R1,670,260,5,52,134
+Pythium aristosporum,Set_5-2,V-MICO2_5-8,R2,830,300,5,60,166
+Pythium aristosporum,Set_5-2,V-MICO2_5-8,R3,910,430,5,86,182
+Pythium aristosporum,Set_5-2,V-NDSO2_6-50,R1,800,270,5,54,160
+Pythium aristosporum,Set_5-2,V-NDSO2_6-50,R2,960,340,5,68,192
+Pythium aristosporum,Set_5-2,V-NDSO2_6-50,R3,700,310,5,62,140
+Phytopythium litorale,Set_5-2,V-NDSO2_6-55,R1,830,240,5,48,166
+Phytopythium litorale,Set_5-2,V-NDSO2_6-55,R2,740,250,5,50,148
+Phytopythium litorale,Set_5-2,V-NDSO2_6-55,R3,790,200,5,40,158
+Phytopythium mercuriale,Set_5-2,V-NESO2_5-41,R1,870,300,5,60,174
+Phytopythium mercuriale,Set_5-2,V-NESO2_5-41,R2,740,330,5,66,148
+Phytopythium mercuriale,Set_5-2,V-NESO2_5-41,R3,820,300,5,60,164
+Phytopythium mercuriale,Set_5-2,V-NESO2_5-43,R1,780,230,5,46,156
+Phytopythium mercuriale,Set_5-2,V-NESO2_5-43,R2,650,330,5,66,130
+Phytopythium mercuriale,Set_5-2,V-NESO2_5-43,R3,720,260,5,52,144
+Pythium kashmirense,Set_5-2,V-SDSO2_4-64,R1,850,350,5,70,170
+Pythium kashmirense,Set_5-2,V-SDSO2_4-64,R2,910,330,5,66,182
+Pythium kashmirense,Set_5-2,V-SDSO2_4-64,R3,770,290,5,58,154
+Pythium aff. perplexum,Set_5-2,WISO_4-39.1H,R1,520,170,5,34,104
+Pythium aff. perplexum,Set_5-2,WISO_4-39.1H,R2,580,170,5,34,116
+Pythium aff. perplexum,Set_5-2,WISO_4-39.1H,R3,760,240,5,48,152
+CONTROL_NR,Set_5-2,CONTROL_NR,R1,920,360,5,72,184
+CONTROL_NR,Set_5-2,CONTROL_NR,R2,980,360,5,72,196
+CONTROL_NR,Set_5-2,CONTROL_NR,R3,950,340,5,68,190
+Pythium pleroticum,Set_6-1,C-ARSO2_3-13,R1,1060,420,5,84,212
+Pythium pleroticum,Set_6-1,C-ARSO2_3-13,R2,860,320,5,64,172
+Pythium pleroticum,Set_6-1,C-ARSO2_3-13,R3,970,350,5,70,194
+Pythium amasculinum,Set_6-1,C-ARSO2_4-4,R1,840,320,5,64,168
+Pythium amasculinum,Set_6-1,C-ARSO2_4-4,R2,960,440,5,88,192
+Pythium amasculinum,Set_6-1,C-ARSO2_4-4,R3,830,340,5,68,166
+Pythium nunn,Set_6-1,C-INSO2_6-13,R1,760,280,5,56,152
+Pythium nunn,Set_6-1,C-INSO2_6-13,R2,940,310,5,62,188
+Pythium nunn,Set_6-1,C-INSO2_6-13,R3,830,330,5,66,166
+Pythium coloratum,Set_6-1,C-MISO2_2-12,R1,750,350,5,70,150
+Pythium coloratum,Set_6-1,C-MISO2_2-12,R2,940,420,5,84,188
+Pythium coloratum,Set_6-1,C-MISO2_2-12,R3,900,430,5,86,180
+Pythium coloratum,Set_6-1,C-MNSO2_3-2,R1,940,420,5,84,188
+Pythium coloratum,Set_6-1,C-MNSO2_3-2,R2,1050,480,5,96,210
+Pythium coloratum,Set_6-1,C-MNSO2_3-2,R3,760,290,5,58,152
+Pythium pachycaule,Set_6-1,C-MNSO2_4-4,R1,800,330,5,66,160
+Pythium pachycaule,Set_6-1,C-MNSO2_4-4,R2,820,430,5,86,164
+Pythium pachycaule,Set_6-1,C-MNSO2_4-4,R3,1040,430,5,86,208
+Pythium amasculinum,Set_6-1,C-MNSO2_5-12,R1,870,440,5,88,174
+Pythium amasculinum,Set_6-1,C-MNSO2_5-12,R2,800,210,5,42,160
+Pythium amasculinum,Set_6-1,C-MNSO2_5-12,R3,880,340,5,68,176
+Pythium pachycaule,Set_6-1,C-NESO2_5-17,R1,790,300,5,60,158
+Pythium pachycaule,Set_6-1,C-NESO2_5-17,R2,980,570,5,114,196
+Pythium pachycaule,Set_6-1,C-NESO2_5-17,R3,1070,510,5,102,214
+Pythium aphanidermatum,Set_6-1,C-NESO2_6-2,R1,730,210,5,42,146
+Pythium aphanidermatum,Set_6-1,C-NESO2_6-2,R2,830,370,5,74,166
+Pythium aphanidermatum,Set_6-1,C-NESO2_6-2,R3,720,270,5,54,144
+Pythium intermedium,Set_6-1,C-SDSO2_5-35,R1,1070,430,5,86,214
+Pythium intermedium,Set_6-1,C-SDSO2_5-35,R2,660,230,5,46,132
+Pythium intermedium,Set_6-1,C-SDSO2_5-35,R3,700,170,5,34,140
+Pythium orthogonon,Set_6-1,C-SDSO2_6-2,R1,910,430,5,86,182
+Pythium orthogonon,Set_6-1,C-SDSO2_6-2,R2,900,310,5,62,180
+Pythium orthogonon,Set_6-1,C-SDSO2_6-2,R3,740,380,5,76,148
+CONTROL,Set_6-1,CONTROL,R1,870,410,5,82,174
+CONTROL,Set_6-1,CONTROL,R2,960,400,5,80,192
+CONTROL,Set_6-1,CONTROL,R3,990,400,5,80,198
+Pythium conidiophorum,Set_6-1,IASO_10-37.7H,R1,740,160,5,32,148
+Pythium conidiophorum,Set_6-1,IASO_10-37.7H,R2,1060,480,5,96,212
+Pythium conidiophorum,Set_6-1,IASO_10-37.7H,R3,930,350,5,70,186
+Pythium pachycaule,Set_6-1,IASO_8-30.4RD,R1,1090,500,5,100,218
+Pythium pachycaule,Set_6-1,IASO_8-30.4RD,R2,1030,500,5,100,206
+Pythium pachycaule,Set_6-1,IASO_8-30.4RD,R3,730,340,5,68,146
+Pythium sp. balticum,Set_6-1,ILSO_5-1A,R1,830,290,5,58,166
+Pythium sp. balticum,Set_6-1,ILSO_5-1A,R2,850,400,5,80,170
+Pythium sp. balticum,Set_6-1,ILSO_5-1A,R3,740,230,5,46,148
+Pythium aphanidermatum,Set_6-1,ILSO_6-13C_1,R1,790,300,5,60,158
+Pythium aphanidermatum,Set_6-1,ILSO_6-13C_1,R2,790,420,5,84,158
+Pythium aphanidermatum,Set_6-1,ILSO_6-13C_1,R3,610,260,5,52,122
+Pythium sp. balticum,Set_6-1,INSO_2-47,R1,800,290,5,58,160
+Pythium sp. balticum,Set_6-1,INSO_2-47,R2,850,400,5,80,170
+Pythium sp. balticum,Set_6-1,INSO_2-47,R3,720,270,5,54,144
+Pythium pleroticum,Set_6-1,INSO_3-10,R1,940,340,5,68,188
+Pythium pleroticum,Set_6-1,INSO_3-10,R2,920,420,5,84,184
+Pythium pleroticum,Set_6-1,INSO_3-10,R3,870,380,5,76,174
+Pythium aphanidermatum,Set_6-1,INSO_4-33,R1,780,430,5,86,156
+Pythium aphanidermatum,Set_6-1,INSO_4-33,R2,740,320,5,64,148
+Pythium aphanidermatum,Set_6-1,INSO_4-33,R3,670,300,5,60,134
+Pythium amasculinum,Set_6-1,KSSO_4-31,R1,830,380,5,76,166
+Pythium amasculinum,Set_6-1,KSSO_4-31,R2,750,370,5,74,150
+Pythium amasculinum,Set_6-1,KSSO_4-31,R3,730,310,5,62,146
+Pythium orthogonon,Set_6-1,KSSO_5-44,R1,810,370,5,74,162
+Pythium orthogonon,Set_6-1,KSSO_5-44,R2,840,360,5,72,168
+Pythium orthogonon,Set_6-1,KSSO_5-44,R3,780,320,5,64,156
+Pythium sp. balticum,Set_6-1,MISO_10-33,R1,910,370,5,74,182
+Pythium sp. balticum,Set_6-1,MISO_10-33,R2,890,400,5,80,178
+Pythium sp. balticum,Set_6-1,MISO_10-33,R3,910,320,5,64,182
+Pythium pleroticum,Set_6-1,MNSO_2-10,R1,900,350,5,70,180
+Pythium pleroticum,Set_6-1,MNSO_2-10,R2,860,370,5,74,172
+Pythium pleroticum,Set_6-1,MNSO_2-10,R3,750,300,5,60,150
+Pythium orthogonon,Set_6-1,NDSO_4-17,R1,1020,400,5,80,204
+Pythium orthogonon,Set_6-1,NDSO_4-17,R2,860,390,5,78,172
+Pythium orthogonon,Set_6-1,NDSO_4-17,R3,910,400,5,80,182
+Pythium intermedium,Set_6-1,NDSO_5-35,R1,830,430,5,86,166
+Pythium intermedium,Set_6-1,NDSO_5-35,R2,860,230,5,46,172
+Pythium intermedium,Set_6-1,NDSO_5-35,R3,940,400,5,80,188
+Pythium conidiophorum,Set_6-1,V-ILSO2_5-55,R1,840,400,5,80,168
+Pythium conidiophorum,Set_6-1,V-ILSO2_5-55,R2,940,420,5,84,188
+Pythium conidiophorum,Set_6-1,V-ILSO2_5-55,R3,1110,400,5,80,222
+Pythium nunn,Set_6-1,V-KSSO2_6-7,R1,780,330,5,66,156
+Pythium nunn,Set_6-1,V-KSSO2_6-7,R2,810,280,5,56,162
+Pythium nunn,Set_6-1,V-KSSO2_6-7,R3,940,410,5,82,188
+Pythium intermedium,Set_6-1,V-MNSO2_6-60,R1,620,50,5,10,124
+Pythium intermedium,Set_6-1,V-MNSO2_6-60,R2,520,0,5,0,104
+Pythium intermedium,Set_6-1,V-MNSO2_6-60,R3,380,30,5,6,76
+Pythium conidiophorum,Set_6-1,V-NESO2_2-41,R1,710,380,5,76,142
+Pythium conidiophorum,Set_6-1,V-NESO2_2-41,R2,990,510,5,102,198
+Pythium conidiophorum,Set_6-1,V-NESO2_2-41,R3,960,440,5,88,192
+Pythium nunn,Set_6-1,V-SDSO2_4-65,R1,860,300,5,60,172
+Pythium nunn,Set_6-1,V-SDSO2_4-65,R2,800,420,5,84,160
+Pythium nunn,Set_6-1,V-SDSO2_4-65,R3,740,220,5,44,148
+CONTROL_NR,Set_6-1,CONTROL_NR,R1,900,500,5,100,180
+CONTROL_NR,Set_6-1,CONTROL_NR,R2,940,400,5,80,188
+CONTROL_NR,Set_6-1,CONTROL_NR,R3,1030,490,5,98,206
+Pythium pleroticum,Set_6-2,C-ARSO2_3-13,R1,810,290,5,58,162
+Pythium pleroticum,Set_6-2,C-ARSO2_3-13,R2,1080,360,5,72,216
+Pythium pleroticum,Set_6-2,C-ARSO2_3-13,R3,1010,260,5,52,202
+Pythium amasculinum,Set_6-2,C-ARSO2_4-4,R1,1070,380,5,76,214
+Pythium amasculinum,Set_6-2,C-ARSO2_4-4,R2,930,310,5,62,186
+Pythium amasculinum,Set_6-2,C-ARSO2_4-4,R3,1000,330,5,66,200
+Pythium nunn,Set_6-2,C-INSO2_6-13,R1,660,310,5,62,132
+Pythium nunn,Set_6-2,C-INSO2_6-13,R2,1050,320,5,64,210
+Pythium nunn,Set_6-2,C-INSO2_6-13,R3,890,260,5,52,178
+Pythium coloratum,Set_6-2,C-MISO2_2-12,R1,890,260,5,52,178
+Pythium coloratum,Set_6-2,C-MISO2_2-12,R2,680,180,5,36,136
+Pythium coloratum,Set_6-2,C-MISO2_2-12,R3,930,300,5,60,186
+Pythium coloratum,Set_6-2,C-MNSO2_3-2,R1,1020,300,5,60,204
+Pythium coloratum,Set_6-2,C-MNSO2_3-2,R2,870,320,5,64,174
+Pythium coloratum,Set_6-2,C-MNSO2_3-2,R3,750,180,5,36,150
+Pythium pachycaule,Set_6-2,C-MNSO2_4-4,R1,1040,410,5,82,208
+Pythium pachycaule,Set_6-2,C-MNSO2_4-4,R2,780,250,5,50,156
+Pythium pachycaule,Set_6-2,C-MNSO2_4-4,R3,750,230,5,46,150
+Pythium amasculinum,Set_6-2,C-MNSO2_5-12,R1,730,260,5,52,146
+Pythium amasculinum,Set_6-2,C-MNSO2_5-12,R2,700,260,5,52,140
+Pythium amasculinum,Set_6-2,C-MNSO2_5-12,R3,870,300,5,60,174
+Pythium pachycaule,Set_6-2,C-NESO2_5-17,R1,1100,330,5,66,220
+Pythium pachycaule,Set_6-2,C-NESO2_5-17,R2,1120,400,5,80,224
+Pythium pachycaule,Set_6-2,C-NESO2_5-17,R3,810,320,5,64,162
+Pythium aphanidermatum,Set_6-2,C-NESO2_6-2,R1,540,180,5,36,108
+Pythium aphanidermatum,Set_6-2,C-NESO2_6-2,R2,680,120,5,24,136
+Pythium aphanidermatum,Set_6-2,C-NESO2_6-2,R3,740,220,5,44,148
+Pythium intermedium,Set_6-2,C-SDSO2_5-35,R1,550,120,5,24,110
+Pythium intermedium,Set_6-2,C-SDSO2_5-35,R2,910,190,5,38,182
+Pythium intermedium,Set_6-2,C-SDSO2_5-35,R3,880,180,5,36,176
+Pythium orthogonon,Set_6-2,C-SDSO2_6-2,R1,840,360,5,72,168
+Pythium orthogonon,Set_6-2,C-SDSO2_6-2,R2,1000,320,5,64,200
+Pythium orthogonon,Set_6-2,C-SDSO2_6-2,R3,990,260,5,52,198
+CONTROL,Set_6-2,CONTROL,R1,910,280,5,56,182
+CONTROL,Set_6-2,CONTROL,R2,950,300,5,60,190
+CONTROL,Set_6-2,CONTROL,R3,820,240,5,48,164
+Pythium conidiophorum,Set_6-2,IASO_10-37.7H,R1,810,260,5,52,162
+Pythium conidiophorum,Set_6-2,IASO_10-37.7H,R2,820,230,5,46,164
+Pythium conidiophorum,Set_6-2,IASO_10-37.7H,R3,970,370,5,74,194
+Pythium pachycaule,Set_6-2,IASO_8-30.4RD,R1,670,260,5,52,134
+Pythium pachycaule,Set_6-2,IASO_8-30.4RD,R2,940,340,5,68,188
+Pythium pachycaule,Set_6-2,IASO_8-30.4RD,R3,930,340,5,68,186
+Pythium sp. balticum,Set_6-2,ILSO_5-1A,R1,690,180,5,36,138
+Pythium sp. balticum,Set_6-2,ILSO_5-1A,R2,870,350,5,70,174
+Pythium sp. balticum,Set_6-2,ILSO_5-1A,R3,820,270,5,54,164
+Pythium aphanidermatum,Set_6-2,ILSO_6-13C_1,R1,570,180,5,36,114
+Pythium aphanidermatum,Set_6-2,ILSO_6-13C_1,R2,920,340,5,68,184
+Pythium aphanidermatum,Set_6-2,ILSO_6-13C_1,R3,870,320,5,64,174
+Pythium sp. balticum,Set_6-2,INSO_2-47,R1,1010,340,5,68,202
+Pythium sp. balticum,Set_6-2,INSO_2-47,R2,790,310,5,62,158
+Pythium sp. balticum,Set_6-2,INSO_2-47,R3,1050,330,5,66,210
+Pythium pleroticum,Set_6-2,INSO_3-10,R1,740,310,5,62,148
+Pythium pleroticum,Set_6-2,INSO_3-10,R2,990,340,5,68,198
+Pythium pleroticum,Set_6-2,INSO_3-10,R3,750,300,5,60,150
+Pythium aphanidermatum,Set_6-2,INSO_4-33,R1,890,190,5,38,178
+Pythium aphanidermatum,Set_6-2,INSO_4-33,R2,930,310,5,62,186
+Pythium aphanidermatum,Set_6-2,INSO_4-33,R3,930,310,5,62,186
+Pythium amasculinum,Set_6-2,KSSO_4-31,R1,910,380,5,76,182
+Pythium amasculinum,Set_6-2,KSSO_4-31,R2,990,490,5,98,198
+Pythium amasculinum,Set_6-2,KSSO_4-31,R3,760,310,5,62,152
+Pythium orthogonon,Set_6-2,KSSO_5-44,R1,1080,410,5,82,216
+Pythium orthogonon,Set_6-2,KSSO_5-44,R2,900,280,5,56,180
+Pythium orthogonon,Set_6-2,KSSO_5-44,R3,940,320,5,64,188
+Pythium sp. balticum,Set_6-2,MISO_10-33,R1,910,350,5,70,182
+Pythium sp. balticum,Set_6-2,MISO_10-33,R2,700,260,5,52,140
+Pythium sp. balticum,Set_6-2,MISO_10-33,R3,990,390,5,78,198
+Pythium pleroticum,Set_6-2,MNSO_2-10,R1,910,290,5,58,182
+Pythium pleroticum,Set_6-2,MNSO_2-10,R2,850,320,5,64,170
+Pythium pleroticum,Set_6-2,MNSO_2-10,R3,680,260,5,52,136
+Pythium orthogonon,Set_6-2,NDSO_4-17,R1,1040,340,5,68,208
+Pythium orthogonon,Set_6-2,NDSO_4-17,R2,810,230,5,46,162
+Pythium orthogonon,Set_6-2,NDSO_4-17,R3,1000,420,5,84,200
+Pythium intermedium,Set_6-2,NDSO_5-35,R1,820,270,5,54,164
+Pythium intermedium,Set_6-2,NDSO_5-35,R2,800,250,5,50,160
+Pythium intermedium,Set_6-2,NDSO_5-35,R3,890,400,5,80,178
+Pythium conidiophorum,Set_6-2,V-ILSO2_5-55,R1,960,200,5,40,192
+Pythium conidiophorum,Set_6-2,V-ILSO2_5-55,R2,870,280,5,56,174
+Pythium conidiophorum,Set_6-2,V-ILSO2_5-55,R3,700,140,5,28,140
+Pythium nunn,Set_6-2,V-KSSO2_6-7,R1,860,360,5,72,172
+Pythium nunn,Set_6-2,V-KSSO2_6-7,R2,760,350,5,70,152
+Pythium nunn,Set_6-2,V-KSSO2_6-7,R3,850,360,5,72,170
+Pythium intermedium,Set_6-2,V-MNSO2_6-60,R1,130,0,5,0,26
+Pythium intermedium,Set_6-2,V-MNSO2_6-60,R2,100,0,5,0,20
+Pythium intermedium,Set_6-2,V-MNSO2_6-60,R3,360,10,5,2,72
+Pythium conidiophorum,Set_6-2,V-NESO2_2-41,R1,730,230,5,46,146
+Pythium conidiophorum,Set_6-2,V-NESO2_2-41,R2,970,300,5,60,194
+Pythium conidiophorum,Set_6-2,V-NESO2_2-41,R3,890,320,5,64,178
+Pythium nunn,Set_6-2,V-SDSO2_4-65,R1,880,170,5,34,176
+Pythium nunn,Set_6-2,V-SDSO2_4-65,R2,860,350,5,70,172
+Pythium nunn,Set_6-2,V-SDSO2_4-65,R3,950,270,5,54,190
+CONTROL_NR,Set_6-2,CONTROL_NR,R1,1230,470,5,94,246
+CONTROL_NR,Set_6-2,CONTROL_NR,R2,980,300,5,60,196
+CONTROL_NR,Set_6-2,CONTROL_NR,R3,1030,400,5,80,206
+Pythium hypogynum,Set_5-3,C-ARSO2_3-12,R1,900,240,5,48,180
+Pythium hypogynum,Set_5-3,C-ARSO2_3-12,R2,810,250,5,50,162
+Pythium hypogynum,Set_5-3,C-ARSO2_3-12,R3,800,280,5,56,160
+Pythium middletonii,Set_5-3,C-ARSO2_5-1,R1,840,250,5,50,168
+Pythium middletonii,Set_5-3,C-ARSO2_5-1,R2,850,220,5,44,170
+Pythium middletonii,Set_5-3,C-ARSO2_5-1,R3,800,300,5,60,160
+Pythium arrhenomanes,Set_5-3,C-ILSO2_1-1,R1,930,270,5,54,186
+Pythium arrhenomanes,Set_5-3,C-ILSO2_1-1,R2,790,270,5,54,158
+Pythium arrhenomanes,Set_5-3,C-ILSO2_1-1,R3,930,340,5,68,186
+Pythium aristosporum,Set_5-3,C-ILSO2_1-13,R1,780,290,5,58,156
+Pythium aristosporum,Set_5-3,C-ILSO2_1-13,R2,900,320,5,64,180
+Pythium aristosporum,Set_5-3,C-ILSO2_1-13,R3,750,270,5,54,150
+Pythium arrhenomanes,Set_5-3,C-ILSO2_1-3,R1,780,280,5,56,156
+Pythium arrhenomanes,Set_5-3,C-ILSO2_1-3,R2,740,280,5,56,148
+Pythium arrhenomanes,Set_5-3,C-ILSO2_1-3,R3,730,240,5,48,146
+Phytopythium litorale,Set_5-3,C-KSSO2_1-25,R1,730,220,5,44,146
+Phytopythium litorale,Set_5-3,C-KSSO2_1-25,R2,670,260,5,52,134
+Phytopythium litorale,Set_5-3,C-KSSO2_1-25,R3,800,300,5,60,160
+Phytopythium mercuriale,Set_5-3,C-KSSO2_2-15,R1,850,320,5,64,170
+Phytopythium mercuriale,Set_5-3,C-KSSO2_2-15,R2,850,250,5,50,170
+Phytopythium mercuriale,Set_5-3,C-KSSO2_2-15,R3,750,290,5,58,150
+Pythium hypogynum,Set_5-3,C-KSSO2_6-21,R1,690,320,5,64,138
+Pythium hypogynum,Set_5-3,C-KSSO2_6-21,R2,810,320,5,64,162
+Pythium hypogynum,Set_5-3,C-KSSO2_6-21,R3,750,280,5,56,150
+Pythium hypogynum,Set_5-3,C-MISO2_4-1,R1,830,220,5,44,166
+Pythium hypogynum,Set_5-3,C-MISO2_4-1,R2,770,320,5,64,154
+Pythium hypogynum,Set_5-3,C-MISO2_4-1,R3,760,270,5,54,152
+Pythium arrhenomanes,Set_5-3,C-MISO2_4-10,R1,860,260,5,52,172
+Pythium arrhenomanes,Set_5-3,C-MISO2_4-10,R2,1160,480,5,96,232
+Pythium arrhenomanes,Set_5-3,C-MISO2_4-10,R3,830,260,5,52,166
+Pythium nagaii,Set_5-3,C-MNSO2_6-21,R1,1010,410,5,82,202
+Pythium nagaii,Set_5-3,C-MNSO2_6-21,R2,860,280,5,56,172
+Pythium nagaii,Set_5-3,C-MNSO2_6-21,R3,830,340,5,68,166
+Pythium nagaii,Set_5-3,C-NDSO2_1-1,R1,990,320,5,64,198
+Pythium nagaii,Set_5-3,C-NDSO2_1-1,R2,920,290,5,58,184
+Pythium nagaii,Set_5-3,C-NDSO2_1-1,R3,970,350,5,70,194
+Pythium nagaii,Set_5-3,C-NDSO2_6-1,R1,840,250,5,50,168
+Pythium nagaii,Set_5-3,C-NDSO2_6-1,R2,730,260,5,52,146
+Pythium nagaii,Set_5-3,C-NDSO2_6-1,R3,910,290,5,58,182
+CONTROL,Set_5-3,CONTROL,R1,960,290,5,58,192
+CONTROL,Set_5-3,CONTROL,R2,800,340,5,68,160
+CONTROL,Set_5-3,CONTROL,R3,880,310,5,62,176
+Pythium aff. perplexum,Set_5-3,IASO_2-12.11,R1,780,270,5,54,156
+Pythium aff. perplexum,Set_5-3,IASO_2-12.11,R2,720,270,5,54,144
+Pythium aff. perplexum,Set_5-3,IASO_2-12.11,R3,920,310,5,62,184
+Pythium middletonii,Set_5-3,ILSO_6-58C,R1,910,350,5,70,182
+Pythium middletonii,Set_5-3,ILSO_6-58C,R2,770,270,5,54,154
+Pythium middletonii,Set_5-3,ILSO_6-58C,R3,940,370,5,74,188
+Pythium middletonii,Set_5-3,INSO_4-27,R1,800,340,5,68,160
+Pythium middletonii,Set_5-3,INSO_4-27,R2,780,280,5,56,156
+Pythium middletonii,Set_5-3,INSO_4-27,R3,830,290,5,58,166
+Pythium tardicrescens,Set_5-3,KSSO_5-18,R1,590,80,5,16,118
+Pythium tardicrescens,Set_5-3,KSSO_5-18,R2,840,190,5,38,168
+Pythium tardicrescens,Set_5-3,KSSO_5-18,R3,660,190,5,38,132
+Pythium tardicrescens,Set_5-3,MICO_5-13,R1,990,430,5,86,198
+Pythium tardicrescens,Set_5-3,MICO_5-13,R2,760,250,5,50,152
+Pythium tardicrescens,Set_5-3,MICO_5-13,R3,960,330,5,66,192
+Pythium tardicrescens,Set_5-3,MICO_6-11,R1,790,280,5,56,158
+Pythium tardicrescens,Set_5-3,MICO_6-11,R2,840,260,5,52,168
+Pythium tardicrescens,Set_5-3,MICO_6-11,R3,750,310,5,62,150
+Pythium aff. perplexum,Set_5-3,MNSO_2-28,R1,960,340,5,68,192
+Pythium aff. perplexum,Set_5-3,MNSO_2-28,R2,1100,400,5,80,220
+Pythium aff. perplexum,Set_5-3,MNSO_2-28,R3,1070,360,5,72,214
+Pythium kashmirense,Set_5-3,SDSO_7-31,R1,800,280,5,56,160
+Pythium kashmirense,Set_5-3,SDSO_7-31,R2,710,230,5,46,142
+Pythium kashmirense,Set_5-3,SDSO_7-31,R3,730,240,5,48,146
+Phytopythium litorale,Set_5-3,V-IASO2_6-55,R1,840,280,5,56,168
+Phytopythium litorale,Set_5-3,V-IASO2_6-55,R2,920,370,5,74,184
+Phytopythium litorale,Set_5-3,V-IASO2_6-55,R3,910,310,5,62,182
+Pythium kashmirense,Set_5-3,V-ILSO2_4-64,R1,860,390,5,78,172
+Pythium kashmirense,Set_5-3,V-ILSO2_4-64,R2,750,200,5,40,150
+Pythium kashmirense,Set_5-3,V-ILSO2_4-64,R3,950,380,5,76,190
+Pythium aristosporum,Set_5-3,V-MICO2_5-8,R1,840,240,5,48,168
+Pythium aristosporum,Set_5-3,V-MICO2_5-8,R2,850,280,5,56,170
+Pythium aristosporum,Set_5-3,V-MICO2_5-8,R3,700,280,5,56,140
+Pythium aristosporum,Set_5-3,V-NDSO2_6-50,R1,950,470,5,94,190
+Pythium aristosporum,Set_5-3,V-NDSO2_6-50,R2,900,350,5,70,180
+Pythium aristosporum,Set_5-3,V-NDSO2_6-50,R3,940,350,5,70,188
+Phytopythium litorale,Set_5-3,V-NDSO2_6-55,R1,890,230,5,46,178
+Phytopythium litorale,Set_5-3,V-NDSO2_6-55,R2,790,320,5,64,158
+Phytopythium litorale,Set_5-3,V-NDSO2_6-55,R3,730,300,5,60,146
+Phytopythium mercuriale,Set_5-3,V-NESO2_5-41,R1,720,310,5,62,144
+Phytopythium mercuriale,Set_5-3,V-NESO2_5-41,R2,770,340,5,68,154
+Phytopythium mercuriale,Set_5-3,V-NESO2_5-41,R3,660,290,5,58,132
+Phytopythium mercuriale,Set_5-3,V-NESO2_5-43,R1,820,270,5,54,164
+Phytopythium mercuriale,Set_5-3,V-NESO2_5-43,R2,780,250,5,50,156
+Phytopythium mercuriale,Set_5-3,V-NESO2_5-43,R3,1030,360,5,72,206
+Pythium kashmirense,Set_5-3,V-SDSO2_4-64,R1,770,340,5,68,154
+Pythium kashmirense,Set_5-3,V-SDSO2_4-64,R2,570,190,5,38,114
+Pythium kashmirense,Set_5-3,V-SDSO2_4-64,R3,710,270,5,54,142
+Pythium aff. perplexum,Set_5-3,WISO_4-39.1H,R1,740,180,5,36,148
+Pythium aff. perplexum,Set_5-3,WISO_4-39.1H,R2,680,170,5,34,136
+Pythium aff. perplexum,Set_5-3,WISO_4-39.1H,R3,510,120,5,24,102
+CONTROL_NR,Set_5-3,CONTROL_NR,R1,1060,370,5,74,212
+CONTROL_NR,Set_5-3,CONTROL_NR,R2,1060,380,5,76,212
+CONTROL_NR,Set_5-3,CONTROL_NR,R3,950,290,5,58,190
+Pythium pleroticum,Set_6-3,C-ARSO2_3-13,R1,740,350,5,70,148
+Pythium pleroticum,Set_6-3,C-ARSO2_3-13,R2,890,330,5,66,178
+Pythium pleroticum,Set_6-3,C-ARSO2_3-13,R3,860,340,5,68,172
+Pythium amasculinum,Set_6-3,C-ARSO2_4-4,R1,790,340,5,68,158
+Pythium amasculinum,Set_6-3,C-ARSO2_4-4,R2,890,290,5,58,178
+Pythium amasculinum,Set_6-3,C-ARSO2_4-4,R3,660,250,5,50,132
+Pythium coloratum,Set_6-3,C-ILSO2_5-22,R1,740,210,5,42,148
+Pythium coloratum,Set_6-3,C-ILSO2_5-22,R2,750,250,5,50,150
+Pythium coloratum,Set_6-3,C-ILSO2_5-22,R3,720,240,5,48,144
+Pythium nunn,Set_6-3,C-INSO2_6-13,R1,930,430,5,86,186
+Pythium nunn,Set_6-3,C-INSO2_6-13,R2,930,280,5,56,186
+Pythium nunn,Set_6-3,C-INSO2_6-13,R3,870,290,5,58,174
+Pythium coloratum,Set_6-3,C-MISO2_2-12,R1,890,300,5,60,178
+Pythium coloratum,Set_6-3,C-MISO2_2-12,R2,790,330,5,66,158
+Pythium coloratum,Set_6-3,C-MISO2_2-12,R3,750,270,5,54,150
+Pythium coloratum,Set_6-3,C-MNSO2_3-2,R1,980,330,5,66,196
+Pythium coloratum,Set_6-3,C-MNSO2_3-2,R2,930,400,5,80,186
+Pythium coloratum,Set_6-3,C-MNSO2_3-2,R3,940,340,5,68,188
+Pythium pachycaule,Set_6-3,C-MNSO2_4-4,R1,870,340,5,68,174
+Pythium pachycaule,Set_6-3,C-MNSO2_4-4,R2,860,360,5,72,172
+Pythium pachycaule,Set_6-3,C-MNSO2_4-4,R3,730,300,5,60,146
+Pythium amasculinum,Set_6-3,C-MNSO2_5-12,R1,680,250,5,50,136
+Pythium amasculinum,Set_6-3,C-MNSO2_5-12,R2,1040,380,5,76,208
+Pythium amasculinum,Set_6-3,C-MNSO2_5-12,R3,910,360,5,72,182
+Pythium pachycaule,Set_6-3,C-NESO2_5-17,R1,840,350,5,70,168
+Pythium pachycaule,Set_6-3,C-NESO2_5-17,R2,750,260,5,52,150
+Pythium pachycaule,Set_6-3,C-NESO2_5-17,R3,930,410,5,82,186
+Pythium aphanidermatum,Set_6-3,C-NESO2_6-2,R1,770,280,5,56,154
+Pythium aphanidermatum,Set_6-3,C-NESO2_6-2,R2,910,350,5,70,182
+Pythium aphanidermatum,Set_6-3,C-NESO2_6-2,R3,890,370,5,74,178
+Pythium intermedium,Set_6-3,C-SDSO2_5-35,R1,750,350,5,70,150
+Pythium intermedium,Set_6-3,C-SDSO2_5-35,R2,820,330,5,66,164
+Pythium intermedium,Set_6-3,C-SDSO2_5-35,R3,900,450,5,90,180
+Pythium orthogonon,Set_6-3,C-SDSO2_6-2,R1,910,310,5,62,182
+Pythium orthogonon,Set_6-3,C-SDSO2_6-2,R2,480,150,5,30,96
+Pythium orthogonon,Set_6-3,C-SDSO2_6-2,R3,740,170,5,34,148
+CONTROL,Set_6-3,CONTROL,R1,870,420,5,84,174
+CONTROL,Set_6-3,CONTROL,R2,910,320,5,64,182
+CONTROL,Set_6-3,CONTROL,R3,980,360,5,72,196
+Pythium conidiophorum,Set_6-3,IASO_10-37.7H,R1,910,220,5,44,182
+Pythium conidiophorum,Set_6-3,IASO_10-37.7H,R2,700,270,5,54,140
+Pythium conidiophorum,Set_6-3,IASO_10-37.7H,R3,760,310,5,62,152
+Pythium pachycaule,Set_6-3,IASO_8-30.4RD,R1,700,270,5,54,140
+Pythium pachycaule,Set_6-3,IASO_8-30.4RD,R2,520,110,5,22,104
+Pythium pachycaule,Set_6-3,IASO_8-30.4RD,R3,970,420,5,84,194
+Pythium sp. balticum,Set_6-3,ILSO_5-1A,R1,670,230,5,46,134
+Pythium sp. balticum,Set_6-3,ILSO_5-1A,R2,800,300,5,60,160
+Pythium sp. balticum,Set_6-3,ILSO_5-1A,R3,540,300,5,60,108
+Pythium aphanidermatum,Set_6-3,ILSO_6-13C_1,R1,540,220,5,44,108
+Pythium aphanidermatum,Set_6-3,ILSO_6-13C_1,R2,720,260,5,52,144
+Pythium aphanidermatum,Set_6-3,ILSO_6-13C_1,R3,560,200,5,40,112
+Pythium sp. balticum,Set_6-3,INSO_2-47,R1,680,290,5,58,136
+Pythium sp. balticum,Set_6-3,INSO_2-47,R2,800,360,5,72,160
+Pythium sp. balticum,Set_6-3,INSO_2-47,R3,740,330,5,66,148
+Pythium pleroticum,Set_6-3,INSO_3-10,R1,730,360,5,72,146
+Pythium pleroticum,Set_6-3,INSO_3-10,R2,910,320,5,64,182
+Pythium pleroticum,Set_6-3,INSO_3-10,R3,920,350,5,70,184
+Pythium aphanidermatum,Set_6-3,INSO_4-33,R1,730,310,5,62,146
+Pythium aphanidermatum,Set_6-3,INSO_4-33,R2,750,320,5,64,150
+Pythium aphanidermatum,Set_6-3,INSO_4-33,R3,650,300,5,60,130
+Pythium amasculinum,Set_6-3,KSSO_4-31,R1,880,390,5,78,176
+Pythium amasculinum,Set_6-3,KSSO_4-31,R2,660,280,5,56,132
+Pythium amasculinum,Set_6-3,KSSO_4-31,R3,580,280,5,56,116
+Pythium orthogonon,Set_6-3,KSSO_5-44,R1,700,290,5,58,140
+Pythium orthogonon,Set_6-3,KSSO_5-44,R2,720,290,5,58,144
+Pythium orthogonon,Set_6-3,KSSO_5-44,R3,840,400,5,80,168
+Pythium sp. balticum,Set_6-3,MISO_10-33,R1,890,380,5,76,178
+Pythium sp. balticum,Set_6-3,MISO_10-33,R2,700,340,5,68,140
+Pythium sp. balticum,Set_6-3,MISO_10-33,R3,710,340,5,68,142
+Pythium pleroticum,Set_6-3,MNSO_2-10,R1,830,330,5,66,166
+Pythium pleroticum,Set_6-3,MNSO_2-10,R2,660,300,5,60,132
+Pythium pleroticum,Set_6-3,MNSO_2-10,R3,870,320,5,64,174
+Pythium orthogonon,Set_6-3,NDSO_4-17,R1,790,250,5,50,158
+Pythium orthogonon,Set_6-3,NDSO_4-17,R2,730,320,5,64,146
+Pythium orthogonon,Set_6-3,NDSO_4-17,R3,760,270,5,54,152
+Pythium intermedium,Set_6-3,NDSO_5-35,R1,780,270,5,54,156
+Pythium intermedium,Set_6-3,NDSO_5-35,R2,610,210,5,42,122
+Pythium intermedium,Set_6-3,NDSO_5-35,R3,710,350,5,70,142
+Pythium conidiophorum,Set_6-3,V-ILSO2_5-55,R1,720,270,5,54,144
+Pythium conidiophorum,Set_6-3,V-ILSO2_5-55,R2,880,280,5,56,176
+Pythium conidiophorum,Set_6-3,V-ILSO2_5-55,R3,740,190,5,38,148
+Pythium nunn,Set_6-3,V-KSSO2_6-7,R1,730,230,5,46,146
+Pythium nunn,Set_6-3,V-KSSO2_6-7,R2,800,330,5,66,160
+Pythium nunn,Set_6-3,V-KSSO2_6-7,R3,960,350,5,70,192
+Pythium intermedium,Set_6-3,V-MNSO2_6-60,R1,370,100,5,20,74
+Pythium intermedium,Set_6-3,V-MNSO2_6-60,R2,500,120,5,24,100
+Pythium intermedium,Set_6-3,V-MNSO2_6-60,R3,470,80,5,16,94
+Pythium conidiophorum,Set_6-3,V-NESO2_2-41,R1,390,170,5,34,78
+Pythium conidiophorum,Set_6-3,V-NESO2_2-41,R2,600,200,5,40,120
+Pythium conidiophorum,Set_6-3,V-NESO2_2-41,R3,740,250,5,50,148
+Pythium nunn,Set_6-3,V-SDSO2_4-65,R1,690,280,5,56,138
+Pythium nunn,Set_6-3,V-SDSO2_4-65,R2,590,290,5,58,118
+Pythium nunn,Set_6-3,V-SDSO2_4-65,R3,690,200,5,40,138
+CONTROL_NR,Set_6-3,CONTROL_NR,R1,860,350,5,70,172
+CONTROL_NR,Set_6-3,CONTROL_NR,R2,900,440,5,88,180
+CONTROL_NR,Set_6-3,CONTROL_NR,R3,800,390,5,78,160
+Pythium coloratum,Set_6-1,C-ILSO2_5-22,R1,570,140,5,28,114
+Pythium coloratum,Set_6-1,C-ILSO2_5-22,R2,390,90,5,18,78
+Pythium coloratum,Set_6-1,C-ILSO2_5-22,R3,610,180,5,36,122
+Pythium coloratum,Set_6-2,C-ILSO2_5-22,R1,730,280,5,56,146
+Pythium coloratum,Set_6-2,C-ILSO2_5-22,R2,600,180,5,36,120
+Pythium coloratum,Set_6-2,C-ILSO2_5-22,R3,770,170,5,34,154
+Pythium spinosum,Set_7-1,AR_96.S.2.1.A,R1,720,230,5,46,144
+Pythium spinosum,Set_7-1,AR_96.S.2.1.A,R2,760,190,5,38,152
+Pythium spinosum,Set_7-1,AR_96.S.2.1.A,R3,770,240,5,48,154
+Pythium paroecandrum,Set_7-1,AR.171_S.1.2.A,R1,690,290,5,58,138
+Pythium paroecandrum,Set_7-1,AR.171_S.1.2.A,R2,620,210,5,42,124
+Pythium paroecandrum,Set_7-1,AR.171_S.1.2.A,R3,860,370,5,74,172
+Pythium paroecandrum,Set_7-1,C-ARSO2_5-15,R1,960,330,5,66,192
+Pythium paroecandrum,Set_7-1,C-ARSO2_5-15,R2,720,220,5,44,144
+Pythium paroecandrum,Set_7-1,C-ARSO2_5-15,R3,900,300,5,60,180
+Pythium rostratifingens,Set_7-1,C-IASO2_1-13,R1,720,220,5,44,144
+Pythium rostratifingens,Set_7-1,C-IASO2_1-13,R2,790,330,5,66,158
+Pythium rostratifingens,Set_7-1,C-IASO2_1-13,R3,770,360,5,72,154
+Pythium ultimum,Set_7-1,C-ILSO2_3-25,R1,590,50,5,10,118
+Pythium ultimum,Set_7-1,C-ILSO2_3-25,R2,380,10,5,2,76
+Pythium ultimum,Set_7-1,C-ILSO2_3-25,R3,630,50,5,10,126
+Pythium inflatum,Set_7-1,C-ILSO2_5-5,R1,860,340,5,68,172
+Pythium inflatum,Set_7-1,C-ILSO2_5-5,R2,820,340,5,68,164
+Pythium inflatum,Set_7-1,C-ILSO2_5-5,R3,850,300,5,60,170
+Pythium inflatum,Set_7-1,C-KSSO2_1-18,R1,890,260,5,52,178
+Pythium inflatum,Set_7-1,C-KSSO2_1-18,R2,950,300,5,60,190
+Pythium inflatum,Set_7-1,C-KSSO2_1-18,R3,820,240,5,48,164
+Pythium ultimum,Set_7-1,C-KSSO2_3-8,R1,510,10,5,2,102
+Pythium ultimum,Set_7-1,C-KSSO2_3-8,R2,580,20,5,4,116
+Pythium ultimum,Set_7-1,C-KSSO2_3-8,R3,330,0,5,0,66
+Pythium acanthicum,Set_7-1,C-KSSO2_5-11,R1,690,210,5,42,138
+Pythium acanthicum,Set_7-1,C-KSSO2_5-11,R2,890,290,5,58,178
+Pythium acanthicum,Set_7-1,C-KSSO2_5-11,R3,870,330,5,66,174
+Pythium nodosum,Set_7-1,C-MICO2_3-24,R1,820,280,5,56,164
+Pythium nodosum,Set_7-1,C-MICO2_3-24,R2,750,310,5,62,150
+Pythium nodosum,Set_7-1,C-MICO2_3-24,R3,950,350,5,70,190
+Pythium rostratifingens,Set_7-1,C-MISO2_1-14,R1,1060,370,5,74,212
+Pythium rostratifingens,Set_7-1,C-MISO2_1-14,R2,1000,290,5,58,200
+Pythium rostratifingens,Set_7-1,C-MISO2_1-14,R3,820,260,5,52,164
+Pythium acanthicum,Set_7-1,C-MISO2_4-16,R1,830,310,5,62,166
+Pythium acanthicum,Set_7-1,C-MISO2_4-16,R2,840,300,5,60,168
+Pythium acanthicum,Set_7-1,C-MISO2_4-16,R3,820,310,5,62,164
+Pythium ultimum,Set_7-1,C-MNSO2_1-20,R1,510,80,5,16,102
+Pythium ultimum,Set_7-1,C-MNSO2_1-20,R2,650,120,5,24,130
+Pythium ultimum,Set_7-1,C-MNSO2_1-20,R3,430,50,5,10,86
+Pythium perplexum,Set_7-1,C-NDSO2_1-11,R1,790,320,5,64,158
+Pythium perplexum,Set_7-1,C-NDSO2_1-11,R2,1010,310,5,62,202
+Pythium perplexum,Set_7-1,C-NDSO2_1-11,R3,870,300,5,60,174
+Pythium rostratifingens,Set_7-1,C-NESO2_6-5,R1,890,330,5,66,178
+Pythium rostratifingens,Set_7-1,C-NESO2_6-5,R2,730,280,5,56,146
+Pythium rostratifingens,Set_7-1,C-NESO2_6-5,R3,860,250,5,50,172
+CONTROL,Set_7-1,CONTROL,R1,740,290,5,58,148
+CONTROL,Set_7-1,CONTROL,R2,760,310,5,62,152
+CONTROL,Set_7-1,CONTROL,R3,840,340,5,68,168
+Pythium spinosum,Set_7-1,INSO_3-43,R1,830,230,5,46,166
+Pythium spinosum,Set_7-1,INSO_3-43,R2,750,290,5,58,150
+Pythium spinosum,Set_7-1,INSO_3-43,R3,950,270,5,54,190
+Pythium paroecandrum,Set_7-1,INSO_3-51,R1,830,300,5,60,166
+Pythium paroecandrum,Set_7-1,INSO_3-51,R2,850,190,5,38,170
+Pythium paroecandrum,Set_7-1,INSO_3-51,R3,820,240,5,48,164
+Pythium spinosum,Set_7-1,INSO_4-40,R1,710,230,5,46,142
+Pythium spinosum,Set_7-1,INSO_4-40,R2,930,310,5,62,186
+Pythium spinosum,Set_7-1,INSO_4-40,R3,820,320,5,64,164
+Pythium acanthicum,Set_7-1,NDSO_L_4-9,R1,690,160,5,32,138
+Pythium acanthicum,Set_7-1,NDSO_L_4-9,R2,790,290,5,58,158
+Pythium acanthicum,Set_7-1,NDSO_L_4-9,R3,830,350,5,70,166
+Pythium perplexum,Set_7-1,NESO_4-29,R1,780,280,5,56,156
+Pythium perplexum,Set_7-1,NESO_4-29,R2,770,280,5,56,154
+Pythium perplexum,Set_7-1,NESO_4-29,R3,780,360,5,72,156
+Pythium nodosum,Set_7-1,V-INSO2_2-52,R1,900,340,5,68,180
+Pythium nodosum,Set_7-1,V-INSO2_2-52,R2,770,220,5,44,154
+Pythium nodosum,Set_7-1,V-INSO2_2-52,R3,670,290,5,58,134
+Pythium perplexum,Set_7-1,V-MISO2_2-57,R1,670,260,5,52,134
+Pythium perplexum,Set_7-1,V-MISO2_2-57,R2,810,290,5,58,162
+Pythium perplexum,Set_7-1,V-MISO2_2-57,R3,720,290,5,58,144
+Pythium inflatum,Set_7-1,V-MNSO2_3-63,R1,670,210,5,42,134
+Pythium inflatum,Set_7-1,V-MNSO2_3-63,R2,920,300,5,60,184
+Pythium inflatum,Set_7-1,V-MNSO2_3-63,R3,890,260,5,52,178
+Pythium nodosum,Set_7-1,V-NESO2_6-56,R1,820,270,5,54,164
+Pythium nodosum,Set_7-1,V-NESO2_6-56,R2,780,310,5,62,156
+Pythium nodosum,Set_7-1,V-NESO2_6-56,R3,810,250,5,50,162
+CONTROL_NR,Set_7-1,CONTROL_NR,R1,870,430,5,86,174
+CONTROL_NR,Set_7-1,CONTROL_NR,R2,780,310,5,62,156
+CONTROL_NR,Set_7-1,CONTROL_NR,R3,800,240,5,48,160
+Pythium spinosum,Set_7-2,AR_96.S.2.1.A,R1,790,220,5,44,158
+Pythium spinosum,Set_7-2,AR_96.S.2.1.A,R2,850,170,5,34,170
+Pythium spinosum,Set_7-2,AR_96.S.2.1.A,R3,820,290,5,58,164
+Pythium paroecandrum,Set_7-2,AR.171_S.1.2.A,R1,880,310,5,62,176
+Pythium paroecandrum,Set_7-2,AR.171_S.1.2.A,R2,820,280,5,56,164
+Pythium paroecandrum,Set_7-2,AR.171_S.1.2.A,R3,920,390,5,78,184
+Pythium paroecandrum,Set_7-2,C-ARSO2_5-15,R1,950,310,5,62,190
+Pythium paroecandrum,Set_7-2,C-ARSO2_5-15,R2,720,290,5,58,144
+Pythium paroecandrum,Set_7-2,C-ARSO2_5-15,R3,950,360,5,72,190
+Pythium rostratifingens,Set_7-2,C-IASO2_1-13,R1,1100,450,5,90,220
+Pythium rostratifingens,Set_7-2,C-IASO2_1-13,R2,700,180,5,36,140
+Pythium rostratifingens,Set_7-2,C-IASO2_1-13,R3,940,370,5,74,188
+Pythium ultimum,Set_7-2,C-ILSO2_3-25,R1,400,0,5,0,80
+Pythium ultimum,Set_7-2,C-ILSO2_3-25,R2,240,0,5,0,48
+Pythium ultimum,Set_7-2,C-ILSO2_3-25,R3,230,0,5,0,46
+Pythium inflatum,Set_7-2,C-ILSO2_5-5,R1,870,290,5,58,174
+Pythium inflatum,Set_7-2,C-ILSO2_5-5,R2,950,320,5,64,190
+Pythium inflatum,Set_7-2,C-ILSO2_5-5,R3,770,260,5,52,154
+Pythium inflatum,Set_7-2,C-KSSO2_1-18,R1,890,340,5,68,178
+Pythium inflatum,Set_7-2,C-KSSO2_1-18,R2,810,260,5,52,162
+Pythium inflatum,Set_7-2,C-KSSO2_1-18,R3,970,350,5,70,194
+Pythium ultimum,Set_7-2,C-KSSO2_3-8,R1,280,40,5,8,56
+Pythium ultimum,Set_7-2,C-KSSO2_3-8,R2,140,0,5,0,28
+Pythium ultimum,Set_7-2,C-KSSO2_3-8,R3,500,10,5,2,100
+Pythium acanthicum,Set_7-2,C-KSSO2_5-11,R1,970,390,5,78,194
+Pythium acanthicum,Set_7-2,C-KSSO2_5-11,R2,870,280,5,56,174
+Pythium acanthicum,Set_7-2,C-KSSO2_5-11,R3,880,330,5,66,176
+Pythium nodosum,Set_7-2,C-MICO2_3-24,R1,840,320,5,64,168
+Pythium nodosum,Set_7-2,C-MICO2_3-24,R2,750,290,5,58,150
+Pythium nodosum,Set_7-2,C-MICO2_3-24,R3,700,240,5,48,140
+Pythium rostratifingens,Set_7-2,C-MISO2_1-14,R1,880,380,5,76,176
+Pythium rostratifingens,Set_7-2,C-MISO2_1-14,R2,900,320,5,64,180
+Pythium rostratifingens,Set_7-2,C-MISO2_1-14,R3,900,320,5,64,180
+Pythium acanthicum,Set_7-2,C-MISO2_4-16,R1,840,310,5,62,168
+Pythium acanthicum,Set_7-2,C-MISO2_4-16,R2,1070,400,5,80,214
+Pythium acanthicum,Set_7-2,C-MISO2_4-16,R3,680,240,5,48,136
+Pythium ultimum,Set_7-2,C-MNSO2_1-20,R1,520,90,5,18,104
+Pythium ultimum,Set_7-2,C-MNSO2_1-20,R2,410,30,5,6,82
+Pythium ultimum,Set_7-2,C-MNSO2_1-20,R3,490,0,5,0,98
+Pythium perplexum,Set_7-2,C-NDSO2_1-11,R1,890,350,5,70,178
+Pythium perplexum,Set_7-2,C-NDSO2_1-11,R2,980,420,5,84,196
+Pythium perplexum,Set_7-2,C-NDSO2_1-11,R3,940,360,5,72,188
+Pythium rostratifingens,Set_7-2,C-NESO2_6-5,R1,810,330,5,66,162
+Pythium rostratifingens,Set_7-2,C-NESO2_6-5,R2,870,290,5,58,174
+Pythium rostratifingens,Set_7-2,C-NESO2_6-5,R3,790,270,5,54,158
+CONTROL,Set_7-2,CONTROL,R1,970,330,5,66,194
+CONTROL,Set_7-2,CONTROL,R2,920,360,5,72,184
+CONTROL,Set_7-2,CONTROL,R3,980,340,5,68,196
+Pythium spinosum,Set_7-2,INSO_3-43,R1,680,210,5,42,136
+Pythium spinosum,Set_7-2,INSO_3-43,R2,870,360,5,72,174
+Pythium spinosum,Set_7-2,INSO_3-43,R3,940,340,5,68,188
+Pythium paroecandrum,Set_7-2,INSO_3-51,R1,970,390,5,78,194
+Pythium paroecandrum,Set_7-2,INSO_3-51,R2,880,350,5,70,176
+Pythium paroecandrum,Set_7-2,INSO_3-51,R3,850,350,5,70,170
+Pythium spinosum,Set_7-2,INSO_4-40,R1,970,430,5,86,194
+Pythium spinosum,Set_7-2,INSO_4-40,R2,850,320,5,64,170
+Pythium spinosum,Set_7-2,INSO_4-40,R3,840,310,5,62,168
+Pythium acanthicum,Set_7-2,NDSO_L_4-9,R1,820,310,5,62,164
+Pythium acanthicum,Set_7-2,NDSO_L_4-9,R2,640,220,5,44,128
+Pythium acanthicum,Set_7-2,NDSO_L_4-9,R3,810,300,5,60,162
+Pythium perplexum,Set_7-2,NESO_4-29,R1,750,280,5,56,150
+Pythium perplexum,Set_7-2,NESO_4-29,R2,1010,420,5,84,202
+Pythium perplexum,Set_7-2,NESO_4-29,R3,900,340,5,68,180
+Pythium nodosum,Set_7-2,V-INSO2_2-52,R1,870,330,5,66,174
+Pythium nodosum,Set_7-2,V-INSO2_2-52,R2,780,350,5,70,156
+Pythium nodosum,Set_7-2,V-INSO2_2-52,R3,910,360,5,72,182
+Pythium perplexum,Set_7-2,V-MISO2_2-57,R1,950,340,5,68,190
+Pythium perplexum,Set_7-2,V-MISO2_2-57,R2,930,350,5,70,186
+Pythium perplexum,Set_7-2,V-MISO2_2-57,R3,830,360,5,72,166
+Pythium inflatum,Set_7-2,V-MNSO2_3-63,R1,800,210,5,42,160
+Pythium inflatum,Set_7-2,V-MNSO2_3-63,R2,890,280,5,56,178
+Pythium inflatum,Set_7-2,V-MNSO2_3-63,R3,890,300,5,60,178
+Pythium nodosum,Set_7-2,V-NESO2_6-56,R1,920,340,5,68,184
+Pythium nodosum,Set_7-2,V-NESO2_6-56,R2,930,360,5,72,186
+Pythium nodosum,Set_7-2,V-NESO2_6-56,R3,830,360,5,72,166
+CONTROL_NR,Set_7-2,CONTROL_NR,R1,860,320,5,64,172
+CONTROL_NR,Set_7-2,CONTROL_NR,R2,970,340,5,68,194
+CONTROL_NR,Set_7-2,CONTROL_NR,R3,820,290,5,58,164
+Pythium spinosum,Set_7-3,AR_96.S.2.1.A,R1,560,210,5,42,112
+Pythium spinosum,Set_7-3,AR_96.S.2.1.A,R2,840,480,5,96,168
+Pythium spinosum,Set_7-3,AR_96.S.2.1.A,R3,780,350,5,70,156
+Pythium paroecandrum,Set_7-3,AR.171_S.1.2.A,R1,970,450,5,90,194
+Pythium paroecandrum,Set_7-3,AR.171_S.1.2.A,R2,800,390,5,78,160
+Pythium paroecandrum,Set_7-3,AR.171_S.1.2.A,R3,870,440,5,88,174
+Pythium paroecandrum,Set_7-3,C-ARSO2_5-15,R1,830,370,5,74,166
+Pythium paroecandrum,Set_7-3,C-ARSO2_5-15,R2,820,400,5,80,164
+Pythium paroecandrum,Set_7-3,C-ARSO2_5-15,R3,780,370,5,74,156
+Pythium rostratifingens,Set_7-3,C-IASO2_1-13,R1,870,380,5,76,174
+Pythium rostratifingens,Set_7-3,C-IASO2_1-13,R2,1170,490,5,98,234
+Pythium rostratifingens,Set_7-3,C-IASO2_1-13,R3,810,350,5,70,162
+Pythium ultimum,Set_7-3,C-ILSO2_3-25,R1,390,0,5,0,78
+Pythium ultimum,Set_7-3,C-ILSO2_3-25,R2,550,110,5,22,110
+Pythium ultimum,Set_7-3,C-ILSO2_3-25,R3,380,0,5,0,76
+Pythium inflatum,Set_7-3,C-ILSO2_5-5,R1,880,440,5,88,176
+Pythium inflatum,Set_7-3,C-ILSO2_5-5,R2,790,300,5,60,158
+Pythium inflatum,Set_7-3,C-ILSO2_5-5,R3,980,480,5,96,196
+Pythium inflatum,Set_7-3,C-KSSO2_1-18,R1,940,390,5,78,188
+Pythium inflatum,Set_7-3,C-KSSO2_1-18,R2,820,210,5,42,164
+Pythium inflatum,Set_7-3,C-KSSO2_1-18,R3,1030,380,5,76,206
+Pythium ultimum,Set_7-3,C-KSSO2_3-8,R1,280,0,5,0,56
+Pythium ultimum,Set_7-3,C-KSSO2_3-8,R2,430,10,5,2,86
+Pythium ultimum,Set_7-3,C-KSSO2_3-8,R3,420,0,5,0,84
+Pythium acanthicum,Set_7-3,C-KSSO2_5-11,R1,880,330,5,66,176
+Pythium acanthicum,Set_7-3,C-KSSO2_5-11,R2,900,430,5,86,180
+Pythium acanthicum,Set_7-3,C-KSSO2_5-11,R3,1020,550,5,110,204
+Pythium nodosum,Set_7-3,C-MICO2_3-24,R1,1050,620,5,124,210
+Pythium nodosum,Set_7-3,C-MICO2_3-24,R2,990,460,5,92,198
+Pythium nodosum,Set_7-3,C-MICO2_3-24,R3,1170,510,5,102,234
+Pythium rostratifingens,Set_7-3,C-MISO2_1-14,R1,980,480,5,96,196
+Pythium rostratifingens,Set_7-3,C-MISO2_1-14,R2,1050,480,5,96,210
+Pythium rostratifingens,Set_7-3,C-MISO2_1-14,R3,1290,510,5,102,258
+Pythium acanthicum,Set_7-3,C-MISO2_4-16,R1,890,390,5,78,178
+Pythium acanthicum,Set_7-3,C-MISO2_4-16,R2,1000,430,5,86,200
+Pythium acanthicum,Set_7-3,C-MISO2_4-16,R3,1030,470,5,94,206
+Pythium ultimum,Set_7-3,C-MNSO2_1-20,R1,480,0,5,0,96
+Pythium ultimum,Set_7-3,C-MNSO2_1-20,R2,390,10,5,2,78
+Pythium ultimum,Set_7-3,C-MNSO2_1-20,R3,470,0,5,0,94
+Pythium perplexum,Set_7-3,C-NDSO2_1-11,R1,1160,490,5,98,232
+Pythium perplexum,Set_7-3,C-NDSO2_1-11,R2,1070,470,5,94,214
+Pythium perplexum,Set_7-3,C-NDSO2_1-11,R3,940,460,5,92,188
+Pythium rostratifingens,Set_7-3,C-NESO2_6-5,R1,910,370,5,74,182
+Pythium rostratifingens,Set_7-3,C-NESO2_6-5,R2,780,320,5,64,156
+Pythium rostratifingens,Set_7-3,C-NESO2_6-5,R3,920,430,5,86,184
+CONTROL,Set_7-3,CONTROL,R1,890,370,5,74,178
+CONTROL,Set_7-3,CONTROL,R2,800,340,5,68,160
+CONTROL,Set_7-3,CONTROL,R3,850,390,5,78,170
+Pythium spinosum,Set_7-3,INSO_3-43,R1,930,540,5,108,186
+Pythium spinosum,Set_7-3,INSO_3-43,R2,1170,510,5,102,234
+Pythium spinosum,Set_7-3,INSO_3-43,R3,800,430,5,86,160
+Pythium paroecandrum,Set_7-3,INSO_3-51,R1,790,390,5,78,158
+Pythium paroecandrum,Set_7-3,INSO_3-51,R2,820,400,5,80,164
+Pythium paroecandrum,Set_7-3,INSO_3-51,R3,960,460,5,92,192
+Pythium spinosum,Set_7-3,INSO_4-40,R1,970,400,5,80,194
+Pythium spinosum,Set_7-3,INSO_4-40,R2,1160,470,5,94,232
+Pythium spinosum,Set_7-3,INSO_4-40,R3,1020,520,5,104,204
+Pythium acanthicum,Set_7-3,NDSO_L_4-9,R1,910,390,5,78,182
+Pythium acanthicum,Set_7-3,NDSO_L_4-9,R2,1100,510,5,102,220
+Pythium acanthicum,Set_7-3,NDSO_L_4-9,R3,930,480,5,96,186
+Pythium perplexum,Set_7-3,NESO_4-29,R1,890,460,5,92,178
+Pythium perplexum,Set_7-3,NESO_4-29,R2,1060,470,5,94,212
+Pythium perplexum,Set_7-3,NESO_4-29,R3,1090,480,5,96,218
+Pythium nodosum,Set_7-3,V-INSO2_2-52,R1,900,380,5,76,180
+Pythium nodosum,Set_7-3,V-INSO2_2-52,R2,940,420,5,84,188
+Pythium nodosum,Set_7-3,V-INSO2_2-52,R3,1080,540,5,108,216
+Pythium perplexum,Set_7-3,V-MISO2_2-57,R1,1010,450,5,90,202
+Pythium perplexum,Set_7-3,V-MISO2_2-57,R2,1320,630,5,126,264
+Pythium perplexum,Set_7-3,V-MISO2_2-57,R3,1150,500,5,100,230
+Pythium inflatum,Set_7-3,V-MNSO2_3-63,R1,920,390,5,78,184
+Pythium inflatum,Set_7-3,V-MNSO2_3-63,R2,830,460,5,92,166
+Pythium inflatum,Set_7-3,V-MNSO2_3-63,R3,1170,480,5,96,234
+Pythium nodosum,Set_7-3,V-NESO2_6-56,R1,1200,470,5,94,240
+Pythium nodosum,Set_7-3,V-NESO2_6-56,R2,710,350,5,70,142
+Pythium nodosum,Set_7-3,V-NESO2_6-56,R3,1040,400,5,80,208
+CONTROL_NR,Set_7-3,CONTROL_NR,R1,1180,520,5,104,236
+CONTROL_NR,Set_7-3,CONTROL_NR,R2,1140,540,5,108,228
+CONTROL_NR,Set_7-3,CONTROL_NR,R3,1020,480,5,96,204

@@ -38,7 +38,20 @@ Datasets
 For both papers, the sequences can be obtained with the accession numbers GenBank KU208091-KU211502 at [GenBank](http://www.ncbi.nlm.nih.gov/nuccore/).
 
 ###Part I
-* 
+* __Isolates_11-12_final.csv__: File containing identification of isolates using local BLAST database based on [Robideau et al. 2011](http://onlinelibrary.wiley.com/doi/10.1111/j.1755-0998.2011.03041.x/abstract)
+* __seed_rot.csv__: File containing seed rot ratings of soybean cv. 'Sloan' challenged with oomycete species.
+* __dry_weight_allsets.csv__: File containing dry weights for soybean cv. 'Sloan' seedlings challenged with oomycete species.
+* __root_measurements_final.csv__: File containing root area, root length for soybean cv. 'Sloan' seedlings challenged with oomycete species.
+
+###Part II
+*
+*
+
+###Miscelaneous datasets
+* __CA_GIS_data.txt__: Canada locations sampled in this study
+* __US_GIS_data.txt__: U.S. locations sampled in this study
+* __soybean_data.csv__: Soybean planted are in the U.S. in 2012 (NASS USDA).
+* __Ontario_soybean.txt__: Soybean production in Ontario, CA.
 
 
 Results
