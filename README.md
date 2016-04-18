@@ -59,7 +59,7 @@ Results
 Rmarkdown documents containing figures and analyses for Oomycete species associated with soybean seedlings in the U.S.
 
 * [Part I - Identification and pathogenicity characterization](results/Oomycetes_part-I_analysis.md)
-* [Part II- Diversity and ecology in relation to environmental and edaphic factors](Oomycetes_part-II_analysis.md)
+* [Part II- Diversity and ecology in relation to environmental and edaphic factors](results/Oomycetes_part-II_analysis.md)
 
 
 

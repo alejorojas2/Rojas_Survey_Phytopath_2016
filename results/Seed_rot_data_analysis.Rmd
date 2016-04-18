@@ -33,7 +33,7 @@ ipak(packages)
 Processing the data for graphical exploration and analysis.  
 ```{r data process}
 #Reading the file
-seed <- read.csv("./seed_rot_allsets.csv")
+seed <- read.csv("../data/clean/seed_rot.csv")
 
 #Summarizing data using different parameters by plyr library
 seed_sum <- ddply(seed, c("Species", "Temp"), summarise,
@@ -93,10 +93,6 @@ summary(fit2_20C)
 
 #Model 2 fitting (fitted vs residuals)
 plot(fit2_20C)
-
-#Calculating pseudo p-values for data
-#coef_fit2 <- data.frame(coef(summary(fit2_20C)))
-#coef_fit2$p.z <- 2*(1-pnorm(abs(coef_fit2$t.value)))
 ```
 
 ```{r lsmeans 20C model 2, fig.align='center', fig.width=8, fig.height=10}
@@ -170,10 +166,6 @@ summary(fit2_13C)
 
 #Model 2 fitting (fitted vs residuals)
 plot(fit2_13C)
-
-#Calculating pseudo p-values for data
-#coef_fit2 <- data.frame(coef(summary(fit2)))
-#coef_fit2$p.z <- 2*(1-pnorm(abs(coef_fit2$t.value)))
 ```
 
 ```{r lsmeans 13C, fig.align='center', fig.width=8, fig.height=10}

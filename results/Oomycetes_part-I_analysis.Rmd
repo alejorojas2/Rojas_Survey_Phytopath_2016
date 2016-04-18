@@ -43,7 +43,7 @@ trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 __Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of 
 planted soybean acres demonstrated by color intensity at the county/parish level. 
 
-```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12, cache=TRUE}
+```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12, cache=TRUE,fig.align='center'}
 source("../code/soy_sample_map.R")
 
 print(gg2)
@@ -137,7 +137,8 @@ Clade_data$Clade <- factor(Clade_data$Clade,
   labs(y="Frequency (%)") + xlab(NULL) + coord_flip())
 ```
 
-For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis.Rmd](Seed_rot_data_analysis.md)__
+For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis.Rmd](Seed_rot_data_analysis.md)
+
 
 __Figure 3.__
 ```{}
