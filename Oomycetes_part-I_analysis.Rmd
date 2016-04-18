@@ -13,7 +13,10 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 
 #Part I: identification and pathogenicity characterization
 
-__Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of planted soybean acres demonstrated by color intensity at the county/parish level. 
+## Figures and analyses
+
+__Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of 
+planted soybean acres demonstrated by color intensity at the county/parish level. 
 
 ```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12}
 source("code/soy_sample_map.R")
@@ -22,7 +25,95 @@ print(gg2)
 print(gg3, vp=viewport(.65, .88, .4,.4))
 ```
 
-## Including Plots
+
+__Figure 2.__ Frequency at which different Oomycete species were recovered from 
+diseased soybean seedlings in 2011 and 2012.  (*) Species previously reported as 
+associated with soybean in the fungal-host database (<http://nt.ars-grin.gov/fungaldatabases/fungushost/fungushost.cfm>).
+```{r abundance_plot, fig.height=10, fig.width=8, echo=FALSE, fig.align='center'}
+source("code/abundance_analysis.R")
+
+#Plots
+Isol_11 <- ggplot(data=Data_11_12, aes(x=reorder(Species, freq_11, mean), y=freq_11)) + 
+  geom_bar(stat="identity", color="#636363", fill="#7fbf7b") + 
+  theme_bw() +
+  theme(axis.title.y = element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.ticks.y = element_blank(),
+        plot.margin = unit(c(1,-4,1,1), "mm")) +
+  labs(y="Frequency (%)") +  xlab(NULL) +
+  coord_flip() + scale_y_reverse()
+
+Isol_12 <- ggplot(data=Data_11_12, aes(x=reorder(Species, freq_11, mean), y=freq_12)) + 
+  geom_bar(stat="identity", color="#636363", fill="#9ecae1") + 
+  xlab(NULL) + theme_bw() + 
+  theme(axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        plot.margin = unit(c(1,1,1,-4), "mm")) +
+    labs(y="Frequency (%)") + coord_flip()
+
+mid.Isol <- ggplot(data=Data_11_12, aes(x=reorder(Species, freq_11, mean), y=0)) +
+  geom_bar(stat="identity",fill="white", alpha=0) + 
+  geom_text(aes(y=0, label=Species), fontface="italic", size=3) +
+  geom_segment(aes(y=-0.003,yend=-0.0025,xend=Species), size=0.2) +
+  geom_segment(aes(y=0.0025,yend=0.003,xend=Species), size=0.2) +
+  xlab(NULL) +
+  coord_flip() + 
+  theme(axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        panel.background=element_blank(),
+        panel.grid=element_blank(),
+        axis.line=element_blank(),
+        axis.text.x=element_text(color=NA),
+        axis.ticks.x=element_line(color=NA),
+        axis.title.x=element_text(color=NA),
+        plot.margin = unit(c(1,-4,1,-6.5), "mm"))
+
+#Final abundance plot
+grid.arrange(ggplotGrob(Isol_11), ggplotGrob(mid.Isol), ggplotGrob(Isol_12), ncol=3, widths=c(.3,.2,.3))
+```
+
+__Figure 3.__  Frequency of the oomycete species summarized by clade for 2011 
+and 2012. Oomycete genera outside of Pythium and Phytophthora were summarized 
+by genus.  Those species designated as spp. are not well resolved based only on
+the ITS sequence.
+```{r clade_plot, fig.height=6, fig.width=4, echo=FALSE, fig.align='center'}
+#Summarise data by year
+Clade_data11 <- ddply(Isolate_11, "Clade", summarise,
+                   N = as.numeric(length(qDef)),
+                   freq = (N/length(Isolate_11$Year))*100
+)
+
+Clade_data12 <- ddply(Isolate_12, "Clade", summarise,
+                   N = as.numeric(length(qDef)),
+                   freq = (N/length(Isolate_12$Year))*100
+)
+#Re-merge summarized data by year and replace NAs by 0
+Clade_11_12 <- full_join(Clade_data12, Clade_data11, by="Clade") %>%
+  dplyr::rename(N_12=N.x, y2012=freq.x, N_11=N.y, y2011=freq.y)
+
+Clade_11_12[is.na(Clade_11_12)] <- 0
+
+Clade_data <-  tidyr::gather(Clade_11_12, Year, Freq, c(y2012, y2011))
+
+Clade_data$Year <- factor(Clade_data$Year, levels = c("y2012","y2011"))
+Clade_data$Clade <- factor(Clade_data$Clade,
+                               levels(Clade_data$Clade)[c(1,5,7,13,8,
+                                                          2,4,6,10,16,
+                                                          11,3,15,14,9,12)])
+#Plots
+(Clade_plot <- ggplot(data=Clade_data, aes(x=Clade, y=Freq)) + 
+  geom_bar(aes(fill=Year), stat="identity", position="dodge", colour="#636363") + 
+  theme_bw() +
+  scale_fill_manual(values=c("#9ecae1","#7fbf7b"), labels=c("2012","2011"),
+                    guide = guide_legend(reverse = TRUE)) +
+  theme(axis.text.y=element_text(face="italic", size = 12)) +
+  labs(y="Frequency (%)") + xlab(NULL) + coord_flip())
+```
+
+
+## Tables
 
 You can also embed plots, for example:
 
