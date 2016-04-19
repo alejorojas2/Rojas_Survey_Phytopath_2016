@@ -25,7 +25,7 @@ sapply(pkg, require, character.only = TRUE)
 #Loading packages
 packages <- c("phyloseq","ggplot2","RColorBrewer","plyr","dplyr",
               "tidyr","knitr","magrittr","ape","vegan", "ggtree", 
-              "cowplot", "ggrepel", "gtable", "gridExtra")
+              "cowplot", "ggrepel", "gtable", "gridExtra", "knitr")
 ipak(packages)
 
 #Standard error function
@@ -80,7 +80,7 @@ complete linkage; (B) diversity of oomycete communities expressed as Shannon
 index across the latitudes of the fields sampled;  (C) diversity of oomycete 
 communities expressed as Shannon index across longitudes of the fields sampled.
 
-```{r cluster_gradient, fig.align='center', fig.width=8, fig.height=10}
+```{r cluster_gradient, fig.align='center', fig.width=6, fig.height=12}
 plot_grid(t1.ph, Obs_plot2, Obs_plot3, labels = c("A", "B", "C"), ncol = 1,
           align = "h")
 ```
@@ -94,7 +94,7 @@ the strength of the correlation. (CEC = Cation Exchange Capacity, Season:
 corresponds to April, May and June where most planting and or sampling was 
 conducted).
 
-```{r PCoA,fig.align='center', fig.width=8, fig.height=10}
+```{r PCoA,fig.align='center', fig.width=8, fig.height=6}
 ggplot(data = ord_plot.data, aes(x = Axis.1, y = Axis.2)) + 
   geom_point(aes(color=State2, shape=Year), size = 4, alpha = 0.7) + 
   labs(color = "State", shape = "Year", x = "PCoA 1 [12.1%]", y = "PCoA 2 [9.4%]") +
@@ -137,21 +137,21 @@ represents state-year average and standard deviation of soybean seedlings
 sampled by field.
 
 ```{r richness_table}
-kable(Tb_richness_final, digits = 3)
+kable(Tb_richness_final, digits = 3, format = "markdown" )
 ```
 
 __Table 2.__ Comparison of oomycete community structure (beta diversity) by state 
 and year using Bray-Curtis distances.
 
 ```{r result_adonis}
-kable(Oom_adonis$aov.tab, digits = 3)
+kable(Oom_adonis$aov.tab, digits = 3, format = "markdown")
 ```
 
 __Table 3.__  Significance of factors affecting oomycete communites associated 
 with soybean seedlings, based on using ‘envfit’ function form vegan.
 
 ```{r env_factors}
-kable(fit_plot, digits = 3)
+kable(fit_plot, digits = 3, format = "markdown")
 ```
 
 ## Supplementary figures
@@ -161,7 +161,7 @@ edaphic factors using ‘envfit’ function form vegan that affect oomycete
 community associated with soybean seedlings.
 
 ```{r env_full_table}
-kable(fit_data, digits = 3)
+kable(fit_data, digits = 3, format = "markdown")
 ```
 
 __Supplementary Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of 
@@ -187,7 +187,7 @@ _Py. aff. dissotocum_ and _Py. aff. torulosum_ by different environmental factor
 (d) season minimum temperature (April – June) and, (e) cation exchange 
 capacity (CEC).
 
-```{r occupancy_models, fig.height=7, fig.width=6, fig.align='center'}
+```{r occupancy_models, fig.height=7, fig.width=10, fig.align='center'}
 plot_grid(pp1, pp2, labels = c("A", "B"), 
           ncol = 1, nrow = 2, align = "h")
 
