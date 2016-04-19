@@ -1,0 +1,845 @@
+---
+title: "Diversity and ecology of oomycetes associated wiht soybean seedlings"
+author: "J. Alejandro Rojas"
+date: "April 19, 2016"
+output: html_document
+---
+
+```{r custom_functions, echo=FALSE, message=FALSE}
+# ipak function: install and load multiple R packages.
+# check to see if packages are installed. Install them if they are not, 
+#then load them into the R session.
+# Source: https://gist.github.com/stevenworthington/3178163
+ipak <- function(pkg){
+new.pkg <- pkg[!(pkg %in% installed.packages()[,"Package"])]
+if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+sapply(pkg, require, character.only = TRUE)
+}
+
+#Loading packages
+packages <- c("phyloseq","ggplot2","RColorBrewer","plyr","dplyr",
+              "tidyr","knitr","magrittr","ape","vegan", "ggtree", 
+              "cowplot", "ggrepel", "gtable", "gridExtra")
+ipak(packages)
+
+#Standard error function
+std <- function(x) sd(x)/sqrt(length(x))
+CVcoeff <- function(x) (sd(x)/mean(x))*100
+
+#Trimming leading or trailing space
+trim <- function(x) gsub("^\\s+|\\s+$", "", x)
+
+#RDP phyloseq extraction to vegan
+veganotu <- function(physeq) {
+  OTU <- otu_table(physeq)
+  if (taxa_are_rows(OTU)) {
+    OTU <- t(OTU)
+  }
+  OTU <- as(OTU, "matrix")
+  return(OTU)
+}
+
+vegansam <- function(physeq) {
+  sam <- sample_data(physeq)
+  # i <- sapply(sam, is.numeric)
+  # j <- sapply(sam, is.character)
+  # k <- sapply(sam, is.factor)
+  # sam <- as.matrix(sam)
+  sam <- data.frame(sam)
+  # sam[i] <- lapply(sam[i], as.numeric)
+  # sam[j] <- lapply(sam[j], as.character)
+  # sam[k] <- lapply(sam[k], as.factor)
+  return(sam)
+}
+```
+
+##Read files for OTU analyses
+```{r importing_files}
+#Import BIOM, sample data and tree files
+OTU_file <- "../data/clean/Seqs_11_12.OTU.biom"
+Metadata_file <- "../data/clean/env_metadata.csv"
+
+Oom_OTU <- import_biom(OTU_file)
+
+#Oom_tree <- read_tree(Tree_file)
+Oom_data <- import_qiime_sample_data(Metadata_file)
+
+#Covert year to factor
+Oom_data$Year <- as.factor(Oom_data$Year)
+
+#Rename tax ranks to actual names
+colnames(tax_table(Oom_OTU)) <- c("Phylum","Class","Order",
+                                  "Family","Genus","Clade","Species")
+
+#Merge phyloseq objects
+Oom_biom <- merge_phyloseq(Oom_OTU, Oom_data) 
+```
+
+##Read files for phylotype analyses
+```{r phylotype_files}
+#Import files
+otu_phylo <- read.csv("../data/clean/OTU.phylotype.txt", sep = "\t", 
+                      row.names = 1, header = TRUE)
+taxa_phylo <- read.csv("../data/clean/Taxa.phylotype.txt", sep = "\t", 
+                       row.names = 1, header = TRUE)
+
+#Transform to phyloseq objects
+otu_phylo <- otu_table(otu_phylo, taxa_are_rows = TRUE)
+taxa_phylo <- tax_table(as.matrix(taxa_phylo))
+
+#Phyloseq object
+Oom_phylo <- phyloseq(otu_phylo, taxa_phylo)
+Oom_phylo <- merge_phyloseq(Oom_phylo, Oom_data)
+```
+
+##Richness analyses
+```{r Richness_analysis}
+#Plotting richness
+plot_richness(Oom_biom, "St_Yr", 
+              measures = c("InvSimpson","Shannon","Chao1"), color = "Year")
+
+#Table richness
+Tb_richness <- estimate_richness(Oom_biom, 
+                                 split = TRUE, 
+                                 c("Observed", "Shannon", "Simpson")) %>% 
+  add_rownames(var = "sample") %>%
+  mutate(Evenness = Shannon/log(Observed))
+
+samp_size <- colSums(otu_table(Oom_biom))
+samp_size <- data.frame(samp_size) %>% add_rownames(var = "sample")
+
+smp_state <- data.frame(sample_data(Oom_biom)[,1:5]) %>% 
+  add_rownames(var = "sample")
+
+Tb_richness_final <- left_join(Tb_richness, samp_size, by = "sample") %>%
+  left_join(smp_state, by = "sample") %>%
+  filter(Observed > 1) %>%
+  ddply(c("St_Yr"), summarise, 
+        N = length(sample),
+        Isolates = sum(samp_size),
+        mean.Observed = mean(Observed),
+        sd.Observed = sd(Observed, na.rm = TRUE),
+        mean.Shannon = mean(Shannon),
+        sd.Shannon = sd(Shannon, na.rm = TRUE),
+        mean.Simpson = mean(Simpson),
+        sd.Simpson = sd(Simpson, na.rm = TRUE),
+        mean.Evenness = mean(Shannon/log(Observed)),
+        sd.Evenness = sd(Shannon/log(Observed), na.rm = TRUE))
+
+kable(Tb_richness_final)
+```
+
+```{r plots_phylotype}
+#Summarizing by state
+Oom_phylo_state <- tax_glom(Oom_phylo, taxrank = "Clade")
+Oom_phylo_state <- merge_samples(Oom_phylo_state, "St_Yr")
+
+#Transform counts for plot
+#Oom_phylo_state <- transform_sample_counts(Oom_phylo_state, 
+#                                           function(x) 100 * x/sum(x))
+State_Year <- psmelt(Oom_phylo_state)
+
+#Color scale
+pal <- colorRampPalette(brewer.pal(12, "Paired"))
+
+#Reorder factor
+Clade_factor <- State_Year %>% group_by(Clade) %>% dplyr::summarise(sum(Abundance))
+Clade_factor <- Clade_factor[order(-Clade_factor$`sum(Abundance)`),]
+Clade_factor <- Clade_factor$Clade
+State_Year$Clade <- factor(State_Year$Clade, levels = Clade_factor)
+levels(State_Year$Clade)
+
+data_state <- dplyr::select(State_Year, Sample, Abundance, Clade)
+data_state <- data_state[with(data_state, order(Clade, as.numeric(Clade))),]
+
+#Plot
+(ByState <- ggplot(data = data_state, aes(Sample, Abundance, fill = Clade)) +
+  geom_bar(stat = "identity", position = position_fill()) + coord_flip() +
+  scale_fill_manual(values = pal(18)) + 
+   theme(text = element_text(size = 15)) + theme_gray())
+```
+
+
+```{r plots_otu, echo=FALSE}
+#Summarizing by State
+Oom_biom_state <- tax_glom(Oom_biom, taxrank = "Clade")
+Oom_biom_state <- merge_samples(Oom_biom_state, "St_Yr")
+
+classified <- as.vector(substr(tax_table(Oom_biom_state)[,"Clade"], 
+                               0, 7) != "unclass")
+Oom_biom_state <- prune_taxa(classified, Oom_biom_state)
+
+#Color scale
+pal <- colorRampPalette(brewer.pal(12, "Paired"))
+
+#Data_OTU abundance plot
+State_OTU <- psmelt(Oom_biom_state)
+clf_otu <- as.vector((State_Year %>% 
+                        group_by(Clade) %>% 
+                        summarise(sum(Abundance)))$Clade)
+State_OTU$Clade <- factor(State_OTU$Clade, levels = clf_otu)
+State_OTU <-  dplyr::select(State_OTU, Sample, Abundance, Clade)
+State_OTU <- State_OTU[with(State_OTU, order(Clade, as.numeric(Clade))),]
+
+(State_abd_otu <- ggplot(State_OTU, aes(Sample, Abundance, fill = Clade)) + 
+  geom_bar(stat = "identity", position = position_fill()) + coord_flip() +
+  scale_fill_manual(values = pal(16)) + theme_gray())
+```
+
+## Rarefaction curves
+```{r rarefaction_curvers, warning=FALSE}
+## DATA ##
+
+psdata <- merge_samples(Oom_phylo, "St_Yr")
+psdata
+sample_sums(psdata)
+
+### Calculate alpha diversity ###
+set.seed(42)
+
+calculate_rarefaction_curves <- function(psdata, measures, depths) {
+  require('plyr') # ldply
+  require('reshape2') # melt
+
+  estimate_rarified_richness <- function(psdata, measures, depth) {
+    if(max(sample_sums(psdata)) < depth) return()
+    psdata <- prune_samples(sample_sums(psdata) >= depth, psdata)
+
+    rarified_psdata <- rarefy_even_depth(psdata, depth, verbose = FALSE)
+
+    alpha_diversity <- estimate_richness(rarified_psdata, measures = measures)
+
+    # as.matrix forces the use of melt.array, which includes the Sample names (rownames)
+    molten_alpha_diversity <- melt(as.matrix(alpha_diversity), varnames = c('Sample', 'Measure'), value.name = 'Alpha_diversity')
+
+    molten_alpha_diversity
+  }
+
+  names(depths) <- depths # this enables automatic addition of the Depth to the output by ldply
+  rarefaction_curve_data <- ldply(depths, estimate_rarified_richness, psdata = psdata, measures = measures, .id = 'Depth', .progress = ifelse(interactive(), 'text', 'none'))
+
+  # convert Depth from factor to numeric
+  rarefaction_curve_data$Depth <- as.numeric(levels(rarefaction_curve_data$Depth))[rarefaction_curve_data$Depth]
+
+  rarefaction_curve_data
+}
+
+rarefaction_curve_data <- calculate_rarefaction_curves(psdata, c('Observed', 'Shannon'), rep(c(1, 5, 10, 1:20 * 10), each = 10))
+summary(rarefaction_curve_data)
+
+
+### Summarize alpha diversity ###
+rarefaction_curve_data_summary <- ddply(rarefaction_curve_data, c('Depth', 'Sample', 'Measure'), summarise, Alpha_diversity_mean = mean(Alpha_diversity), Alpha_diversity_sd = sd(Alpha_diversity))
+
+### Add sample data ###
+smp_dt <- as.data.frame(sample_data(psdata))
+row.names(smp_dt) <- gsub(pattern = " ",replacement = ".", x = row.names(smp_dt))
+rarefaction_curve_data_summary_verbose <- merge(rarefaction_curve_data_summary, smp_dt,
+                                                by.x = 'Sample', by.y = 'row.names')
+
+### plot ###
+ggplot(
+  data = rarefaction_curve_data_summary_verbose,
+  mapping = aes(
+    x = Depth,
+    y = Alpha_diversity_mean,
+    ymin = Alpha_diversity_mean - Alpha_diversity_sd,
+    ymax = Alpha_diversity_mean + Alpha_diversity_sd,
+    colour = State2,
+    group = Sample)) + 
+  geom_smooth() + 
+  #geom_pointrange() + 
+  facet_wrap(facets = ~ Measure, scales = 'free_y') + 
+  theme_gray()
+```
+
+
+## Latitude/Longitude gradient
+```{r latitude_vs_diversity}
+#Richness data
+richness2 <- estimate_richness(Oom_biom, 
+                                 split = TRUE, 
+                                 c("Observed", "Shannon", "Simpson", "Chao1", "InvSimpson")) %>% 
+  add_rownames(var = "sample")
+
+
+samp_size <- colSums(otu_table(Oom_biom))
+samp_size <- data.frame(samp_size) %>% add_rownames(var = "sample")
+
+#Sample data
+smp_state2 <- data.frame(sample_data(Oom_biom)[,c(1:5,8,9)]) %>% 
+  add_rownames(var = "sample")
+smp_state2 <- left_join(smp_state2, samp_size, by = "sample")
+
+#Merging tables together
+lt_rch_data <- left_join(smp_state2, richness2, by = "sample")
+lt_rch_data <- lt_rch_data[!is.na(lt_rch_data[,7]),]
+lt_rch_data <- lt_rch_data[(lt_rch_data[,9]) >= 10,]
+
+#Correlation
+cor.test(lt_rch_data$Lat, lt_rch_data$Observed, method = "spearman")
+cor.test(lt_rch_data$Lat, lt_rch_data$Simpson, method = "spearman")
+cor.test(lt_rch_data$Lat, lt_rch_data$Shannon, method = "spearman")
+cor.test(lt_rch_data$Long, lt_rch_data$Shannon, method = "spearman")
+
+#Plot
+(Obs_plot <- ggplot(lt_rch_data, aes(x = Lat, y = Observed)) + 
+  geom_point(size = 2, alpha = 0.5) + geom_smooth(method = lm) + theme_gray() +
+  labs(x = "Latitude", y = "Observed OTUs") +
+  annotate("text", x=45, y=0.4, label = "p-value = 0.0813\nrho = 0.189", 
+           fontface = "bold", hjust = 0))
+  
+
+(Obs_plot2 <- ggplot(lt_rch_data, aes(x = Lat, y = Shannon)) + 
+  geom_point(size = 2, alpha = 0.5) + geom_smooth(method = lm) + theme_gray() +
+  labs(x = "Latitude", y = "Shannon diversity index") +
+  annotate("text", x=45, y=0.4, label = "p-value = 0.016\nrho = 0.258", 
+           fontface = "bold", hjust = 0))
+
+(Obs_plot3 <- ggplot(lt_rch_data, aes(x = Long, y = Shannon)) + 
+  geom_point(size = 2, alpha = 0.5) + geom_smooth(method = lm) + theme_gray() +
+  labs(x = "Longitude", y = "Shannon diversity index") +
+  annotate("text", x=-88, y=0.4, label = "p-value = 0.037\nrho = -0.224", 
+           fontface = "bold", hjust = 0))
+
+grid.arrange(Obs_plot2, Obs_plot3)
+```
+
+##Cluster analysis - OTU
+
+```{r cluster_analysis_otu}
+#Phyloseq otu table to vegan otu table
+Oom_st <- prune_samples(!(grepl('MICO|ONSO', sample_names(Oom_biom))), Oom_biom)
+Oom_st <- merge_samples(Oom_biom, "St_Yr")
+tb_otu <- veganotu(Oom_st)
+tb_otu <- tb_otu[row.names(tb_otu) != "Ontario 2012",]
+
+#Phyloseq sample to vegan sample table
+tb_sample <- vegansam(Oom_st)
+
+#Relative abundance and bray-curtis distance
+tb_otu <- decostand(tb_otu, method = "total")
+tb_otu.bc <- vegdist(tb_otu, method = "bray")
+tb_otu.pa.bc <- vegdist(tb_otu, method = "bray", binary = TRUE)
+
+tb.otu.cl <- as.phylo(hclust(tb_otu.bc, method = "ward.D2"))
+tb.otu.pa <- as.phylo(hclust(tb_otu.pa.bc, method = "ward.D2"))
+
+cls <- list(c1 = c("N Dakota 2011", "N Dakota 2012", 
+                   "Minnesota 2011", "Minnesota 2012"),
+            c2 = c("S Dakota 2011", "S Dakota 2012", "Iowa 2011", 
+                   "Iowa 2012", "Nebraska 2011"),
+            c3 = c("Wisconsin 2011", "Illinois 2011", "Illinois 2012", 
+                   "Indiana 2011", "Indiana 2012", "Michigan 2011", 
+                   "Michigan 2012"),
+            c4 = c("Kansas 2011", "Kansas 2012", "Arkansas 2011", 
+                   "Arkansas 2012"))
+
+tb.otu.cl <- groupOTU(tb.otu.cl, cls)
+tb.otu.pa <- groupOTU(tb.otu.pa, cls)
+
+t1.otu <- ggtree(tb.otu.cl, branch.length = 'branch.length') + 
+  #geom_text(aes(label = label, hjust = -0.05)) + 
+  ggplot2::xlim(0,1) + geom_tiplab(aes(color = group, label = label)) +
+  scale_color_brewer(type = "div", palette = "Set1")
+
+ggtree(tb.otu.pa) + geom_text(aes(label = label, hjust = -0.05)) + ggplot2::xlim(0,0.6)
+
+t2.otu <- ggtree(tb.otu.pa, branch.length = 'branch.length') + 
+  #geom_text(aes(label = label, hjust = -0.05)) + 
+  ggplot2::xlim(0,0.6) + geom_tiplab(aes(color = group, label = label)) +
+  scale_color_brewer(type = "div", palette = "Set1")
+
+gridExtra::grid.arrange(t1.otu, t2.otu, ncol = 2)
+```
+
+
+##Cluster analysis - phylotype
+
+```{r cluster_analysis_phylo}
+#Phyloseq otu table to vegan otu table
+Oom_ph.1 <- prune_samples(!(grepl('MICO|ONSO', sample_names(Oom_phylo))), Oom_phylo)
+Oom_ph <- merge_samples(Oom_ph.1, "St_Yr")
+tb_ph <- veganotu(Oom_ph)
+tb_ph <- tb_ph[row.names(tb_ph) != "Ontario 2012",]
+
+#Phyloseq sample to vegan sample table
+tb_sp_ph <- vegansam(Oom_ph)
+
+#Relative abundance and bray-curtis distance
+tb_ph <- decostand(tb_ph, method = "total")
+tb_ph.bc <- vegdist(tb_ph, method = "bray")
+tb_ph.pa.bc <- vegdist(tb_ph, method = "jaccard", binary = TRUE)
+
+tb.ph.cl <- as.phylo(hclust(tb_ph.bc))
+tb.ph.pa <- as.phylo(hclust(tb_ph.pa.bc))
+
+tb.ph.cl <- groupOTU(tb.ph.cl, cls)
+tb.ph.pa <- groupOTU(tb.ph.pa, cls)
+
+
+ggtree(tb.ph.cl, layout="rectangular") + 
+  geom_text(aes(label = label, hjust = -0.05)) + ggplot2::xlim(0,0.6) + theme_tree2()
+
+t1.ph <- ggtree(tb.ph.cl, branch.length = 'branch.length') + 
+  #geom_text(aes(label = label, hjust = -0.05)) + 
+  ggplot2::xlim(0,0.6) + geom_tiplab(aes(label = label)) +
+  scale_color_brewer(type = "div", palette = "Set1") + xlab("Height") + ylab("Cluster dendogram")
+
+ggtree(tb.ph.pa) + 
+  geom_text(aes(label = label, hjust = -0.05)) + ggplot2::xlim(0,0.6)
+
+t2.ph <- ggtree(tb.ph.pa, branch.length = 'branch.length') + 
+  #geom_text(aes(label = label, hjust = -0.05)) + 
+  ggplot2::xlim(0,0.6) + geom_tiplab(aes(color = group, label = label)) +
+  scale_color_brewer(type = "div", palette = "Set1")
+
+#gridExtra::grid.arrange(t1.ph, t2.ph, ncol = 2)
+#gridExtra::grid.arrange(t1.otu, t2.otu, t1.ph, t2.ph, ncol = 2)
+```
+
+```{r}
+plot_grid(t1.ph, Obs_plot2, labels = c("A", "B"), ncol = 1,
+          align = "h"
+          #rel_widths = c(0.85,1,1), rel_heights = c(0.5,1,1) 
+          )
+
+plot_grid(t1.ph, Obs_plot2, Obs_plot3, labels = c("A", "B", "C"), ncol = 1,
+          align = "h"
+          #rel_widths = c(0.85,1,1), rel_heights = c(0.5,1,1) 
+          )
+
+```
+
+
+## Analysis of similarity (ANOSIM) for different parameters
+
+```{r anosim_test}
+Oom_grp <- get_variable(Oom_biom, "State2")
+Oom_st_ano <- anosim(distance(Oom_biom, "bray"), Oom_grp)
+
+Oom_biom_lt <- prune_samples(!is.na(Oom_biom@sam_data$Lat), Oom_biom)
+
+Lat_grp <- cut(get_variable(Oom_biom_lt, "Lat"), c(32,42,50))
+(Oom_lt_ano <- anosim(distance(Oom_biom_lt, "bray"), Lat_grp))
+
+Long_grp <- cut(get_variable(Oom_biom_lt, "Long"), c(-80,-95,-110))
+(Oom_lg_ano <- anosim(distance(Oom_biom_lt, "bray"), Long_grp))
+
+Yr_grp <- get_variable(Oom_biom, "Year")
+Oom_yr_ano <- anosim(distance(Oom_biom, "bray"), Yr_grp)
+
+StYr_grp <- get_variable(Oom_biom, "St_Yr")
+Oom_styr_ano <- anosim(distance(Oom_biom, "bray"), StYr_grp)
+```
+
+## ADONIS for different parameters
+```{r adonis_test}
+df <- as(sample_data(Oom_biom), "data.frame")
+d <- distance(Oom_biom, "bray")
+
+Oom_adonis <- adonis(d ~ State2 + Year + State2*Year, df)
+
+kable(Oom_adonis$aov.tab, digits = 3, 
+      caption = "__Table 2.__ Comparison of community structure (beta diversity)\
+      using Bray-curtis distance by State and year.")
+```
+
+##Ordination analysis
+```{r Ordination_plot}
+Oom_biom2 <- prune_samples(!is.na(Oom_biom@sam_data$Lat), Oom_biom)
+
+colors2 <- c("#77C7C6",
+"#C37F3B",
+"#869BCF",
+"#7DD54E",
+"#C67BB7",
+"#CDC84A",
+"#CC6569",
+"#83D693",
+"#7A7678",
+"#698547",
+"#D3C1A7")
+
+Oom_biom_ord <- ordinate(Oom_biom2, "PCoA", "bray")
+ord_plot <- plot_ordination(Oom_biom2, Oom_biom_ord, color = "State2", shape = "Year")
+(ord_plot.f <- ord_plot + geom_point(size = 4, alpha = 0.7) + 
+  scale_colour_manual(values = colors2) +
+  theme_light() + labs(color = "State", shape = "Year"))
+```
+
+## Environmental/Edaphic factor analysis
+
+```{r envfit_analysis}
+## Environment fit analysis
+bray.pcoa <- ordinate(Oom_biom2, method = "PCoA", "bray")
+env <- as.data.frame(Oom_biom2@sam_data)
+
+Oom_env <- envfit(bray.pcoa$vectors, env, permutations = 999)
+
+fit_data <- as.data.frame(scores(Oom_env, display = "vectors")) %>%
+  add_rownames(var = "Env.var") %>%
+  bind_cols(data.frame(Oom_env$vectors$r, Oom_env$vectors$pvals)) %>%
+  rename(R2 = Oom_env.vectors.r, P.value = Oom_env.vectors.pvals) %>%
+  arrange(P.value)
+  
+## Supplementary material version
+
+kable(fit_data, digits = 3, caption = "__Supp. table 1.__ Significance and correlation\
+of vectors fitted into PCoA ordination of oomycete communities associated with\
+soybean seedlings")
+
+## Reduced version
+
+#kable(fit_data[fit_data$P.value < 0.05,], digits = 3, caption = "__Table 3.__ Significance and correlation\
+#of vectors fitted into PCoA ordination of oomycete communities associated with\
+#soybean seedlings")
+
+```
+
+### Results ordination and environmental data
+
+```{r Ord_envfit_plot}
+## Vectors for plot
+fit_reduced <- fit_data[fit_data$P.value < 0.05,] 
+
+fit_plot <- as.data.frame(scores(Oom_env, display = "vectors")) %>%
+  add_rownames(var = "Env.var") %>%
+  inner_join(fit_reduced, by = "Env.var") %>%
+  arrange(P.value) %>%
+  slice(c(10,1,5,19,18,8,20,22,2,17,15,12,21,6,23))
+
+fit_plot$Env.var2 <- c("Latitude", "Longitude", "Precip. Season","CEC", "Clay (%)", 
+                       "Bulk density", "Soil pH", "Water content", 
+                       "Annual Total Precip.", "Max. Temp 30yr", 
+                       "Mean Temp 30yr", "Min. Temp 30yr",
+                       "Annual Min. Temp","Precip. 30yr", "Min. Temp Season")
+
+## paper version
+kable(fit_plot, digits = 3, caption = "__Table 3.__ Significant factors using\
+      ‘envfit’ function from vegan that affect oomycete community associated\
+      with soybean seedlings.")
+
+ord_plot.data <- plot_ordination(Oom_biom2, Oom_biom_ord, 
+                            color = "State2", shape = "Year", justDF = TRUE)
+
+(ord.plot.env <- ggplot(data = ord_plot.data, aes(x = Axis.1, y = Axis.2)) + 
+  geom_point(aes(color=State2, shape=Year), size = 4, alpha = 0.7) + 
+  #scale_color_brewer(type = "div", palette ="Spectral") +
+  labs(color = "State", shape = "Year", x = "PCoA 1 [12.1%]", y = "PCoA 2 [9.4%]") +
+  scale_colour_manual(values = colors2) +
+  geom_segment(data = fit_plot, aes(x = 0, xend = Axis.1.x, y = 0, yend = Axis.2.x), 
+               arrow = arrow(length = unit(0.1,"cm")), color = "black", size = 0.8) + 
+  geom_label_repel(data = fit_plot, aes(x = Axis.1.x, y = Axis.2.x, label = Env.var2), 
+            size = 3, force = 1) + #facet_wrap(~Year) +
+  theme_gray())
+```
+
+## Correlation of environmental parameters with PCoA axes
+
+```{r factor_correlation, fig.width=14, fig.height= 10}
+#Season precipitation correlation with axis
+P.cor <- cor.test(ord_plot.data[,"Axis.1"], log10(ord_plot.data[,"Precip_AMJ"]), method = "spearman")
+
+Tmin.cor <- cor.test(ord_plot.data[,"Axis.1"], ord_plot.data[,"Tmin_AMJ"], method = "spearman")
+
+Clay.cor <- cor.test(ord_plot.data[,"Axis.2"], ord_plot.data[,"Clay"], method = "spearman")
+
+Blk.cor <- cor.test(ord_plot.data[,"Axis.2"], ord_plot.data[,"Db3rdbar"], method = "spearman")
+
+Lat.cor <- cor.test(ord_plot.data[,"Axis.1"], ord_plot.data[,"Lat"], method = "spearman")
+Long.cor <- cor.test(ord_plot.data[,"Axis.2"], ord_plot.data[,"Long"], method = "spearman")
+
+#Plotting ordination 
+Prec <- ggplot(ord_plot.data, aes(x = Axis.1, y = Precip_AMJ)) + 
+  geom_smooth(method = lm, color = "gray14") +
+  geom_point(aes(color = Lat), size = 3) + 
+  theme_gray() +
+  scale_color_gradientn(colours= c("#ef8a62","#67a9cf")) +
+  labs(y = "Precipitation season (mm)", color = "Latitude") +
+  annotate("text", x = 0.15, y = 210, 
+           label = paste("p-value =", format(P.cor$p.value, digits = 3),
+                         "\nrho =", round(P.cor$estimate, digits = 3)),
+                         fontface = "bold", hjust = 0)
+
+
+Tmin <- ggplot(ord_plot.data, aes(x = Axis.1, y = Tmin_AMJ)) + 
+  geom_smooth(method = lm, color = "gray14") +
+  geom_point(aes(color = Lat), size = 3) + 
+  theme_gray() +
+  scale_color_gradientn(colours= c("#ef8a62","#67a9cf")) +
+  labs(y = "Minimum temperature season", color = "Latitude") +
+  annotate("text", x = 0.15, y = 16, 
+           label = paste("p-value =", format(Tmin.cor$p.value, digits = 3,
+                                             scientific = TRUE),
+                         "\nrho =", round(Tmin.cor$estimate, digits = 3)),
+                         fontface = "bold", hjust = 0)
+
+Clay <- ggplot(ord_plot.data, aes(x = Clay, y = Axis.2)) + 
+  geom_smooth(method = lm, color = "gray14") +
+  geom_point(aes(color = WC3rdbar), size = 3) + 
+  theme_gray() +
+  scale_color_gradientn(colours= c("#ef8a62","#67a9cf")) +
+  labs(x = "Clay content (%)", color = "Vol. water\ncontent (%)") +
+  annotate("text", x = 50, y = 0.38, 
+           label = paste("p-value =", format(Clay.cor$p.value, digits = 3, 
+                                             scientific = TRUE),
+                         "\nrho =", round(Clay.cor$estimate, digits = 3)),
+                         fontface = "bold", hjust = 0)
+
+Blk <- ggplot(ord_plot.data, aes(x = Db3rdbar, y = Axis.2)) + 
+  geom_smooth(method = lm, color = "gray14") +
+  geom_point(aes(color = WC3rdbar), size = 3) + 
+  theme_gray() +
+  scale_color_gradientn(colours= c("#ef8a62","#67a9cf")) +
+  labs(x = "Bulk density (g/cm3)", color = "Vol. water\ncontent (%)") +
+  annotate("text", x = 1.58, y = 0.4, 
+           label = paste("p-value =", format(Blk.cor$p.value, digits = 3,
+                                             scientific = TRUE),
+                         "\nrho =", round(Blk.cor$estimate, digits = 3)),
+                         fontface = "bold", hjust = 0)
+
+#Grid arregement for linear graphs
+plot_grid(Prec, Tmin, Clay, Blk, labels = c("A", "B", "C", "D"), 
+          ncol = 2, nrow = 2, align = "h")
+```
+
+
+## Mantel test for parameters
+```{r Mantel_test}
+Oom.dist <- distance(Oom_biom2, "bray")
+env2 <- data.frame(env[,-c(1:7,12,24)])
+env2.dist <- vegdist(env2$Lat, method = "euclidean")
+
+# test.m <- mantel(Oom.dist, env2.dist, method = "pearson")
+# test.m$statistic
+# 
+# length(colnames(env2))
+
+factor_mantel <- function(dist, env){
+  n <- length(colnames(env))
+  df <- data.frame(Env.var = character(0), stat = numeric(0), pval = numeric(0))
+  for (i in seq(1,n,1)) {
+    factor_dist <- vegdist(env[,i], method = "euclidean")
+    mt_test <- mantel(dist, factor_dist, method = "spearman")
+    df <- rbind(df, data.frame(Env.var = colnames(env[i]), 
+                               Statistic = mt_test$statistic, 
+                               p.val = mt_test$signif))
+    }
+  df
+}
+
+
+mantel_table <- factor_mantel(Oom.dist, env2)
+cor.table <- left_join(fit_data, mantel_table, by = "Env.var")
+kable(cor.table, digits = 3)
+```
+
+
+## Abundance of top 8 pathogenic species
+```{r map_pie_chart}
+##Top 8 species
+top.sp <- names(sort(taxa_sums(Oom_phylo), TRUE)[1:8])
+oom.sp <- prune_taxa(top.sp, Oom_phylo)
+oom.sp.st <- merge_samples(oom.sp, "State2")
+
+##Function
+getLabelPoint <- function(county) {Polygon(county[c('long', 'lat')])@labpt}
+
+#map data
+library(maps)
+library(sp)
+states <- map_data("state")
+centroids <- by(states, states$region, getLabelPoint)
+centroids <- do.call("rbind.data.frame", centroids)
+names(centroids) <- c('long', 'lat')
+
+centroids[row.names(centroids) == "michigan",]$long <- -84.62014
+centroids[row.names(centroids) == "michigan",]$lat <- 43.49422
+
+#Transform counts for plot
+oom.data.pie <- transform_sample_counts(oom.sp.st, 
+                                           function(x) 100 * x/sum(x))
+oom.data.pie <- psmelt(oom.data.pie)
+oom.data.pie <- oom.data.pie[,c(1:3,6,55,56)] %>%
+                mutate(sample = tolower(Sample))
+
+oom.data.pie$sample <- gsub("n dakota","north dakota", oom.data.pie$sample)
+oom.data.pie$sample <- gsub("s dakota","south dakota", oom.data.pie$sample)
+oom.data.pie$Species <- factor(oom.data.pie$Species,
+                               levels(oom.data.pie$Species)[c(7,3,6,8,1,2,5,4)])
+#data
+oom.pie.0 <- add_rownames(centroids, "sample") %>%
+  left_join({distinct(oom.data.pie)}) %>%
+  filter(!is.na(Clade))
+  
+oom.pie <- oom.pie.0 %>% split(., .$sample)
+
+#Color scale
+pal <- colorRampPalette(brewer.pal(8, "Set3"))
+
+#Pie chart
+pies <- setNames(lapply(1:length(oom.pie), function(i){
+  ggplot(oom.pie[[i]], aes(x=1, Abundance, fill=Species)) +
+    geom_bar(stat="identity", width=1, color="black") + 
+    coord_polar(theta="y") + 
+    theme_tree() + 
+    xlab(NULL) + 
+    ylab(NULL) + 
+    theme_transparent() +
+    scale_fill_manual(values = pal(8)) +
+    theme(plot.margin=unit(c(0,0,0,0),"mm"))
+}), names(oom.pie))
+
+#Legend
+e1 <- ggplot(oom.pie[[2]], aes(x=1, Abundance, fill=Species)) +
+        geom_bar(stat="identity", width=1) + 
+        coord_polar(theta="y") + 
+  scale_fill_manual(values = pal(8), 
+                    labels = c("Py. sylvaticum","Py. heterothallicum", "Py. oopapillum",
+                               "Py. ultimum var. ultimum","Py. aff. dissotocum",
+                               "Py. aff. torulosum", "Py. lutarium","Py. irregulare")) +
+  theme(legend.text = element_text(face = "italic"))
+
+leg1 <- gtable_filter(ggplot_gtable(ggplot_build(e1)), "guide-box") 
+
+#map
+states2 <- subset(states, region %in% c(unique(oom.data.pie$sample), "missouri"))
+map.p <- ggplot(states2, aes(long, lat, group=group)) +  
+    geom_polygon(fill="gray90", color = "gray20", size=0.125) +
+    xlim(-105,-78) +
+    theme_transparent(axis.title = element_blank(),
+                      axis.text = element_blank(),
+                      axis.line = element_blank(),
+                      axis.ticks = element_blank()) +
+      annotation_custom(grob = leg1, xmin = -81, xmax = -83, ymin = 33, ymax = 40) 
+
+#Final plot
+n <- length(pies)
+for (i in 1:n) {
+    nms <- names(pies)[i]
+    dat <- oom.pie.0[which(oom.pie.0$sample == nms)[1], ]
+    map.p <- subview(map.p, pies[[i]], x = unlist(dat[["long"]])[1], y=unlist(dat[["lat"]])[1], 0.07, 0.07)
+}
+
+print(map.p)
+```
+
+## Correlation of individual species with different parameters using occupancy models
+
+```{r var_plots, warning=FALSE, message=FALSE, fig.height=10}
+library(ggradar)
+library(scales)
+library(MASS)
+#Oom_phylo.sp <- transform_sample_counts(Oom_phylo, 
+#                                     function(x) x/sum(x))
+test <- psmelt(Oom_phylo)
+head(test)
+test %>% filter(Species == "Pythium_sylvaticum"| 
+                Species == "Pythium_heterothallicum"|
+                Species == "Pythium_oopapillum"|
+                Species == "Pythium_ultimum_var._ultimum"|
+                Species == "Pythium_aff._dissotocum"|
+                Species == "Pythium_aff._torulosum") %>% 
+  group_by(Species) %>%
+  filter(!is.na(Clay)) %>%
+  filter(CEC7 < 100) -> test_dat
+
+
+pp1 <- ggplot(test_dat, aes(x=pHwater, y=log10(Abundance + 1))) + 
+  geom_point(aes(colour=Lat), size = 3, alpha=0.9) + 
+  geom_smooth(se = FALSE, method = "glm.nb", colour="grey30") +
+  facet_wrap(~ Species) + labs(x="soil pH") +   
+  scale_color_continuous(name="Latitude", na.value = "grey50", 
+                         low = "#ef8a62", high = "#67a9cf") +
+  theme_bw()
+
+pp2 <-ggplot(test_dat, aes(x=Clay, y=log10(Abundance + 1))) + 
+  geom_point(aes(colour=Lat), size = 3, alpha=0.9) + 
+  geom_smooth(se = FALSE, method = "glm.nb", colour="grey30") +
+  facet_wrap(~ Species) + labs(x="Clay percent (%)") +   
+  scale_color_continuous(name="Latitude", na.value = "grey50", 
+                         low = "#ef8a62", high = "#67a9cf") +
+  theme_bw()
+
+pp3 <-ggplot(test_dat, aes(x=Precip_AMJ, y=log10(Abundance + 1))) + 
+  geom_point(aes(colour=Lat), size = 3, alpha=0.8) + 
+  geom_smooth(se = FALSE, method = "glm.nb", colour="grey30") +
+  facet_wrap(~ Species) + labs(x="Seasonal precipitation (mm)") +   
+  scale_color_continuous(name="Latitude", na.value = "grey50", 
+                         low = "#ef8a62", high = "#67a9cf") +
+  theme_bw()
+
+pp4 <- ggplot(test_dat, aes(x=Tmin_AMJ, y=log10(Abundance + 1))) + 
+  geom_point(aes(colour=Lat), size = 3, alpha=0.9) + 
+  geom_smooth(se = FALSE, method = "glm.nb", colour="grey30") +
+  facet_wrap(~ Species) + labs(x="Season minimum temperature (ºC)") +   
+  scale_color_continuous(name="Latitude", na.value = "grey50", 
+                         low = "#ef8a62", high = "#67a9cf") +
+  expand_limits(x=c(4,18)) +
+  theme_bw()
+
+
+pp5 <- ggplot(test_dat[test_dat$CEC < 100,], aes(x=CEC7, y=log10(Abundance + 1))) + 
+  geom_point(aes(colour=Lat), size = 3, alpha=0.9) + 
+  geom_smooth(se = FALSE, method = "glm.nb", colour="grey30") +
+  facet_wrap(~ Species) + labs(x="Cation exchange capacity (meq/100g)") +   
+  scale_color_continuous(name="Latitude", na.value = "grey50", 
+                         low = "#ef8a62", high = "#67a9cf") +
+  theme_bw()
+
+plot_grid(pp1, pp2, labels = c("A", "B"), 
+          ncol = 1, nrow = 2, align = "h")
+
+plot_grid(pp3, pp4, labels = c("C", "D"), 
+          ncol = 1, nrow = 2, align = "h")
+
+plot_grid(pp5, labels ="E", 
+          ncol = 1, nrow = 2, align = "h")
+```
+
+##Ordination by taxa
+
+```{r Ordination_plot_taxa}
+Oom_biom2 <- prune_samples(!is.na(Oom_biom@sam_data$Lat), Oom_biom)
+
+Oom_biom_ord <- ordinate(Oom_biom2, "PCoA", "bray")
+ord_plot2 <- plot_ordination(Oom_biom2, Oom_biom_ord, type = "taxa", color = "Clade")
+(ord_plot.f2 <- ord_plot2 + geom_point(size = 4, alpha = 0.7) +
+  theme_light() + labs(color = "Clade"))
+
+## Environment fit analysis
+bray.pcoa2 <- ordinate(Oom_biom2, method = "PCoA", "bray")
+#env3 <- vegansam(Oom_biom2) %>% select("CDL_2011":"Precip_AMJ")
+
+Oom_env2 <- envfit(bray.pcoa$vectors, env, permutations = 999)
+
+fit_data2 <- as.data.frame(scores(Oom_env2, display = "vectors")) %>%
+  add_rownames(var = "Env.var") %>%
+  bind_cols(data.frame(Oom_env2$vectors$r, Oom_env2$vectors$pvals)) %>%
+  rename(R2 = Oom_env2.vectors.r, P.value = Oom_env2.vectors.pvals) %>%
+  arrange(P.value)
+  
+
+## Vectors for plot
+fit_reduced2 <- fit_data2[fit_data2$P.value < 0.05,] 
+
+fit_plot2 <- as.data.frame(scores(Oom_env2, display = "vectors")) %>%
+  add_rownames(var = "Env.var") %>%
+  inner_join(fit_reduced, by = "Env.var") 
+
+
+ord_plot.data2 <- plot_ordination(Oom_biom2, Oom_biom_ord, 
+                                  type = "taxa", color = "Clade", justDF = TRUE)
+
+(ord.plot.env2 <- ggplot(data = ord_plot.data2, aes(x = Axis.1, y = Axis.2)) + 
+  labs(color = "Clade", x = "PCoA 1 [12.1%]", y = "PCoA 2 [9.4%]") +
+  geom_segment(data = fit_plot2, aes(x = 0, xend = Axis.1.x, y = 0, yend = Axis.2.x), 
+               arrow = arrow(length = unit(0.1,"cm")), color = "black", size = 0.8) + 
+  geom_label_repel(data = fit_plot2, aes(x = Axis.1.x, y = Axis.2.x, label = Env.var), 
+            size = 2, force = 1, label.size = 0.15) + 
+  geom_point(aes(color=Clade), size = 4, alpha = 0.7) + 
+  facet_wrap(~Clade) +
+  theme_gray())
+```

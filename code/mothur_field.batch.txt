@@ -1,0 +1,64 @@
+#Set directories
+set.dir(input=..data/input_files_mothur)
+set.dir(output=../scratch)
+
+#Precleaning_seqs
+summary.seqs(fasta=./input_files/Seqs_11_12.paper.fasta, processors=8)
+screen.seqs(fasta=./input_files/Seqs_11_12.paper.fasta, group=./input_files/field.groups, maxambig=10, maxhomop=20)
+summary.seqs(fasta=current)
+unique.seqs(fasta=current)
+count.seqs(name=Seqs_11_12.paper.good.names, group=field.good.groups)
+count.groups(count=current)
+summary.seqs(count=current)
+
+#Alignment sequences
+align.seqs(fasta=Seqs_11_12.paper.good.unique.fasta, reference=./input_files/BOL_ITS1-2.fasta, flip=t, processors=8)
+summary.seqs(fasta=Seqs_11_12.paper.good.unique.align, count=Seqs_11_12.paper.good.count_table)
+screen.seqs(fasta=Seqs_11_12.paper.good.unique.align, count=Seqs_11_12.paper.good.count_table, minlength=500, maxhomop=20)
+filter.seqs(fasta=Seqs_11_12.paper.good.unique.good.align, vertical=T, trump=.)
+
+#Unique seqs and preclustering
+unique.seqs(fasta=Seqs_11_12.paper.good.unique.good.filter.fasta, count=Seqs_11_12.paper.good.good.count_table)
+pre.cluster(fasta=Seqs_11_12.paper.good.unique.good.filter.unique.fasta, count=Seqs_11_12.paper.good.unique.good.filter.count_table, diffs=3)
+
+#Classify seqs (pre-classify seqs to remove undesired lineages)
+classify.seqs(fasta=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.fasta, count=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table, reference=./input_files/BOL_ITS1-2.fasta, taxonomy=./input_files/ITS1-2_taxonomy.txt, cutoff=80)
+
+#OTU analysis
+dist.seqs(fasta=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.fasta, cutoff=0.10)
+cluster(column=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.dist, count=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table)
+make.shared(list=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.list, count=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table, label=0.03)
+
+#Classify OTUs
+classify.otu(list=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.list, count=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table, taxonomy=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.taxonomy, label=0.03)
+
+#Make BIOM file for OTUs
+make.biom(shared=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.shared, constaxonomy=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.0.03.cons.taxonomy)
+
+#Phylotype analysis
+phylotype(taxonomy=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.taxonomy)
+
+#Shared phylotype file
+make.shared(list=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.tx.list, count=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table, label=1)
+
+#Classification for phylotype analysis
+classify.otu(list=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.tx.list, count=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table, label=1, taxonomy=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.taxonomy)
+
+#Make BIOM file for phylotype analysis
+make.biom(shared=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.tx.shared, constaxonomy=Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.tx.1.cons.taxonomy)
+
+#Rename BIOMs file
+system(cp ./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.0.03.biom  ./Seqs_11_12.OTU.biom)
+system(cp ./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.ITS1-2_taxonomy.wang.tx.1.biom ./Seqs_11_12.phylotype.biom)
+
+#Get OTU representative seqs
+get.oturep(column=./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.dist, count=./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.count_table, fasta=./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.fasta, label=0.03, list=./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.list)
+system(cp ./temp_files/Seqs_11_12.paper.good.unique.good.filter.unique.precluster.an.unique_list.0.03.rep.fasta ./Seqs_11_12.OTUrep.fasta)
+system(sh sed_fasta.sh)
+
+#FastTree - Phylogenetic
+system(FastTree -log Seqs_11_12_tree.log -nt Seqs_11_12.OTUrep.fasta > Seqs_11_12.OTU.tre)
+
+#Clearcut
+clearcut(fasta=Seqs_11_12.OTUrep.fasta, DNA=T)
+system(cp ./temp_files/Seqs_11_12.OTUrep.tre ./Seqs_11_12.OTU.clearcut.tre)

@@ -1,0 +1,31 @@
+---
+title: "Oomycete species associated with soybean seedlings in North America"
+author: "J. Alejandro Rojas"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+#Knitr options
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+
+##Library load
+# ipak function: install and load multiple R packages.
+# check to see if packages are installed. Install them if they are not, then load them into the R session.
+# Source: https://gist.github.com/stevenworthington/3178163
+ipak <- function(pkg){
+new.pkg <- pkg[!(pkg %in% installed.packages()[,"Package"])]
+if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+sapply(pkg, require, character.only = TRUE)
+}
+
+```
+
+#Part II: diversity and ecology in relation to environmental and edaphic factors
+
+## Figures and analyses
+
+

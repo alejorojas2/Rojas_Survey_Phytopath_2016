@@ -1,5 +1,5 @@
 ---
-title: "Oomycete species associated with soybean seedlings in the U.S."
+title: "Oomycete species associated with soybean seedlings in in North America"
 author: "J. Alejandro Rojas"
 output: 
   html_document: 
