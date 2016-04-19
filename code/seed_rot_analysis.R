@@ -245,10 +245,10 @@ P <- groupClade(P, node=c(90, 89, 87))
 htree2 <- ggtree(P, aes(colour=group), size=0.5) + geom_text(aes(label=label), size=3, hjust=-0.05) + 
   scale_color_manual(values = c("#1a1a1a","#1a1a1a","#008837","#2b83ba"))
 
-htree2.1 <- htree2 %>% 
-  annotation_clade(node=90, "Cluster A", offset.text = 20, offset = 400, color="#636363") %>% 
-  annotation_clade(node=89, "Cluster B", offset.text = 20, offset = 400, color="#525252") %>%
-  annotation_clade(node=87, "Cluster C", offset.text = 20, offset = 400, color="#252525")
+htree2.1 <- htree2 +
+  geom_cladelabel(node=90, "Cluster A", offset.text = 20, offset = 400, color="#636363") + 
+  geom_cladelabel(node=89, "Cluster B", offset.text = 20, offset = 400, color="#525252") +
+  geom_cladelabel(node=87, "Cluster C", offset.text = 20, offset = 400, color="#252525")
 
 plot_grid(htree2.1, bp, labels=c("A","B"), ncol=2)
 

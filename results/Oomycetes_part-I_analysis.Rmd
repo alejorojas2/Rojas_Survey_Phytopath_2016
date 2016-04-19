@@ -34,6 +34,13 @@ CVcoeff <- function(x) (sd(x)/mean(x))*100
 
 #Trimming leading or trailing space
 trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+
+#pval
+pval <- function(p){
+  if(p < 0.001){p <- 'p<0.001'}
+  else{p <- sprintf('p=%.1g', p)}
+  return(p)
+}
 ```
 
 #Part I: identification and pathogenicity characterization
@@ -138,14 +145,16 @@ Clade_data$Clade <- factor(Clade_data$Clade,
   labs(y="Frequency (%)") + xlab(NULL) + coord_flip())
 ```
 
-For __seed rot analyses__ in detail, please check the [seed_rot_data_analysis](Seed_rot_data_analysis.md)
+For __seed rot analyses__ in detail, please check the 
+[seed_rot_data_analysis](Seed_rot_data_analysis.md)
 
-
-```{r seed_analysis, echo=FALSE, results='hide', fig.show='hide'}
+```{r seed_analysis_src, echo=FALSE, results='hide', fig.show='hide'}
 source("../code/seed_rot_analysis.R")
 ```
 
-__Figure 4.__ Mean disease severity index of 84 oomycete species screened in a seed rot assay at 13ºC and 20ºC.  Bars represent standard error and disease severity index values from 0 = non-pathogenic to 100 = highly pathogenic.
+__Figure 4.__ Mean disease severity index of 84 oomycete species screened in a 
+seed rot assay at 13ºC and 20ºC.  Bars represent standard error and disease 
+severity index values from 0 = non-pathogenic to 100 = highly pathogenic.
 
 ```{r temp_seed, fig.align='center', fig.width=12, fig.height=9}
 ggplot(seed_sum, aes(x=reorder(Species, mean_DI,median), y=mean_DI)) + 
@@ -157,18 +166,86 @@ ggplot(seed_sum, aes(x=reorder(Species, mean_DI,median), y=mean_DI)) +
   labs(x="Species", y="Disease Severity Index")
 ```
 
-__Figure 5.__ Figure 5.  (A) Hierarchical analysis of the disease severity index of 84 oomycete species to establish three clusters related to pathogenicity on soybean and (B) boxplot of disease severity index by clusters at 13°C and 20°C as evaluated in a seed rot assay.
+__Figure 5.__ (A) Hierarchical analysis of the disease severity index 
+of 84 oomycete species to establish three clusters related to pathogenicity on 
+soybean and (B) boxplot of disease severity index by clusters at 13°C and 20°C 
+as evaluated in a seed rot assay.
 
 ```{r seed_cluster, fig.height=8, fig.width=15, warning=FALSE, message=FALSE}
 plot_grid(htree2.1, bp, labels=c("A","B"), ncol=2)
 ```
 
-## Tables
+For __seedling root rot analyses__ in detail, please check the 
+[seedling_data_analysis](Seedling_data_analysis.md)
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r seed_analysis, echo=FALSE, results='hide', fig.show='hide'}
+source("../code/seedling_analysis.R")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+__Figure 6.__ Mean soybean root area (cm2), mean root length (cm), 
+and mean weight per root (mg) after being challenged by 84 oomycete species 
+using a soybean seedling root rot assay.  Bars represent standard error and 
+darker points represent species significantly different from the non-rice 
+control (P < 0.05).
+
+```{r seedling_data, fig.align='center', fig.width=11, fig.height=8, out.extra='angle=90'}
+grid.draw(rbind(ggplotGrob(plot_wpr), ggplotGrob(plot_ln), ggplotGrob(plot_ar), size="last"))
+```
+
+
+__Figure 7.__ Phylogram for the ITS sequences of the rDNA for oomycete species 
+found during the survey.  Phylogenetic distribution of pathogenicity traits 
+mapped to taxa represent in the tree.  Tip colors indicate members of different 
+clades.  Parameters in light gray represent taxa not isolated in the study.
+
+```{r tree, fig.align='center', fig.height=12, fig.width=10, warning=FALSE}
+source("../code/tree_traits.R")
+tree_final_plot
+```
+
+__Figure 8.__ Prevalence of pathogenic oomycete species, designated based on 
+seedling assay data, across the states sampled during the current study.  Color 
+gradient indicates number of isolates per species collected per state 
+during 2011 and 2012.
+
+```{r prevalence, fig.align='center'}
+prev.plot
+```
+
+## Tables
+
+__Table 1.__  Mean disease severity index (DSI) of soybean cv. `Sloan` seeds in 
+response to multiple oomycete species as compared to the non-inoculated control 
+at 13ºC or 20ºC.  Only species with significant differences from the control at 
+either temperature are represented (Complete table, see Supplementary Table 2).  
+A seed rot assay was used to determine pathogenicity of oomycete species using a 
+disease severity scale of 0-4 to rate individual seeds.  Data were transformed 
+to disease severity index (0=non-pathogenic; 100=highly aggressive).
+
+```{r seed_rot_table, echo=FALSE}
+Seed_rot_table <- Seed_rot_final %>% 
+  filter(Pval_13C <0.05 | Pval_20C <0.05) %>%
+  arrange(Species)
+ctl <- seed_spp[seed_spp$Species == "Control",]
+Seed_rot_table <- bind_rows(Seed_rot_table, c(ctl[1],"",ctl[3],
+                                              ctl[4],"",ctl[5],ctl[6],""))
+
+kable(Seed_rot_table, format = "markdown", digits = 3 )
+```
+
+__Table 2.__  Forty-three oomycete species highly aggressive on soybean cv. `Sloan` 
+in the seedling root rot assay measured as root area, root length and dry weight
+per root.  Only species with significant differences from the non-rice control
+are represented (Complete table, see Supplementary Table 3).  Data were analyzed 
+by multivariate analysis of variance (MANOVA) combining all the parameters: root 
+area, root length and weight per root; and followed by univariate analysis for 
+each of the measured parameters.  Plants were grown at 20ºC in a growth chamber
+for 2 weeks.
+
+```{r seedling_table}
+root_table <- root.sp %>% filter(mnv.p < 0.05) %>%
+              select_("Species", "N", "mnv.p", "ar", "ar.se", "ar.p", 
+                      "ln", "ln.se", "ln.p", "wpr", "wpr.se", "wpr.p") 
+
+kable(root_table, format = "markdown", digits = 3)
+```

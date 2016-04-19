@@ -1,0 +1,460 @@
+## ----custom_functions, echo=FALSE, message=FALSE-------------------------
+#Standard error function
+std <- function(x) sd(x)/sqrt(length(x))
+CVcoeff <- function(x) (sd(x)/mean(x))*100
+
+# ipak function: install and load multiple R packages.
+# check to see if packages are installed. Install them if they are not, then load them into the R session.
+# Source: https://gist.github.com/stevenworthington/3178163
+ipak <- function(pkg){
+new.pkg <- pkg[!(pkg %in% installed.packages()[,"Package"])]
+if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+sapply(pkg, require, character.only = TRUE)
+}
+
+#Trimming leading or trailing space
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+
+## ----libraries, echo=FALSE, message=FALSE--------------------------------
+packages <- c("ggplot2","RColorBrewer","grid","gridExtra","plyr","lme4","lsmeans","knitr","tidyr","dplyr", "MASS", "magrittr", "reshape2", "FactoMineR", "cowplot")
+ipak(packages)
+
+#require(devtools)
+#install_github('vqv/ggbiplot')
+
+## ----file_reading--------------------------------------------------------
+#Reading the file
+dry_weight <- read.csv(file = "../data/clean/dry_weight_allsets.csv")
+dry_weight$Species <- trim(dry_weight$Species)
+
+#Calculate root:shoot ratio
+dry_weight$r_s <- with(dry_weight, Weight.per.root/Weight.per.shoot)
+
+#Summarizing data using different parameters by plyr library
+dryw_sum <- ddply(dry_weight, c("Species"), summarise,
+              N = length(Weight.per.root),
+              mean_wpr = mean(Weight.per.root), 
+              sd_wpr = sd(Weight.per.root),
+              se_wpr = sd_wpr/sqrt(N),
+              mean_wps = mean(Weight.per.shoot), 
+              sd_wps = sd(Weight.per.shoot),
+              se_wps = sd_wps/sqrt(N),
+              mean_rs = mean(r_s),
+              sd_rs = sd(r_s),
+              se_rs = sd_rs/sqrt(N)
+              )
+  
+#Setting limits for error bars
+wpr_limits <- aes(ymax = mean_wpr + se_wpr, ymin=mean_wpr - se_wpr)
+wps_limits <- aes(ymax = mean_wps + se_wps, ymin=mean_wps - se_wps)
+rs_limits <- aes(ymax = mean_rs + se_rs, ymin=mean_rs - se_rs)
+
+#melt data into long format
+dryw_sum.t1 <- melt(dryw_sum, measure.vars = c("mean_wpr","mean_wps","mean_rs")) %>%
+  subset(select = c(Species, variable,value))
+
+dryw_sum.t2 <- melt(dryw_sum, measure.vars = c("se_wpr","se_wps","se_rs")) %>% 
+  subset(select = c(Species, variable,value)) %>%
+  dplyr::rename(Spp=Species, SE_var=variable, SE_val=value)
+
+dryw_sum.t <- cbind(dryw_sum.t1, dryw_sum.t2)
+
+## ----point_weight, fig.align='center', fig.width=11, fig.height=8--------
+plot_wpr <- ggplot(dryw_sum, aes(x = reorder(Species, mean_wpr, median), y = mean_wpr)) +
+  geom_point(stat = "summary", fun.y = "mean", size = 3, col="#d8b365") +
+  geom_errorbar(wpr_limits, width=0.2, col="#d8b365") + theme_gray() +
+  theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"), 
+        axis.text.y=element_text(angle=90, hjust = 0.5), 
+        axis.title.x = element_text(angle=180),
+        plot.margin=unit(c(1,1,1,1), "mm")) +
+  labs(x="Species", y = "Weight per root (mg)") 
+
+plot_wps <- ggplot(dryw_sum, aes(x = reorder(Species, mean_wpr, median), y = mean_wps)) +
+  geom_point(stat = "summary", fun.y = "mean", size = 3, col="#7fbf7b") +
+  geom_errorbar(wps_limits, width=0.2, col="#7fbf7b") + theme_gray() +
+  #theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"))) +
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,-7,1), "mm")) +
+  labs(x="", y = "Weight per shoot (mg)") 
+
+plot_rs <- ggplot(dryw_sum, aes(x = reorder(Species, mean_wpr, median), y = mean_rs)) +
+  geom_point(stat = "summary", fun.y = "mean", size = 3, col="#4d4d4d") +
+  geom_errorbar(rs_limits, width=0.2, col="#4d4d4d") + theme_gray() +
+  #theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"))) +
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,-7,1), "mm")) + 
+  labs(x="", y = "root:shoot ratio") 
+
+grid.draw(rbind(ggplotGrob(plot_rs), ggplotGrob(plot_wps), ggplotGrob(plot_wpr), size="last"))
+
+
+## ----data_input----------------------------------------------------------
+#Reading the file
+root_raw <- read.csv(file = "../data/clean/root_measurements_final.csv")
+root_raw$Species <- trim(root_raw$Species)
+
+#Data transformation using different parameters by plyr library
+root_measures <- ddply(root_raw, c("Species","Isolate","Set","Rep"), summarise,
+              N = length(Area_cm),
+              area.r = mean(Area_cm), 
+              length.r = mean(Length_cm)
+              )
+
+#Summarizing data using different parameters by plyr library
+root_sum <- ddply(root_measures, c("Species"), summarise,
+              N = length(area.r),
+              area.p = mean(area.r),
+              sd_ap = sd(area.r),
+              se_ap = sd_ap/sqrt(N),
+              ln.p = mean(length.r),
+              sd_lp = sd(length.r),
+              se_lp = sd_lp/sqrt(N)
+              )
+
+#Setting limits for error bars
+ap_limits <- aes(ymax = area.p + se_ap, ymin=area.p - se_ap)
+lp_limits <- aes(ymax = ln.p + se_lp, ymin=ln.p - se_lp)
+
+## ----point_scans, fig.align='center', fig.width=11, fig.height=8---------
+plot_area <- ggplot(root_sum, aes(x=reorder(Species, area.p, median), y=area.p)) +
+  geom_point(stat = "summary", fun.y = "mean", size=3, col="#4d4d4d") +
+  geom_errorbar(ap_limits, width=0.2, col="#4d4d4d") + theme_gray() +
+  theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,1,1), "mm")) +
+  labs(x="Species", y = expression(paste("Root area (",cm^"2",")")))
+
+plot_len <- ggplot(root_sum, aes(x=reorder(Species, area.p, median), y=ln.p)) +
+  geom_point(stat = "summary", fun.y = "mean", size=3, col="#7fbf7b") +
+  geom_errorbar(lp_limits, width=0.2, col="#7fbf7b") + theme_gray() +
+  #theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"),
+  #      axis.text.y=element_text(angle=90)) +
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,-7,1), "mm")) +
+  labs(x="", y = "Root Length (cm)")
+
+grid.draw(rbind(ggplotGrob(plot_len), ggplotGrob(plot_area), size="last"))
+
+## ----combined_data-------------------------------------------------------
+#Data for table publication
+Root_data <- left_join(dryw_sum,root_sum, by="Species")
+Root_data$N.x <- with(Root_data, N.x/9)
+
+#Selecting the columns desired
+Root_data <- Root_data %>% dplyr::select(Species,N.x,mean_wpr,
+                                         se_wpr,mean_wps,se_wps,
+                                         mean_rs,se_rs, area.p,se_ap,ln.p,se_lp)
+
+#Renaming column data
+Root_data <- dplyr::rename(Root_data, N=N.x, Weight.Root=mean_wpr, se.wr=se_wpr,
+                    Weight.Shoot=mean_wps, se.ws=se_wps, Root.Shoot=mean_rs,
+                    se.rs=se_rs, Root.Area=area.p, se.area=se_ap,
+                    Root.length=ln.p, se.length=se_lp)
+
+kable(Root_data, digits = 3, format = "markdown")
+
+## ----PCA_analysis--------------------------------------------------------
+## Combine dataset for multivariate analysis
+root_final <- full_join(root_measures,dry_weight, by=c("Species","Isolate","Set","Rep"))
+root_final <- root_final[c(-5,-8,-9,-10)]
+
+## Log transforming data
+root.log <- root_final
+root.log[,5:9] <- log10(root.log[,5:9] + 1)
+
+#### PCA exploration of the data 
+library(FactoMineR)
+rd.pca <- PCA(root_final[5:9], scale.unit = TRUE, ncp=5, graph = T)
+
+rd.pca$var$contrib
+dimdesc(rd.pca, axes = c(1,2))
+
+rd.hcpc <- HCPC(rd.pca, nb.clust = 3)
+rd.hcpc$desc.var
+
+root.clusters <- rd.hcpc$data.clust$clust
+
+root.log.pca <- prcomp(root_final[5:9],
+                       center = TRUE,
+                       scale. = TRUE)
+summary(root.log.pca)
+
+#Bi-plot for PCA analysis
+library(ggbiplot)
+g <- ggbiplot(root.log.pca, obs.scale = 1, var.scale = 1, 
+              groups = root.clusters, ellipse = TRUE, 
+              circle = FALSE, alpha=0.2)
+g <- g + scale_color_discrete(name = '') + theme_gray() 
+(g <- g + theme(legend.direction = 'horizontal', 
+               legend.position = 'top'))
+
+## ----MANOVA analysis-----------------------------------------------------
+## MANOVA analysis
+# fit <- manova(cbind(area.r, length.r, Weight.per.root)~Species, data=root_scale)
+# summary(fit, test=c("Pillai"))
+# summary(fit, test=c("Wilks"))
+# summary(fit, test=c("Hotelling-Lawley"))
+library(nlme)
+fit <- lme(cbind(area.r, length.r, Weight.per.root) ~ Species, random= ~1|Isolate, data=root.log)
+fit1 <- lme(cbind(area.r, length.r, Weight.per.root) ~ Species, random= ~1|Set/Isolate, data=root.log)
+fit2 <- lme(cbind(area.r, length.r, Weight.per.root) ~ Species, random = ~1|Set, data=root.log)
+fit3 <- lme(cbind(area.r, length.r, Weight.per.root) ~ Species,
+           random = ~1|Set/Species/Isolate, data=root.log)
+
+#model tests
+anova(fit,fit1,fit2, fit3)
+
+#Checking correlation of dependent variables
+library(car)
+scatterplotMatrix(~ area.r + length.r + Weight.per.root, data = root.log)
+
+cor.test(root.log$area.r, root.log$length.r, method="pearson")
+cor.test(root.log$Weight.per.root, root.log$length.r, method="pearson")
+cor.test(root.log$area.r, root.log$Weight.per.root, method="pearson")
+
+cor.test(root_final$area.r, root_final$length.r, method="pearson")
+cor.test(root_final$Weight.per.root, root_final$length.r, method="pearson")
+cor.test(root_final$area.r, root_final$Weight.per.root, method="pearson")
+
+library(lsmeans)
+plot(fit1)
+#Variance
+VarCorr(fit1)
+
+#Confidence intervals
+fit1.ci <- intervals(fit1)
+fit1.ci.2 <- as.data.frame(fit1.ci[[1]]) %>% add_rownames(var = "Species") %>% arrange(est.)
+ggplot(fit1.ci.2, aes(x = reorder(Species, est., mean), 
+                 y = est., ymin = lower, ymax = upper)) + 
+  geom_errorbar() + geom_point() + coord_flip() + theme_bw()
+
+#Contrasts
+fit1.ls <- lsmeans(fit1, "Species")
+plot(fit1.ls)
+fit1.d <- contrast(fit1.ls, "trt.vs.ctrl", ref=4, adjust="bon")
+fit1.dc <- as.data.frame(summary(fit1.d))
+kable(fit1.dc, format = "markdown")
+
+#### Univariate analysis
+#### Area
+fit.area <- lme(area.r ~ Species, random= ~1|Set/Isolate, data=root.log)
+fit.area.ls <- lsmeans(fit.area, "Species")
+fit.area.d <- contrast(fit.area.ls, "trt.vs.ctrl", ref=4, adjust="bon")
+area.d.t <- as.data.frame(summary(fit.area.d))
+#### Length
+fit.length <- lme(length.r ~ Species, random= ~1|Set/Isolate, data=root.log)
+fit.length.ls <- lsmeans(fit.length, "Species")
+fit.length.d <- contrast(fit.length.ls, "trt.vs.ctrl", ref=4, adjust="bon")
+length.d.t <- as.data.frame(summary(fit.length.d))
+#### Weight per root
+fit.wpr <- lme(Weight.per.root ~ Species, random= ~1|Set/Isolate, data=root.log)
+fit.wpr.ls <- lsmeans(fit.wpr, "Species")
+fit.wpr.d <- contrast(fit.wpr.ls, "trt.vs.ctrl", ref=4, adjust="bon")
+wpr.d.t <- as.data.frame(summary(fit.wpr.d))
+
+#### Merge results
+univ.t1 <- full_join(area.d.t, length.d.t, by="contrast") %>% 
+  dplyr::select(c(contrast, contains("p.value"))) %>%
+  dplyr::rename(ar.p = p.value.x, ln.p = p.value.y)
+
+univ.t2 <- full_join(univ.t1, wpr.d.t, by="contrast") %>%
+  dplyr::select(c(contrast, ar.p, ln.p, p.value)) %>%
+  dplyr::rename(wpr.p = p.value)
+
+univ.t <- full_join(univ.t2, fit1.dc, by="contrast") %>%
+  dplyr::select(c(contrast, p.value, ar.p, ln.p, wpr.p)) %>%
+  dplyr::rename(mnv.p = p.value)
+
+univ.t <- cbind(colsplit(univ.t$contrast," - ", names=c('Species','contrast')),univ.t[2:5])
+
+kable(univ.t, digits = 3, format = "markdown")
+
+## ----box_plot_trt--------------------------------------------------------
+### Creating two data sets for downstream analysis
+#### Root original data set
+root_final$Treatment[root_final$Species=="CONTROL"] <- "Control"
+root_final$Treatment[root_final$Species=="CONTROL_NR"] <- "Control"
+root_final$Treatment[is.na(root_final$Treatment)] <- "Inoculated"
+rownames(root_final) <- make.names(root_final[,1], unique = TRUE)
+
+t.test(root_final$Weight.per.shoot~root_final$Treatment)
+t.test(root_final$Weight.per.root~root_final$Treatment)
+t.test(root_final$length.r~root_final$Treatment)
+t.test(root_final$area.r~root_final$Treatment)
+
+## Analyzing by variable
+##Function boxplot
+draw_bp <- function(d, v, c, l){
+  plot1 <- ggplot(data=d, aes_string(y=v, x=c)) +
+    geom_boxplot(position="identity") + theme_bw() + labs(y=l)
+  plot1
+}
+
+ar.root <- draw_bp(root_final, "area.r", "Treatment", expression(paste("Root area (",cm^"2",")")))
+ln.root <- draw_bp(root_final, "length.r", "Treatment", "Root length (cm)")
+wpr <- draw_bp(root_final, "Weight.per.root", "Treatment", "Weight per root (mg)")
+wpp <- draw_bp(root_final, "Weight.per.shoot", "Treatment", "Weight per shoot (mg)")
+
+
+plot_grid(ar.root,ln.root,wpr,wpp, ncol=2, nrow=2, labels = c("A","B","C","D"))
+
+## ----data_plot_final-----------------------------------------------------
+## Summarizing data by species - full dataset
+root.sp <- ddply(root_final, c("Species"), summarise,
+              N = length(area.r),
+              ar = mean(area.r), 
+              ar.se = sd(area.r)/sqrt(N),
+              ln = mean(length.r),
+              ln.se = sd(length.r)/sqrt(N),
+              wpr = mean(Weight.per.root),
+              wpr.se = sd(Weight.per.root)/sqrt(N)
+              )
+
+root.sp <- dplyr::full_join(root.sp, univ.t, by="Species")
+root.sp[is.na(root.sp)] <- 1
+
+kable(root.sp, digits = 3, format = "markdown")
+
+root.sp$ar.sg <- ifelse(root.sp$ar.p<0.05,"SG","NS")
+root.sp$ln.sg <- ifelse(root.sp$ln.p<0.05,"SG","NS")
+root.sp$wpr.sg <- ifelse(root.sp$wpr.p<0.05,"SG","NS")
+#Setting limits for error bars
+ar_lt <- aes(ymax = ar + ar.se, ymin=ar - ar.se)
+ln_lt <- aes(ymax = ln + ln.se, ymin=ln - ln.se)
+wpr_lt <- aes(ymax = wpr + wpr.se, ymin=wpr - wpr.se)
+
+## ----final_plot, fig.align='center', fig.width=11, fig.height=8----------
+
+plot_ar <- ggplot(root.sp, aes(x=reorder(Species, ar, median), y=ar)) +
+  geom_point(aes(shape=ar.sg), stat = "summary", 
+             fun.y = "mean", size=3, colour="#4d4d4d") +
+  geom_errorbar(ar_lt, width=0.2, col="#4d4d4d")  + theme_gray() +
+  scale_shape_manual(values = c(21,19)) +
+  theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, 
+                                 face="italic", size = 12),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,1,1), "mm"),
+        legend.position="none") +
+  labs(x="Species", y = expression(paste("Root area (",cm^"2",")")))
+
+plot_ln <- ggplot(root.sp, aes(x=reorder(Species, ar, median), y=ln)) +
+  geom_point(aes(shape=ln.sg), stat = "summary", fun.y = "mean", 
+             size=3, colour="#005824") +
+  geom_errorbar(ln_lt, width=0.2, col="#005824")  + theme_gray() + 
+  scale_shape_manual(values = c(21,19)) +
+   #theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"),
+  #      axis.text.y=element_text(angle=90)) +
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,-7,1), "mm"),
+        legend.position="none") +
+  labs(x="", y = "Root Length (cm)")
+
+plot_wpr <- ggplot(root.sp, aes(x=reorder(Species, ar, median), y=wpr)) +
+  geom_point(aes(shape=wpr.sg), stat = "summary", fun.y = "mean",
+             size=3, colour = "#bf812d") +
+  geom_errorbar(wpr_lt, width=0.2, col="#bf812d") + theme_gray() +
+  scale_shape_manual(values = c(21,19)) +
+  #theme(axis.text.x=element_text(angle=90, hjust = 1, vjust = 0.5, face="italic"),
+  #      axis.text.y=element_text(angle=90)) +
+  theme(axis.ticks = element_blank(), 
+        axis.text.x = element_blank(),
+        axis.text.y=element_text(angle=90, hjust = 0.5),
+        plot.margin=unit(c(1,1,-7,1), "mm"),
+        legend.position="none") +
+  labs(x="", y = "Weight per root (mg)")
+
+grid.draw(rbind(ggplotGrob(plot_wpr), ggplotGrob(plot_ln), ggplotGrob(plot_ar), size="last"))
+
+## ----fig.align='center', fig.height= 3, fig.width=10---------------------
+root.sp1 <- root.sp
+root.sp1$Group[root.sp1$mnv.p>0.05] <- "Group 1"
+root.sp1$Group[(root.sp1$mnv.p<0.05) & (root.sp1$ln.p>0.05) | (root.sp1$mnv.p<0.05) &(root.sp1$wpr.p>0.05)] <- "Group 2"
+root.sp1$Group[(root.sp1$mnv.p<0.05) & (root.sp1$ln.p<0.05) & (root.sp1$wpr.p<0.05)] <- "Group 3"
+
+
+## Plots by clusters
+a <- draw_bp(root.sp1, "ar", "Group", expression(paste("Root area (",cm^"2",")")))
+b <- draw_bp(root.sp1, "ln", "Group", "Root length (cm)")
+c <- draw_bp(root.sp1, "wpr", "Group", "Weight per root (mg)")
+
+plot_grid(a,b,c, ncol=3, nrow=1, labels = c("A","B","C"))
+
+#function for actual mode of data
+#mode_f <- function(x){as.integer(which.max(table(x)))}
+
+## ------------------------------------------------------------------------
+#### LDA analysis data set
+root.lda.data <- cbind(root_final[1:4],log10(root_final[,5:9] + 1), root_final[10])
+root.lda.data[5:8] <- scale(root.lda.data[5:8], center = TRUE, scale = TRUE)
+
+root_lda <- lda(Species ~ area.r + length.r + Weight.per.root, data=root.lda.data)
+root.lda.p <- predict(root_lda)
+
+prop.lda <- root_lda$svd^2/sum(root_lda$svd^2)
+
+dataset = data.frame(species = root.lda.data[,"Treatment"],
+                     pca = root.log.pca$x, lda = root.lda.p$x)
+
+(p1 <- ggplot(dataset) + geom_point(aes(lda.LD1, lda.LD2, colour = species, shape = species), size = 2.5, position = position_jitter(width=0.3, height=0.3)) + theme_gray() + 
+  labs(x = paste("LD1 (", percent(prop.lda[1]), ")", sep=""),
+       y = paste("LD2 (", percent(prop.lda[2]), ")", sep="")))
+
+## ------------------------------------------------------------------------
+#Vector for pathogenic species
+c3 <- root.sp1[(root.sp1$mnv.p<0.05) & (root.sp1$ln.p<0.05),1]
+
+#Read abundance data
+Isolate_data <- read.csv("../data/clean/Isolates_11-12_final.csv")
+
+#Summarise data by year
+Data_11_12 <- ddply(Isolate_data, c("Species","State"), summarise,
+                   N = as.numeric(length(qDef)),
+                   freq = (N/length(Isolate_data$Year))*100
+                   )
+
+#Subsetting the data
+Data_11_12.sub <- subset(Data_11_12, Data_11_12$Species %in% c3, c(Species, State, N))
+D11_12 <- spread(Data_11_12.sub, State, N)
+D11_12[is.na(D11_12)] <- 0
+D11_12 <- gather(D11_12, State, N, Arkansas:Wisconsin)
+
+D11_12$brk <- cut(D11_12$N, breaks = c(-0.5,0,10,50,100,150,200),
+                  labels=c("0","1-10","10-50","50-100","100-150","150-200"))
+
+#Tile plot
+(prev.plot <- ggplot(D11_12, aes(x=State,y=reorder(Species, N, median))) + 
+  geom_tile(aes(fill=brk)) + 
+  scale_fill_brewer(palette = "GnBu", type = "seq", name="Isolates (n)") +
+  theme_bw() +
+  labs(y="Species") + 
+  theme(axis.text.x=element_text(angle=-60, hjust=0, colour="black"), 
+        axis.text.y=element_text(face="italic", colour="black")))
+
+## Non pathogenic species prevalence
+c4 <- root.sp1[(root.sp1$mnv.p>0.05) & (root.sp1$ln.p>0.05),1]
+
+Data_11_12.sub2 <- subset(Data_11_12, Data_11_12$Species %in% c4, c(Species, State, N))
+D11_12.2 <- spread(Data_11_12.sub2, State, N)
+D11_12.2[is.na(D11_12.2)] <- 0
+D11_12.2 <- gather(D11_12.2, State, N, Arkansas:Wisconsin)
+
+D11_12.2$brk <- cut(D11_12.2$N, breaks = c(-0.5,0,10,50,100,150,200), 
+                  labels=c("0","1-10","10-50","50-100","100-150","150-200"))
+
+(prev.plot2 <- ggplot(D11_12.2, aes(x=State,y=reorder(Species, N, median))) + 
+  geom_tile(aes(fill=brk)) + 
+  scale_fill_brewer(palette = "GnBu", type = "seq", name="Isolates (n)") +
+  theme_bw() +
+  labs(y="Species") + 
+  theme(axis.text.x=element_text(angle=-60, hjust=0, colour="black"), 
+        axis.text.y=element_text(face="italic", colour="black")))
+
