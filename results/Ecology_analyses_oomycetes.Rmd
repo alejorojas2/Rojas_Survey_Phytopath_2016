@@ -129,7 +129,7 @@ Tb_richness_final <- left_join(Tb_richness, samp_size, by = "sample") %>%
         mean.Evenness = mean(Shannon/log(Observed)),
         sd.Evenness = sd(Shannon/log(Observed), na.rm = TRUE))
 
-kable(Tb_richness_final, digits = 3)
+kable(Tb_richness_final, digits = 3, format = "markdown")
 ```
 
 ```{r plots_phylotype, fig.align='center', fig.width=10, fig.height=7}
@@ -445,7 +445,7 @@ Oom_adonis <- adonis(d ~ State2 + Year + State2*Year, df)
 
 kable(Oom_adonis$aov.tab, digits = 3, 
       caption = "__Table 2.__ Comparison of community structure (beta diversity)\
-      using Bray-curtis distance by State and year.")
+      using Bray-curtis distance by State and year.", format = "markdown")
 ```
 
 ##Ordination analysis
@@ -490,7 +490,7 @@ fit_data <- as.data.frame(scores(Oom_env, display = "vectors")) %>%
 
 kable(fit_data, digits = 3, caption = "__Supp. table 1.__ Significance and correlation\
 of vectors fitted into PCoA ordination of oomycete communities associated with\
-soybean seedlings")
+soybean seedlings", format = "markdown")
 
 ## Reduced version
 
@@ -521,7 +521,7 @@ fit_plot$Env.var2 <- c("Latitude", "Longitude", "Precip. Season","CEC", "Clay (%
 ## paper version
 kable(fit_plot, digits = 3, caption = "__Table 3.__ Significant factors using\
       ‘envfit’ function from vegan that affect oomycete community associated\
-      with soybean seedlings.")
+      with soybean seedlings.", format = "markdown")
 
 ord_plot.data <- plot_ordination(Oom_biom2, Oom_biom_ord, 
                             color = "State2", shape = "Year", justDF = TRUE)
@@ -635,7 +635,7 @@ factor_mantel <- function(dist, env){
 
 mantel_table <- factor_mantel(Oom.dist, env2)
 cor.table <- left_join(fit_data, mantel_table, by = "Env.var")
-kable(cor.table, digits = 3)
+kable(cor.table, digits = 3, format = "markdown")
 ```
 
 
