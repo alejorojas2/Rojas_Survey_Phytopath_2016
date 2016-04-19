@@ -17,7 +17,6 @@ Overview
     |- data            # raw and primary data, are not changed once created 
     |  |- raw/         # raw data, will not be altered
     |  +- clean/       # cleaned data, will not be altered once created
-    |  	|- CA_GIS_data.txt    |  	|- dry_weight_allsets.csv    |  	|- Isolates_11-12_final    |  	|- ITS_spp.fasta    |  	|- Ontario_soybean.txt    |  	|- root_measurements_final.csv    |  	|- Root_metadata.txt    |  	|- seed_rot.csv    |  	|- soybean_data.csv    |  	|- US_GIS_data.txt
     |
     |- code/           # any programmatic code
     |  |- abundance_analysis.R    |  |- seed_rot_analysis.R    |  |- seedling_analysis.R    |  |- soy_sample_map.R    |  |- tree_traits.R
