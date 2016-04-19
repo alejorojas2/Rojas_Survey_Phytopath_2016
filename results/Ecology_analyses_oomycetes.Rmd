@@ -94,7 +94,7 @@ Oom_phylo <- merge_phyloseq(Oom_phylo, Oom_data)
 ```
 
 ##Richness analyses
-```{r Richness_analysis}
+```{r Richness_analysis, fig.align='center', fig.width=11, fig.height=7}
 #Plotting richness
 plot_richness(Oom_biom, "St_Yr", 
               measures = c("InvSimpson","Shannon","Chao1"), color = "Year")
@@ -127,10 +127,10 @@ Tb_richness_final <- left_join(Tb_richness, samp_size, by = "sample") %>%
         mean.Evenness = mean(Shannon/log(Observed)),
         sd.Evenness = sd(Shannon/log(Observed), na.rm = TRUE))
 
-kable(Tb_richness_final)
+kable(Tb_richness_final, digits = 3)
 ```
 
-```{r plots_phylotype}
+```{r plots_phylotype, fig.align='center', fig.width=10, fig.height=7}
 #Summarizing by state
 Oom_phylo_state <- tax_glom(Oom_phylo, taxrank = "Clade")
 Oom_phylo_state <- merge_samples(Oom_phylo_state, "St_Yr")
@@ -161,7 +161,7 @@ data_state <- data_state[with(data_state, order(Clade, as.numeric(Clade))),]
 ```
 
 
-```{r plots_otu, echo=FALSE}
+```{r plots_otu, echo=FALSE, fig.align='center', fig.width=10, fig.height=7}
 #Summarizing by State
 Oom_biom_state <- tax_glom(Oom_biom, taxrank = "Clade")
 Oom_biom_state <- merge_samples(Oom_biom_state, "St_Yr")
@@ -188,7 +188,7 @@ State_OTU <- State_OTU[with(State_OTU, order(Clade, as.numeric(Clade))),]
 ```
 
 ## Rarefaction curves
-```{r rarefaction_curvers, warning=FALSE}
+```{r rarefaction_curvers, warning=FALSE, fig.align='center', fig.width=12, fig.height=7}
 ## DATA ##
 
 psdata <- merge_samples(Oom_phylo, "St_Yr")
@@ -256,7 +256,7 @@ ggplot(
 
 
 ## Latitude/Longitude gradient
-```{r latitude_vs_diversity}
+```{r latitude_vs_diversity, fig.align='center', fig.width=7, fig.height=4}
 #Richness data
 richness2 <- estimate_richness(Oom_biom, 
                                  split = TRUE, 
@@ -303,12 +303,12 @@ cor.test(lt_rch_data$Long, lt_rch_data$Shannon, method = "spearman")
   annotate("text", x=-88, y=0.4, label = "p-value = 0.037\nrho = -0.224", 
            fontface = "bold", hjust = 0))
 
-grid.arrange(Obs_plot2, Obs_plot3)
+#grid.arrange(Obs_plot2, Obs_plot3)
 ```
 
 ##Cluster analysis - OTU
 
-```{r cluster_analysis_otu}
+```{r cluster_analysis_otu, fig.align='center', fig.width=8, fig.height=4}
 #Phyloseq otu table to vegan otu table
 Oom_st <- prune_samples(!(grepl('MICO|ONSO', sample_names(Oom_biom))), Oom_biom)
 Oom_st <- merge_samples(Oom_biom, "St_Yr")
@@ -357,7 +357,7 @@ gridExtra::grid.arrange(t1.otu, t2.otu, ncol = 2)
 
 ##Cluster analysis - phylotype
 
-```{r cluster_analysis_phylo}
+```{r cluster_analysis_phylo, fig.align='center', fig.width=8, fig.height=4}
 #Phyloseq otu table to vegan otu table
 Oom_ph.1 <- prune_samples(!(grepl('MICO|ONSO', sample_names(Oom_phylo))), Oom_phylo)
 Oom_ph <- merge_samples(Oom_ph.1, "St_Yr")
@@ -399,16 +399,16 @@ t2.ph <- ggtree(tb.ph.pa, branch.length = 'branch.length') +
 #gridExtra::grid.arrange(t1.otu, t2.otu, t1.ph, t2.ph, ncol = 2)
 ```
 
-```{r}
+```{r, fig.align='center', fig.width=8, fig.height=10}
 plot_grid(t1.ph, Obs_plot2, labels = c("A", "B"), ncol = 1,
           align = "h"
           #rel_widths = c(0.85,1,1), rel_heights = c(0.5,1,1) 
           )
 
-plot_grid(t1.ph, Obs_plot2, Obs_plot3, labels = c("A", "B", "C"), ncol = 1,
+(plot_grid(t1.ph, Obs_plot2, Obs_plot3, labels = c("A", "B", "C"), ncol = 1,
           align = "h"
           #rel_widths = c(0.85,1,1), rel_heights = c(0.5,1,1) 
-          )
+          ))
 
 ```
 
@@ -500,7 +500,7 @@ soybean seedlings")
 
 ### Results ordination and environmental data
 
-```{r Ord_envfit_plot}
+```{r Ord_envfit_plot, fig.align='center', fig.width=10, fig.height=6}
 ## Vectors for plot
 fit_reduced <- fit_data[fit_data$P.value < 0.05,] 
 
@@ -638,7 +638,7 @@ kable(cor.table, digits = 3)
 
 
 ## Abundance of top 8 pathogenic species
-```{r map_pie_chart}
+```{r map_pie_chart, fig.align='center', fig.width=11, fig.height=7}
 ##Top 8 species
 top.sp <- names(sort(taxa_sums(Oom_phylo), TRUE)[1:8])
 oom.sp <- prune_taxa(top.sp, Oom_phylo)
@@ -677,7 +677,7 @@ oom.pie.0 <- add_rownames(centroids, "sample") %>%
 oom.pie <- oom.pie.0 %>% split(., .$sample)
 
 #Color scale
-pal <- colorRampPalette(brewer.pal(8, "Set3"))
+pal2 <- colorRampPalette(brewer.pal(8, "Set3"))
 
 #Pie chart
 pies <- setNames(lapply(1:length(oom.pie), function(i){
@@ -688,7 +688,7 @@ pies <- setNames(lapply(1:length(oom.pie), function(i){
     xlab(NULL) + 
     ylab(NULL) + 
     theme_transparent() +
-    scale_fill_manual(values = pal(8)) +
+    scale_fill_manual(values = pal2(8)) +
     theme(plot.margin=unit(c(0,0,0,0),"mm"))
 }), names(oom.pie))
 
@@ -696,7 +696,7 @@ pies <- setNames(lapply(1:length(oom.pie), function(i){
 e1 <- ggplot(oom.pie[[2]], aes(x=1, Abundance, fill=Species)) +
         geom_bar(stat="identity", width=1) + 
         coord_polar(theta="y") + 
-  scale_fill_manual(values = pal(8), 
+  scale_fill_manual(values = pal2(8), 
                     labels = c("Py. sylvaticum","Py. heterothallicum", "Py. oopapillum",
                                "Py. ultimum var. ultimum","Py. aff. dissotocum",
                                "Py. aff. torulosum", "Py. lutarium","Py. irregulare")) +
@@ -728,7 +728,7 @@ print(map.p)
 
 ## Correlation of individual species with different parameters using occupancy models
 
-```{r var_plots, warning=FALSE, message=FALSE, fig.height=10}
+```{r var_plots, warning=FALSE, message=FALSE, fig.height=7, fig.width=6}
 library(ggradar)
 library(scales)
 library(MASS)
@@ -801,13 +801,13 @@ plot_grid(pp5, labels ="E",
 
 ##Ordination by taxa
 
-```{r Ordination_plot_taxa}
+```{r Ordination_plot_taxa, fig.align='center', fig.width=19, fig.height=17}
 Oom_biom2 <- prune_samples(!is.na(Oom_biom@sam_data$Lat), Oom_biom)
 
 Oom_biom_ord <- ordinate(Oom_biom2, "PCoA", "bray")
 ord_plot2 <- plot_ordination(Oom_biom2, Oom_biom_ord, type = "taxa", color = "Clade")
-(ord_plot.f2 <- ord_plot2 + geom_point(size = 4, alpha = 0.7) +
-  theme_light() + labs(color = "Clade"))
+ord_plot.f2 <- ord_plot2 + geom_point(size = 4, alpha = 0.7) +
+  theme_light() + labs(color = "Clade")
 
 ## Environment fit analysis
 bray.pcoa2 <- ordinate(Oom_biom2, method = "PCoA", "bray")

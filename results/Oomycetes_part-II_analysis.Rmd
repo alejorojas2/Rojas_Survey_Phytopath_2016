@@ -22,10 +22,178 @@ if (length(new.pkg))
 sapply(pkg, require, character.only = TRUE)
 }
 
+#Loading packages
+packages <- c("phyloseq","ggplot2","RColorBrewer","plyr","dplyr",
+              "tidyr","knitr","magrittr","ape","vegan", "ggtree", 
+              "cowplot", "ggrepel", "gtable", "gridExtra")
+ipak(packages)
+
+#Standard error function
+std <- function(x) sd(x)/sqrt(length(x))
+CVcoeff <- function(x) (sd(x)/mean(x))*100
+
+#Trimming leading or trailing space
+trim <- function(x) gsub("^\\s+|\\s+$", "", x)
+
+#RDP phyloseq extraction to vegan
+veganotu <- function(physeq) {
+  OTU <- otu_table(physeq)
+  if (taxa_are_rows(OTU)) {
+    OTU <- t(OTU)
+  }
+  OTU <- as(OTU, "matrix")
+  return(OTU)
+}
+
+vegansam <- function(physeq) {
+  sam <- sample_data(physeq)
+  # i <- sapply(sam, is.numeric)
+  # j <- sapply(sam, is.character)
+  # k <- sapply(sam, is.factor)
+  # sam <- as.matrix(sam)
+  sam <- data.frame(sam)
+  # sam[i] <- lapply(sam[i], as.numeric)
+  # sam[j] <- lapply(sam[j], as.character)
+  # sam[k] <- lapply(sam[k], as.factor)
+  return(sam)
+}
+
+source("../code/ecology_analysis.R")
 ```
 
 #Part II: diversity and ecology in relation to environmental and edaphic factors
 
 ## Figures and analyses
 
+__Figure 1.__  Relative abundance of OTUs summarized by clade or genera and 
+state for 2011 and 2012.  The clades or genera are color coded according to 
+the legend from top to bottom
 
+```{r clade_otu, fig.align='center', fig.width=10, fig.height=7}
+ByState
+```
+
+__Figure 2.__  Oomycete community structure of species recovered from soybean 
+seedling evaluated by (A) cluster analysis based on Bray-Curtis distance by 
+state surveyed.  Dendrogram was constructed using hierarchical clustering with 
+complete linkage; (B) diversity of oomycete communities expressed as Shannon 
+index across the latitudes of the fields sampled;  (C) diversity of oomycete 
+communities expressed as Shannon index across longitudes of the fields sampled.
+
+```{r cluster_gradient, fig.align='center', fig.width=8, fig.height=10}
+plot_grid(t1.ph, Obs_plot2, Obs_plot3, labels = c("A", "B", "C"), ncol = 1,
+          align = "h")
+```
+
+__Figure 3.__  Principal coordinate analysis (PCoA) of oomycete communities
+collected from soybean seedling in the US based on a Bray-Curtis distance 
+computed from taxon counts.  Environmental and edaphic factors are plotted as 
+vectors based on correlations with community distance.  Only vectors with 
+significant correlations are represented and the length of the vector represents
+the strength of the correlation. (CEC = Cation Exchange Capacity, Season: 
+corresponds to April, May and June where most planting and or sampling was 
+conducted).
+
+```{r PCoA,fig.align='center', fig.width=8, fig.height=10}
+ggplot(data = ord_plot.data, aes(x = Axis.1, y = Axis.2)) + 
+  geom_point(aes(color=State2, shape=Year), size = 4, alpha = 0.7) + 
+  labs(color = "State", shape = "Year", x = "PCoA 1 [12.1%]", y = "PCoA 2 [9.4%]") +
+  scale_colour_manual(values = colors2) +
+  geom_segment(data = fit_plot, aes(x = 0, xend = Axis.1.x, y = 0, yend = Axis.2.x), 
+               arrow = arrow(length = unit(0.1,"cm")), color = "black", size = 0.8) + 
+  geom_label_repel(data = fit_plot, aes(x = Axis.1.x, y = Axis.2.x, label = Env.var2), 
+            size = 3, force = 1) + theme_gray()
+```
+
+__Figure 4.__  Representation of the correlation of among community similarity 
+(PCoA ordination axis) and four environmental factors: (A) seasonal 
+precipitation (mm, from April - June) with samples colored by latitude; 
+(B) seasonal minimum temperature (ºC, April - June) with samples colored by 
+latitude; (C) clay content (%) with samples colored by volumetric water 
+content (%); and (D) bulk density of the soil (gm/cm3) with samples colored by
+volumetric water content (%).  Spearman correlation values (rho) and P-value are 
+presented for each comparison.  Season refers to the planting and or sampling 
+period which ranged from April to June. 
+
+```{r Correlation_factors, fig.align='center', fig.width=14, fig.height= 10}
+plot_grid(Prec, Tmin, Clay, Blk, labels = c("A", "B", "C", "D"), 
+          ncol = 2, nrow = 2, align = "h")
+```
+
+__Figure 5.__  Distribution and abundance of the top 8 pathogenic oomycete
+species across the states sampled in 2011 and 2012.
+
+```{r top_8, fig.align='center', fig.width=11, fig.height=7}
+print(map.p)
+```
+
+For detailed analyses, please go to 
+[Ecology_analyses_oomycetes](Ecology_analyses_oomycetes.md)
+
+## Tables
+
+__Table 1.__  Oomycete community diversity and evenness by state and year.  Data 
+represents state-year average and standard deviation of soybean seedlings 
+sampled by field.
+
+```{r richness_table}
+kable(Tb_richness_final, digits = 3)
+```
+
+__Table 2.__ Comparison of oomycete community structure (beta diversity) by state 
+and year using Bray-Curtis distances.
+
+```{r result_adonis}
+kable(Oom_adonis$aov.tab, digits = 3)
+```
+
+__Table 3.__  Significance of factors affecting oomycete communites associated 
+with soybean seedlings, based on using ‘envfit’ function form vegan.
+
+```{r env_factors}
+kable(fit_plot, digits = 3)
+```
+
+## Supplementary figures
+
+__Supplementary Table 1.__  Significance and correlation of environmental and 
+edaphic factors using ‘envfit’ function form vegan that affect oomycete 
+community associated with soybean seedlings.
+
+```{r env_full_table}
+kable(fit_data, digits = 3)
+```
+
+__Supplementary Figure 1.__ Map of sampled soybean fields in 2011 and 2012, and intensity of 
+planted soybean acres demonstrated by color intensity at the county/parish level. 
+
+```{r map_soybean_samples, echo=FALSE, fig.height=8, fig.width=12, cache=TRUE,fig.align='center'}
+source("../code/soy_sample_map.R")
+
+print(gg2)
+print(gg3, vp=viewport(.65, .88, .4,.4))
+```
+
+__Supplementary Figure 2.__  Climate conditions across soybean fields sampled
+in the US from May to June (A) mean temperature 2011, (B) mean temperature 2012,
+(C) mean precipitation 2011, and (D) mean precipitation 2012. 
+
+![fig2](figures/climate_survey.png)
+
+__Supplementary Figure 3.__  Abundance of designated pathogenic oomycete species 
+_Py. sylvaticum_, _Py. heterothallicum_, _Py. oopapillum_, _Py. ultimum var. ultimum_, 
+_Py. aff. dissotocum_ and _Py. aff. torulosum_ by different environmental factors: 
+(a) soil pH, (b) clay percent (%), (c) seasonal precipitation (April – June), 
+(d) season minimum temperature (April – June) and, (e) cation exchange 
+capacity (CEC).
+
+```{r occupancy_models, fig.height=7, fig.width=6, fig.align='center'}
+plot_grid(pp1, pp2, labels = c("A", "B"), 
+          ncol = 1, nrow = 2, align = "h")
+
+plot_grid(pp3, pp4, labels = c("C", "D"), 
+          ncol = 1, nrow = 2, align = "h")
+
+plot_grid(pp5, labels ="E", 
+          ncol = 1, nrow = 2, align = "h")
+```

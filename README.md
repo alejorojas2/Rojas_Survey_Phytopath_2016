@@ -20,14 +20,21 @@ Overview
     |  |- input_files_mothur	#Input files used for mothur analyses
     |
     |- code/           # any programmatic code
-    |  |- abundance_analysis.R #Analyses part I    |  |- seed_rot_analysis.R #Analyses part I    |  |- seedling_analysis.R #Analyses part I    |  |- soy_sample_map.R #Analyses part I    |  |- tree_traits.R #Analyses part I
+    |  |- abundance_analysis.R #Analyses part I
+    |  |- seed_rot_analysis.R #Analyses part I
+    |  |- seedling_analysis.R #Analyses part I
+    |  |- soy_sample_map.R #Analyses part I
+    |  |- tree_traits.R #Analyses part I
     |  |- mothur_field.batch # Batch file used in mothur   
+    |  |- ecology_analysis.R #Analyses part II    
     |
     |- results         # all output from workflows and analyses
     |  |- figures/     # graphs, likely designated for manuscript figures
-    |  |- Oomycetes_part-I_analysis.Rmd    |  |- Seed_rot_data_analysis.Rmd    |  |- Seedling_data_analysis.Rmd
+    |  |- Oomycetes_part-I_analysis.Rmd
+    |  |- Seed_rot_data_analysis.Rmd #Detailed analyses of seed rot data
+    |  |- Seedling_data_analysis.Rmd #Detailed analyses of seedling root rot data
     |  |- Oomycetes_part-II_analysis.Rmd
-    |  |- Ecology_analyses_oomycetes.Rmd
+    |  |- Ecology_analyses_oomycetes.Rmd #Detailed analyses of ecological data
     |
     |- scratch/        # temporary files that can be safely deleted or lost
     |
