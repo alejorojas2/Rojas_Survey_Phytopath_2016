@@ -482,7 +482,11 @@ D11_12$brk <- cut(D11_12$N, breaks = c(-0.5,0,10,50,100,150,200),
   labs(y="Species") + 
   theme(axis.text.x=element_text(angle=-60, hjust=0, colour="black"), 
         axis.text.y=element_text(face="italic", colour="black")))
+```
 
+### Prevalence of __non-pathogenic__ species
+
+```{r}
 ## Non pathogenic species prevalence
 c4 <- root.sp1[(root.sp1$mnv.p>0.05) & (root.sp1$ln.p>0.05),1]
 

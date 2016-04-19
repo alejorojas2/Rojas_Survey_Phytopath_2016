@@ -1201,6 +1201,9 @@ D11_12$brk <- cut(D11_12$N, breaks = c(-0.5,0,10,50,100,150,200),
 
 ![](Seedling_data_analysis_files/figure-html/unnamed-chunk-3-1.png)
 
+### Prevalence of __non-pathogenic__ species
+
+
 ```r
 ## Non pathogenic species prevalence
 c4 <- root.sp1[(root.sp1$mnv.p>0.05) & (root.sp1$ln.p>0.05),1]
@@ -1222,4 +1225,4 @@ D11_12.2$brk <- cut(D11_12.2$N, breaks = c(-0.5,0,10,50,100,150,200),
         axis.text.y=element_text(face="italic", colour="black")))
 ```
 
-![](Seedling_data_analysis_files/figure-html/unnamed-chunk-3-2.png)
+![](Seedling_data_analysis_files/figure-html/unnamed-chunk-4-1.png)

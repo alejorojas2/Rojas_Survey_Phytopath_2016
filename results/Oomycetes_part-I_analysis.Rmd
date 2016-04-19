@@ -249,3 +249,66 @@ root_table <- root.sp %>% filter(mnv.p < 0.05) %>%
 
 kable(root_table, format = "markdown", digits = 3)
 ```
+
+## Supplementary figures
+
+__Supplementary Figure 1.__  Comparison of the non-inoculated controls and 
+inoculated seedlings with the 84 oomycete species combined for the four 
+parameters measured: (A) root area (cm2), (B) root length (cm), (C) weight per 
+root (mg), and (D) weight per shoot (mg).  Boxplot represent distribution of 
+data, the line represents the median for each group and dots indicates outliers.
+
+```{r box_plot_trt, fig.align='center'}
+plot_grid(ar.root,ln.root,wpr,wpp, ncol=2, nrow=2, labels = c("A","B","C","D"))
+```
+
+__Supplementary Figure 2.__  Principal Component Analysis (PCA) on seedling 
+parameters measured to determine correlation and contribution for the evaluation
+pathogenic/non-pathogenic oomycete species. The values on parenthesis indicate
+the percent of variance explained by the respective axis.  The length and the 
+direction of the vectors indicate the contribution of each parameter to the 
+corresponding variance.
+
+```{r PCA_parameters}
+plot.PCA(rd.pca, choix = "var", axes = c(1, 2), new.plot = TRUE, 
+         shadowtext = TRUE)
+```
+
+__Supplementary Figure 3.__  Distribution of parameters analyzed: (A) root area 
+(cm2), (B) root length (cm), and (C) weight per root (mg), on three groups based 
+on the significance of the MANOVA and univariate analysis: 
+group 1 (non-significant for all analyses), group 2 (significant for MANOVA, 
+but not for all univariate analyses), group 3 (significant for both MANOVA 
+and univariate analyses). Boxplot represent distribution of data, the line 
+represents the median for each group and dots indicates outliers.
+
+```{r Parameters_groups, fig.align='center', fig.height=5, fig.width=8}
+plot_grid(a,b,c, ncol=3, nrow=1, labels = c("A","B","C"))
+```
+
+__Supplementary Figure 4.__  Effect of media on the frequency of recovery of 
+oomycete species summarized by clade in 2012.  Numbers at the end of the bar 
+represent number of total isolates per clade.
+
+```{r 2012_media_analysis, fig.align='center', fig.height=5, fig.width=8}
+##2012 Species
+#Read raw dataset for isolates
+oom.md <- read.csv("../data/clean/Isolates_11-12_final.csv")
+oom.md <- filter(oom.md, Year == "2012") %>%
+          filter(State != "Ontario" ) %>%
+          group_by(Clade, Media) %>%
+          summarise(N = n()) %>%
+          group_by(Clade) %>% mutate(N.final = sum(N))
+
+(media.plot <- ggplot(oom.md, aes(x = Clade, y = N, fill = Media)) + 
+              geom_bar(stat = "identity", color = "gray50", 
+                       position = position_fill()) +
+              scale_fill_discrete(name = "Media", 
+                                  labels = c("CMA+PARPB", "V8+RPBH")) +
+              theme_gray() + labs(y = "Frequency") + 
+              theme(axis.title = element_text(size = 12, face = "bold"),
+                    axis.text = element_text(size = 12)) +
+              geom_text(aes(y = 0.95, label = N.final), size = 5, 
+                        color = "white", fontface = "bold") +
+              coord_flip())
+```

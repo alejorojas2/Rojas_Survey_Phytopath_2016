@@ -158,3 +158,38 @@ for 2 weeks.
 |Pythium ultimum var. sporangiiferum | 27| 0.000| 1.337| 0.240| 0.000| 15.196| 3.169| 0.000| 19.200|  2.497| 0.000|
 |Pythium ultimum var. ultimum        | 27| 0.000| 0.481| 0.070| 0.000|  4.228| 0.738| 0.000|  8.256|  1.252| 0.000|
 |Pythium vanterpoolii                | 27| 0.022| 6.023| 0.567| 0.022| 70.135| 7.034| 1.000| 47.704|  2.306| 1.000|
+
+## Supplementary figures
+
+__Supplementary Figure 1.__  Comparison of the non-inoculated controls and 
+inoculated seedlings with the 84 oomycete species combined for the four 
+parameters measured: (A) root area (cm2), (B) root length (cm), (C) weight per 
+root (mg), and (D) weight per shoot (mg).  Boxplot represent distribution of 
+data, the line represents the median for each group and dots indicates outliers.
+
+<img src="Oomycetes_part-I_analysis_files/figure-html/box_plot_trt-1.png" title="" alt="" style="display: block; margin: auto;" />
+
+__Supplementary Figure 2.__  Principal Component Analysis (PCA) on seedling 
+parameters measured to determine correlation and contribution for the evaluation
+pathogenic/non-pathogenic oomycete species. The values on parenthesis indicate
+the percent of variance explained by the respective axis.  The length and the 
+direction of the vectors indicate the contribution of each parameter to the 
+corresponding variance.
+
+![](Oomycetes_part-I_analysis_files/figure-html/PCA_parameters-1.png)
+
+__Supplementary Figure 3.__  Distribution of parameters analyzed: (A) root area 
+(cm2), (B) root length (cm), and (C) weight per root (mg), on three groups based 
+on the significance of the MANOVA and univariate analysis: 
+group 1 (non-significant for all analyses), group 2 (significant for MANOVA, 
+but not for all univariate analyses), group 3 (significant for both MANOVA 
+and univariate analyses). Boxplot represent distribution of data, the line 
+represents the median for each group and dots indicates outliers.
+
+<img src="Oomycetes_part-I_analysis_files/figure-html/Parameters_groups-1.png" title="" alt="" style="display: block; margin: auto;" />
+
+__Supplementary Figure 4.__  Effect of media on the frequency of recovery of 
+oomycete species summarized by clade in 2012.  Numbers at the end of the bar 
+represent number of total isolates per clade.
+
+<img src="Oomycetes_part-I_analysis_files/figure-html/2012_media_analysis-1.png" title="" alt="" style="display: block; margin: auto;" />

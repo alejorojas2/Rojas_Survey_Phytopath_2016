@@ -44,8 +44,8 @@ For both papers, the sequences can be obtained with the accession numbers GenBan
 * __root_measurements_final.csv__: File containing root area, root length for soybean cv. 'Sloan' seedlings challenged with oomycete species.
 
 ###Part II
-*
-*
+* 
+* 
 
 ###Miscelaneous datasets
 * __CA_GIS_data.txt__: Canada locations sampled in this study
@@ -59,6 +59,7 @@ Results
 Rmarkdown documents containing figures and analyses for Oomycete species associated with soybean seedlings in the U.S.
 
 * [Part I - Identification and pathogenicity characterization](results/Oomycetes_part-I_analysis.md)
+
 * [Part II- Diversity and ecology in relation to environmental and edaphic factors](results/Oomycetes_part-II_analysis.md)
 
 
