@@ -8,6 +8,13 @@ This repository contains data and scripts used to analyze data for the manuscrip
 
 Data, code and results are contained in this project, but there are independent [Rmarkdown] documents for each analysis.
 
+Citation
+--------
+
+Please use the following DOI to cite this data and associated functions/analyses.
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.50107.svg)](http://dx.doi.org/10.5281/zenodo.50107)
+
 Overview
 --------
 
