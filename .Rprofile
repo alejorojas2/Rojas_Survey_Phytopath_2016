@@ -18,3 +18,6 @@ cat('Project home directory is available as PROJHOME or via get("PROJHOME","RPRO
 
 rm(RPROJ)
 ############################################################
+#### -- Packrat Autoloader (version 0.4.7-1) -- ####
+source("packrat/init.R")
+#### -- End Packrat Autoloader -- ####
